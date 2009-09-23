@@ -47,12 +47,6 @@
 				<label for="location"> Location </label>
 				<input tabindex="3" type="text" id="location" name="[% f.look_down('id','location').attr('name')  %]" value="[% ad.location  %]" />
 			</div>
-			<div class="hidden">
-				<label for="email">E-mail (for responses):</label>
-				<input type="text" readonly="readonly" id="email" name="FromEMail" value="[% ad.email  %]" />
-				<input type="text" readonly="readonly" id="email" name="ConfirmEMail" value="[% ad.email  %]" />
-				<input type="hidden" name="[% f.look_down('type','radio').0.attr('name') %]" value="A" />
-			</div>
 		</div>
 		<div id="formMain">
 			[%- p.get_token_as_html_from_form_pos('description') %]
@@ -61,9 +55,13 @@
 		</div>
 		<div id="formFooter">
 			<div style="display:none"> [%- FOREACH e IN p.get_image_add %] [% e.as_HTML %] [%- END %] </div>
+			[% p.get_token_as_html_from_form_pos('Submit') %]
+			<input tabindex="5" type="submit" name="[% f.look_down('type','submit').attr('name')  %]" value="Continue" />
+			<label for="email">E-mail (for responses):</label>
+			<input type="text" readonly="readonly" id="email" name="FromEMail" value="[% ad.email  %]" />
+			<input type="hidden" readonly="readonly" id="email" name="ConfirmEMail" value="[% ad.email  %]" />
+			<input type="hidden" name="[% f.look_down('type','radio').0.attr('name') %]" value="C" />
 		</div>
-		[% p.get_token_as_html_from_form_pos('Submit') %]
-		<input tabindex="5" type="submit" name="[% f.look_down('type','submit').attr('name')  %]" value="Continue" />
 	</form>
 	[%- END %]
 </body>
