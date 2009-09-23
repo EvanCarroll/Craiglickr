@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<TITLE>FCKeditor - Toolbar Customization</TITLE>
+	</HEAD>
+	<BODY>
+		<P><STRONG><FONT size="6">Toolbar Customization</FONT></STRONG> 
+<BR><EM>(Revised:&nbsp;03/08/2003)</EM>
+			<br>
+			<br>
+			The FCKeditor toolbar can be easily customized. You can easily define what 
+			toolbar options are available and even create your custom actions. All you have 
+			to do is configure the fck_config.js file toolbar sets.<br>
+			<BR>
+			<br>
+			<STRONG><FONT size="5">Configuration File</FONT></STRONG>
+			<BR>
+			<br>
+			The file <STRONG>js/fck_config.js</STRONG> holds all configurations and user 
+			customizations for the editor. Here you can define all available toolbar sets 
+			and its definitions. Use the “<STRONG>ToolbarSets</STRONG> ” configuration 
+			option to do that.<br>
+			<br>
+			A toolbar set is a group of toolbar items that can be used by a FCKeditor 
+			instance. The editor package comes with 3 sample toolbar sets: Default, 
+			Accessibility and Basic. You can modify or add as many toolbar sets as you 
+			want.
+			<br>
+			<br>
+			Let’s take a look at the “ToolbarSets” configuration option:</P>
+		<pre>  config.ToolbarSets["<STRONG>ToolBarSetName</STRONG>"] = [        <FONT color="#008000">// Toolbar Name</FONT>
+      ['Item 1','Item 2','-','Item 3','Item n'],  <FONT color="#008000">// 1st Band</FONT>
+      ['Item 4','-','Item 5','Item 6','Item n']   <FONT color="#008000">// 2nd Band</FONT>
+  ] ;
+</pre>
+		As you can see you can add as many toolbar bands as you want. Use a minus (-) 
+		to create a separator.<br>
+		<br>
+		The toolbar items, in the same way, are defined in the js/fck_toolbaritems.js 
+		file. Until the actual version of the editor, these are the available items 
+		names:<BR>
+		<BR>
+		<TABLE border="0" align="center">
+			<TR>
+				<TD>Cut</TD>
+				<TD>&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+				<TD>Bold</TD>
+				<TD>&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+				<TD>Undo</TD>
+			</TR>
+			<TR>
+				<TD>Copy</TD>
+				<TD></TD>
+				<TD>Italic</TD>
+				<TD></TD>
+				<TD>Redo</TD>
+			</TR>
+			<TR>
+				<TD>Paste</TD>
+				<TD></TD>
+				<TD>Underline</TD>
+				<TD></TD>
+				<TD>InsertOrderedList</TD>
+			</TR>
+			<TR>
+				<TD>SelectAll</TD>
+				<TD></TD>
+				<TD>StrikeThrough</TD>
+				<TD></TD>
+				<TD>InsertUnorderedList</TD>
+			</TR>
+			<TR>
+				<TD>RemoveFormat</TD>
+				<TD></TD>
+				<TD>Subscript</TD>
+				<TD></TD>
+				<TD>FontStyle</TD>
+			</TR>
+			<TR>
+				<TD>Link</TD>
+				<TD></TD>
+				<TD>Superscript</TD>
+				<TD></TD>
+				<TD>FontFormat</TD>
+			</TR>
+			<TR>
+				<TD>Unlink</TD>
+				<TD></TD>
+				<TD>JustifyLeft</TD>
+				<TD></TD>
+				<TD>Font</TD>
+			</TR>
+			<TR>
+				<TD>Image</TD>
+				<TD></TD>
+				<TD>JustifyCenter</TD>
+				<TD></TD>
+				<TD>FontSize</TD>
+			</TR>
+			<TR>
+				<TD>Table</TD>
+				<TD></TD>
+				<TD>JustifyRight</TD>
+				<TD></TD>
+				<TD>TextColor</TD>
+			</TR>
+			<TR>
+				<TD>Rule</TD>
+				<TD></TD>
+				<TD>JustifyFull</TD>
+				<TD></TD>
+				<TD>BGColor</TD>
+			</TR>
+			<TR>
+				<TD>SpecialChar</TD>
+				<TD></TD>
+				<TD>Outdent</TD>
+				<TD></TD>
+				<TD>EditSource</TD>
+			</TR>
+			<TR>
+				<TD>About</TD>
+				<TD></TD>
+				<TD>Indent</TD>
+				<TD></TD>
+				<TD></TD>
+			</TR>
+		</TABLE>
+		<BR>
+		<BR>
+		<FONT size="5"><STRONG>Using the Toolbar Set </STRONG></FONT>
+		<br>
+		<br>
+		All language integration functions allow the developer to set what toolbar set 
+		to use for each FCKeditor instance.<br>
+		<br>
+		In Javascript call the CreateFCKeditor function to create an editor instance 
+		passing the desired ToolbarSet name as a parameter. The function syntax is:
+		<pre>  CreateFCKEditor(instanceName, width, height, <STRONG>toolbarSetName</STRONG>, initialValue) ;</pre>
+		This is a sample that uses “MyToolbar” as the toolbar set to be loaded:<br>
+		<PRE>  &lt;SCRIPT type="text/javascript"&gt;
+  &lt;!--
+      CreateFCKEditor('MyEditor','100%',150,'<STRONG>MyToolbar</STRONG>','This is a &lt;B&gt;sample&lt;/B&gt;.') ;
+  --&gt;
+  &lt;/SCRIPT&gt;</PRE>
+  If toolbarSetName is null, the "Default" toolbar set is loaded.
+	</BODY>
+</HTML>
