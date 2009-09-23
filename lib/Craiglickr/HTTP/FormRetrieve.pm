@@ -81,38 +81,38 @@ has 'form' => (
 			->attr( id => "description" )
 		;
 
-		{
-			my @elements = $form->look_down( _tag=>'input', type=>'hidden', class=>qr/sta|fr|gg[12]|point|mand/ );
-			foreach my $e ( @elements ) {
-				given ( $e->address ) {
-					when ( qr/^0.0.1(?:\.|$)/ ) { $e->attr('id','posPrePostingkey') }
-					when ( qr/^0.2(?:\.|$)/ ) { $e->attr('id','posPreSubmit') }
-				
-					when ( '0.0.5.3.2' ) { $e->attr('id','posPreDescription') }
-					when ( '0.0.5.4.2' ) { $e->attr('id','posPreDescription') }
-					when ( '0.0.5.4.2.0' ) { $e->attr('id','posPreDescription') }
-					when ( '0.0.5.9' ) { $e->attr('id','posPreDescription') }
-					when ( '0.0.5.9.0' ) { $e->attr('id','posPreDescription') } ## confirmed
-					when ( '0.0.5.10' ) { $e->attr('id','posPreDescription') } ## confirmed
-					when ( '0.0.5.3.2.0' ) { $e->attr( 'id','posPreDescription') }
-					when ( '0.0.7.3.2' ) { $e->attr('id','posPreDescription' ) }
-					when ( '0.0.7.4.2' ) { $e->attr('id','posPreDescription') }
-					when ( '0.0.7.9' ) { $e->attr('id','posPreDescription') }
-					when ( '0.0.7.9.0' ) { $e->attr('id','posPreDescription') }
-					when ( '0.0.7.10.0' ) { $e->attr('id','posPreDescription' ) }
+		my @fields_total  = $form->look_down( _tag => qr/input|textarea/ );
+		my @fields_hidden = $form->look_down( _tag=>'input', type=>'hidden', class=>qr/sta|fr|gg[12]|point|mand/ );
 
-					when ( qr/^0.0.[567].[10](?:\.|$)/ ) { $e->attr('id','posPreTitle') }
-					## when ( '0.0.6.0.0.2' ) { $e->attr('id','posPreTitle') }
-					## when ( '0.0.5.0' ) { $e->attr('id','posPreTitle') }
-					## when ( '0.0.5.0.0.2.0' ) { $e->attr('id','posPreTitle') }
-					## when ( '0.0.5.1.0.2.0' ) { $e->attr('id','posPreTitle') }
-					## when ( '0.0.5.1.0.2' ) { $e->attr('id','posPreTitle') }
-					## when ( '0.0.7.0.0' ) { $e->attr('id', 'posPreTitle') }
-					## when ( '0.0.7.0' ) { $e->attr('id', 'posPreTitle') }
-					## when ( '0.0.7.1.0.2' ) { $e->attr('id', 'posPreTitle' ) }
-					default { use XXX; YYY [ $e->attr('id'), $e->attr('class'), $e->address ] }
+
+		## Marks hidden fiels in the class of "posPre$idOfNextDefinitiveElement"...
+		foreach my $hidden ( @fields_hidden ) {
+
+			given ( $hidden->address ) {
+				when ( qr/^0\.0\.1(?:\.|$)/ ) {
+					$hidden->attr('class','posPrePostingkey');
+					next;
+				}
+				when ( qr/^0\.2(?:\.|$)/ ) {
+					$hidden->attr('class','posPreSubmit');
+					next;
+				}
+
+				default {
+
+					for ( my $i = 0; $i < $#fields_total; $i++ ) {
+						if ( $fields_total[$i]->address eq $hidden->address ) {
+
+							$i++ until $fields_total[$i+1]->attr('type') ne 'hidden';
+
+							my $id = 'posPre' .ucfirst( $fields_total[$i+1]->attr('id') );
+							$hidden->attr('class', $id);
+						}
+					}
+
 				}
 			}
+
 		}
 
 		return $form;
@@ -123,8 +123,12 @@ has 'form' => (
 
 sub get_token_as_html_from_form_pos {
 	my ( $self, $formPos ) = @_;
-	my $e = $self->form->look_down(_tag=>'input',id=>'posPre'.ucfirst($formPos));
-	$e ? sprintf ('<div class="posToken">%s</div>', $e->as_HTML) : undef;
+	my @e = $self->form->look_down(_tag=>'input',class=>'posPre'.ucfirst($formPos));
+
+	my $e = '';
+	$e .= $_->as_HTML for @e;
+	$e ? "<div class=\"posToken\">$e</div>" : undef;
+
 }
 
 sub get_image_add {
