@@ -21,6 +21,10 @@ sub hash_write {
 	$hash_ptr->{$cs->name}{description} = $cs->description
 		if $cs->description
 	;
+	
+	$hash_ptr->{$cs->name}{uid} = $cs->posting_uid
+		if $cs->posting_uid
+	;
 
 	if ( defined $cs->subsites ) {
 		$hash_ptr->{$cs->name}{subsites} = {};
