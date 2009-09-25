@@ -4,13 +4,36 @@ use warnings;
 use parent 'Catalyst::Controller';
 
 __PACKAGE__->config->{namespace} = '';
+
 use Craiglickr::Ad;
+use Craiglickr::Post;
 
-sub index :Path :Args(0) {
+sub craiglickr :Chained('.') :CaptureArgs(0) { }
+
+sub configureAll :Chained('craiglickr') :PathPart('') :Args(0) {
 	my ( $self, $c ) = @_;
+	$c->stash->{template} = 'configure.tt';
+}
 
-	$c->stash->{posts} = $c->model('CraiglickrPost')->get_forms;
+sub cities :Chained('craiglickr') :CaptureArgs(1) {
+	my ( $self, $c, $cities ) = @_;
+	$c->stash->{'cities'} = [split /,/, $cities];
+}
 
+sub configureCities :Chained('craiglickr') :PathPart('cities') :Args(0) {
+	my ( $self, $c ) = @_;
+	$c->stash->{template} = 'configure.tt';
+}
+
+sub boards :Chained('cities') :Args(1) {
+	my ( $self, $c, $boards ) = @_;
+	$c->stash->{'boards'} = [split /,/, $boards];
+	
+	$c->stash->{posts} = Craiglickr::Post->new({
+			cities   => $c->stash->{cities}
+			, boards => $c->stash->{boards}
+	})->get_forms;
+	
 	$c->stash->{ad} = Craiglickr::Ad->new({
 		title         => 'Test Vehicle'
 		, location    => 'Kingwood, TX'
@@ -20,7 +43,12 @@ sub index :Path :Args(0) {
 		, email_flag  => 'anonymous'
 	});
 
-	$c->stash->{template} = 'index.html';
+	$c->stash->{template} = 'post.tt';
+}
+
+sub configureBoards :Chained('cities') :PathPart('boards') :Args(0) {
+	my ( $self, $c ) = @_;
+	$c->stash->{template} = 'configure.tt';
 }
 
 sub default :Path {

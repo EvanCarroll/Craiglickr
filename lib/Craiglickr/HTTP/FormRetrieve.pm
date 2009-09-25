@@ -103,7 +103,7 @@ has 'form' => (
 					for ( my $i = 0; $i < $#fields_total; $i++ ) {
 						if ( $fields_total[$i]->address eq $hidden->address ) {
 
-							$i++ until $fields_total[$i+1]->attr('type') ne 'hidden';
+							$i++ until !defined $fields_total[$i+1]->attr('type') || $fields_total[$i+1]->attr('type') ne 'hidden';
 
 							my $id = 'posPre' .ucfirst( $fields_total[$i+1]->attr('id') );
 							$hidden->attr('class', $id);
@@ -121,6 +121,8 @@ has 'form' => (
 
 );
 
+sub get_value_by_name { $_[0]->form->look_down(_tag=>'input',name=>$_[1])->attr('value') }
+
 sub get_token_as_html_from_form_pos {
 	my ( $self, $formPos ) = @_;
 	my @e = $self->form->look_down(_tag=>'input',class=>'posPre'.ucfirst($formPos));
@@ -134,7 +136,7 @@ sub get_token_as_html_from_form_pos {
 sub get_image_add {
 	my $self = shift;
 	
-	$self->form->look_down(
+	my @image_section = $self->form->look_down(
 		'_tag'=>'input'
 		, sub {
 			my $element = $_[0];
@@ -145,6 +147,10 @@ sub get_image_add {
 			0;
 		}
 	);
+
+	$_->attr('id',undef) for @image_section;
+
+	\@image_section
 
 }
 
