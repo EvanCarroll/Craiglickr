@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Craiglickr posting tool</title>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+	<link rel="stylesheet" type="text/css" href="/static/css/post.css" />
+	<script type="text/javascript" src="/static/js/jquery.js"></script>
+	<script type="text/javascript" src="/static/ckeditor/ckeditor.js"></script>
+	<script type="text/javascript" src="/static/js/cleanmultiform.js"></script>
+</head>
+<body>
+	<div id="header"><h1> Craiglickr </h1> <h2> cities [% cities.join(', ') %] &rarr; post to car dealer </h2> </div>
+	<noscript>
+			<p> <strong>CKEditor requires JavaScript to run</strong>. In a browser with no JavaScript support, like yours, you should still see the contents (HTML data) and you should be able to edit it normally, without a rich editor interface. </p>
+	</noscript>
+	[%- FOREACH p IN posts %]
+	[%- SET f = p.form %]
+	<form id="post[%loop.count%]" class="posting" title="A posting to [%p.city%] for the board [%p.board%]" action="[% f.attr('action') %]" method="post" enctype="multipart/form-data" target="_blank">
+		[%- p.get_token_as_html_from_form_pos('postingKey') %]
+		<input type="hidden" name="postingKey" value="[%f.get_value_by_name('postingkey')%]" />
+		<input type="hidden" name="test" value="[%f.get_value_by_name('test')%]" />
+		<fieldset class="formTop">
+			<legend>Required Information</legend>
+			<div class="formGrouping titleGroup">
+				[%- p.get_token_as_html_from_form_pos('title') %]
+				<label for="title[%loop.count%]"> Title </label>
+				<input tabindex="1" type="text" id="title[%loop.count%]" name="[% f.look_down('id','title').attr('name')  %]" value="[% ad.title  %]" />
+			</div>
+			<div class="formGrouping priceGroup">
+				<label for="price[%loop.count%]"> Price ($) </label>
+				<input tabindex="2" type="text" id="price[%loop.count%]" name="[% f.look_down('id','price').attr('name')  %]" value="[% ad.price  %]" />
+			</div>
+			<div class="formGrouping locationGroup">
+				<label for="location[%loop.count%]"> Location </label>
+				<input tabindex="3" type="text" id="location[%loop.count%]" name="[% f.look_down('id','location').attr('name')  %]" value="[% ad.location  %]" />
+			</div>
+		</fieldset>
+		<div class="formMain">
+			[%- p.get_token_as_html_from_form_pos('description') %]
+			<label for="description[%loop.count%]"> Description </label>
+			<textarea tabindex="4" class="ckeditor" id="description[%loop.count%]" name="[% f.look_down('id','description').attr('name')  %]" rows="20" cols="80">[% ad.description %]</textarea>
+		</div>
+		<div class="formFooter">
+			<div style="display:none"> [%- FOREACH e IN p.get_image_add %] [% e.as_HTML %] [%- END %] </div>
+			[%- p.get_token_as_html_from_form_pos('Submit') %]
+			<input tabindex="5" type="submit" name="[% f.look_down('type','submit').attr('name')  %]" value="Continue" alt="[%p.city%] &rarr; [%p.board%]" />
+			<label for="email[%loop.count%]">E-mail (for responses):</label>
+			<input type="text" readonly="readonly" id="email[%loop.count%]" name="FromEMail" value="[% ad.email  %]" />
+			<input type="hidden" readonly="readonly" class="email" name="ConfirmEMail" value="[% ad.email  %]" />
+			<input type="hidden" name="[% f.look_down('type','radio').0.attr('name') %]" value="C" />
+		</div>
+	</form>
+	[%- END %]
+	<div id="disclaimer"> Craiglickr is not a <em>posting agent</em>! We simply mark-up and format the post to Craigslist&trade;: the corresponding post will be sent from your computer, with your IP address exposed to Craigslsit&trade;. <strong>You are bound to the <a target="_new" href="http://www.craigslist.org/about/terms.of.use">Craigslist TOS</a> with the use of Craigslist&trade; web site.</strong> </div>
+	<div id="GMnotice"> <strong>Notice:</strong> to ease posting we've created <a href="/static/gm/craiglickr.user.js">a greesemonkey script for your consumption</a> </div>
+</body>
+</html>
