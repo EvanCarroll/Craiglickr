@@ -44,7 +44,7 @@ __END__
 
 =head1 NAME
 
-Craiglickr - A free open source Craigslist posting agent.
+Craiglickr - A free open source Craigslist posting tool.
 
 =head1 DESCRIPTION
 
@@ -116,8 +116,11 @@ L<http://search.cpan.org/dist/Craigslist/>
 
 =head1 CAVEAT LEGALITY
 
+This is not a I<posting agent>! It is a I<posting tool>. Any post submitted will leave your
+computer, and subsequently be stamped with your ip address.
+
 The term Craigslist is not owned by me. I use the service and generally dislike
-the idea of this tool. However, the methods used by this tool are, afaik legal.
+the idea of this tool. However, the methods used by this program are, afaik legal.
 This tool does *NOT* intentionally circumvent limits imposed by Craigslist, nor
 does it read or process captchas.
 
@@ -125,13 +128,13 @@ Craigslist could prevent this tool entirely, by simply using a captcha in every
 step of the event process. They however don't. Furthermore, numerious attempts to
 contact Craigslist have proven futile.
 
-There are many Craiglist posting agents like this that I'm aware of. This tool is
+There are many Craiglist posting tools like this that I'm aware of. This one is
 simply a free version -- use it at your own risk. Make, no assumption about the
 Craigslist terms of service read it yourself.
 
-Craigslist is the name of proprietary service and at craigslist.com, this is simply a
-perl library to ease posting to that service, the IP of the final submission is the
-client machine.
+Craigslist is the name of corporation and proprietary service found craigslist.com.
+This is simply a perl library to ease posting to that service, the IP of the
+final submission is that of client of Craiglickr.
 
 =head1 COPYRIGHT & LICENSE
 
