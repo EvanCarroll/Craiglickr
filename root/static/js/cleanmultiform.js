@@ -11,8 +11,9 @@ $(document).ready(function(){
 			.click(function() {
 				if ( $('iframe[name=easyReCaptcha]').size() == 0 ) {
 					$('#controller')
-						.append( $('<br />') )
-						.append( $('<iframe style="height:210px;width:420px;border:0" src="http://google.com" name="easyReCaptcha" />') )
+						.append(
+							$('<iframe style="height:210px;width:420px;border:0" src="http://google.com" name="easyReCaptcha" />')
+						)
 					;
 				}
 				
