@@ -20,7 +20,7 @@
 
 	<p> Craiglickr provides <a href="/static/gm/craiglickr.user.js">a Greasemonkey script</a> to ease the redundancy in posting Craigslist.</p>
 
-	<p> <a href="http://www.greasespot.net/" target="_blank">Greasemonkey</a> is a tool for <a href="http://www.mozilla.com/en-US/products/firefox/" target="_blank">Firefox</a>, a totally free and open-source standard-compliant web browser. These are both good things and they are strongly recommended. You can <a href="http://www.firefox.com" target="_blank">download Firefox at firefox.com</a> and you can <a href="https://addons.mozilla.org/en-US/firefox/addon/748" target="_blank">download greasemonkey at addons.mozzila.org.</a></p>
+	<p> <a href="http://www.greasespot.net/" target="_blank">Greasemonkey</a> is a tool that permits control of your browser. We specifically use it to ease your experience across the domain <tt>https://post.craigslist.org</tt>. Greasemonkey require <a href="http://www.mozilla.com/en-US/products/firefox/" target="_blank">Firefox</a>, a totally free and open-source standards-compliant web browser. These are both good things and they are strongly recommended. You can <a href="http://www.firefox.com" target="_blank">download Firefox at firefox.com</a> and you can <a href="https://addons.mozilla.org/en-US/firefox/addon/748" target="_blank">download greasemonkey at addons.mozzila.org.</a></p>
 	
 	<p> If you're looking for more information on Greasemonkey <a href="http://en.wikipedia.org/wiki/Greasemonkey" target="_blank">check out the Wikipedia article on it</a>; <a href="http://en.wikipedia.org/wiki/Mozilla_Firefox" target="_blank">same goes for Firefox &mdash; check out Wikipedia for more information</a>.</p>
 
