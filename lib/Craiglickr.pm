@@ -48,7 +48,7 @@ Craiglickr - A free open source Craigslist posting tool.
 
 =head1 DESCRIPTION
 
-This module works like this, a series of atomic Craiglist-advertisments are contained in one Post. A post is specific to a series of cities and Craigslist boards.
+This is a Catalyst-based Craigslist posting tool. There 
 
 =head1 SYNOPSIS
 
@@ -80,15 +80,15 @@ Evan Carroll, C<< <me at evancarroll.com> >>
 
 =head1 BUGS
 
-Please report any bugs or feature requests to C<bug-craigslist at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Craigslist>.  I will be notified, and then you'll
+Please report any bugs or feature requests to C<bug-craiglickr at rt.cpan.org>, or through
+the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Craiglickr>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
 
 =head1 SUPPORT
 
 You can find documentation for this module with the perldoc command.
 
-perldoc Craigslist
+perldoc Craiglickr
 
 
 You can also look for information at:
@@ -97,22 +97,19 @@ You can also look for information at:
 
 =item * RT: CPAN's request tracker
 
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Craigslist>
+L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Craiglickr>
 
 =item * AnnoCPAN: Annotated CPAN documentation
 
-L<http://annocpan.org/dist/Craigslist>
+L<http://annocpan.org/dist/Craiglickr>
 
 =item * CPAN Ratings
 
-L<http://cpanratings.perl.org/d/Craigslist>
+L<http://cpanratings.perl.org/d/Craiglickr>
 
 =item * Search CPAN
 
-L<http://search.cpan.org/dist/Craigslist/>
-
-=back
-
+L<http://search.cpan.org/dist/Craiglickr/>
 
 =head1 CAVEAT LEGALITY
 
@@ -138,13 +135,10 @@ final submission is that of client of Craiglickr.
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2009 Evan Carroll.
+All code not explicitly marked otherwise is Copyright 2009 Evan Carroll CC-BY-SA version 3.0 or greater.
+You can find the available license at L<http://creativecommons.org/licenses/by-sa/3.0/>.
 
-This program is free software; you can redistribute it and/or modify it
-under the terms of either: the GNU General Public License as published
-by the Free Software Foundation; or the Artistic License.
-
-See http://dev.perl.org/licenses/ for more information.
+This program is currently using, and distributed with, B<CKeditor> which is being used under an unspecified license. You can find more information at http://ckeditor.com/license. CKeditor is a great easy to use WYSIWYG form, please check it out.
 
 =cut
 

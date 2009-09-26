@@ -60,7 +60,9 @@ Craiglickr::Post
 
 =head1 DESCRIPTION
 
-Object that prep a post to craigslist, stores Cities to post to, and an array of Boards to post to, and then works by calling ->new_ad();
+Object that prep a post to Craigslist.
+
+Stores an array of cities to post to and an array of boards to post to, and then works by calling ->get_form, which will return a list of valid L<Craiglickr::HTTP::FormRetrieve>s.
 
 =head1 Methods
 

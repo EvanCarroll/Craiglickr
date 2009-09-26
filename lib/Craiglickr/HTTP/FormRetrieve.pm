@@ -178,9 +178,9 @@ Craiglickr::HTTP::FormRetrieve
 
 =head1 DESCRIPTION
 
-This module takes a city/section/board, and generates a URI with it. With the URI, we (a) downloads the URL (b) parses out the form, (c) optionally present the form with data from L<Craiglickr::Ad>
+This module takes a city/section/board, and generates a URI with it. With the URI, we (a) downloads the URL (b) parses out the form, (c) mark the form up by setting ids, and classes which will make it easier to handle.
 
-It is B<required> that you either supply the city, section, board, or the URI.
+It is B<required> that you either supply the city, section, board; or, the URI.
 
 =over 12
 
