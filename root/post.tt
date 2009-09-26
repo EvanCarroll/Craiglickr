@@ -51,7 +51,7 @@
 		</div>
 	</form>
 	[%- END %]
-	<div id="disclaimer"> Craiglickr is not a <em>posting agent</em>! We simply mark-up and format the post to Craigslist&trade;: the corresponding post will be sent from your computer, with your IP address exposed to Craigslsit&trade;. <strong>You are bound to the <a target="_new" href="http://www.craigslist.org/about/terms.of.use">Craigslist TOS</a> with the use of Craigslist&trade; web site.</strong> </div>
+	<div id="disclaimer"> Craiglickr is not a <em>posting agent</em>! We simply mark-up and format the post to Craigslist&trade;: the corresponding post will be sent from your computer, with your IP address exposed to Craigslsit&trade;. <strong>You are bound to the <a target="_new" href="http://www.craigslist.org/about/terms.of.use">Craigslist TOS</a> with the use of the Craigslist&trade; web site.</strong> </div>
 	<div id="GMnotice"> <strong>Notice:</strong> to ease posting we've created <a href="/static/gm/craiglickr.user.js">a greesemonkey script for your consumption</a> </div>
 </body>
 </html>
