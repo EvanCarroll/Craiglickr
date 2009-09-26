@@ -23,5 +23,12 @@
 	<p> Greasemonkey is a tool for Firefox, a totally free and open-source standard-compliant web browser. These are both good things and they are strongly recommended. You can <a href="http://www.firefox.com" target="_blank">download Firefox at firefox.com</a> and you can <a href="https://addons.mozilla.org/en-US/firefox/addon/748" target="_blank">download greasemonkey at addons.mozzila.org.</a></p>
 	
 	<p> If you're looking for more information on Greasemonkey <a href="http://en.wikipedia.org/wiki/Greasemonkey" target="_blank">check out the Wikipedia article on it</a>; <a href="http://en.wikipedia.org/wiki/Mozilla_Firefox" target="_blank">same goes for Firefox &mdash; check out Wikipedia for more information</a>.</p>
+
+	<h1> Using Craiglickr </h1>
+	<p>
+	After Craiglickr is configured you can use it by linking to:
+	<br /><tt style="font-size:large">http://craiglickrdomain.com/craiglickr/cities/*/boards/*</tt>
+	<br /><em style="font-size:x-small">note: replace the * with the city or board, or in the event you wish to force Craiglickr to cross-post, a comma seperated list of the cities or boards</em>
+	</p>
 </body>
 </html>
