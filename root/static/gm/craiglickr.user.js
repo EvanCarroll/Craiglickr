@@ -23,18 +23,34 @@ function GM_wait() {
 	if(typeof unsafeWindow.jQuery == 'undefined') { window.setTimeout(GM_wait,100); }
 	else { $ = unsafeWindow.jQuery; letsJQuery(); }
 }
+
 GM_wait();
 
 // All your GM code must be inside this function
+alert('foobar');
 function letsJQuery() {
-	if ( $("input[name*=recaptcha]").size() == 0 ) {
-		var $button = $(":submit[value=ACCEPT the terms of use],:submit[value=Continue]");
-		$button.click();
+	if ( $(":button[value=Continue]").size() == 1 ) {
+		// POSTING PAGE
+		// skip if all the good stuff isn't there that we want.
+		if (
+			$( "input[tabindex=1][type=text]" ).filter(
+				function () { return ( ! $(this).val() ) }
+			).size() == 0
+		) {
+			$(":button[value=Continue]").click();
+		}
 	}
-	else {
+
+	// TOU/TOS Page
+	else if ( $(":submit[value=ACCEPT the terms of use]").size() == 1 ) {
+		$(":submit[value=ACCEPT the terms of use]").click();
+	}
+
+	else if ( $("input[name*=recaptcha]").size() == 1 ) {
 		$("table[id=header]").remove();
 		$("hr").remove();
 	}
+
 }
 // END
 
