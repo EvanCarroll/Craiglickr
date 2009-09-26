@@ -3,19 +3,25 @@
 <head>
 	<title>Craiglickr posting tool</title>
 	<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+	<style type="text/css">
+	body { font-size:.8em; font-family:sans-serif; width:60%; margin:auto }
+	h1 { text-decoration: underline }
+	</style>
 </head>
 <body>
 	<h1>Configure Craiglickr</h1>
+	
 	<p> Configuring Craiglickr is easy: </p>
+	
 	<ol>
 		<li>Pick your cities</li>
 		<li>Pick your boards</li>
 	</ol>
 
-	<p> Craiglickr provides <a href="/static/gm/craiglickr.user.js">a Greasemonkey script</a> to ease the redundancy in posting Craigslist.<p>
+	<p> Craiglickr provides <a href="/static/gm/craiglickr.user.js">a Greasemonkey script</a> to ease the redundancy in posting Craigslist.</p>
 
-	<p> Greasemonkey is a tool for Firefox, a totally free open-source standard compliant web browser. These are both good things and they are strongly recommended. You can <a href="http://www.firefox.com" target="_blank">download Firefox at firefox.com</a> and you can <a href="https://addons.mozilla.org/en-US/firefox/addon/748" target="_blank">download greasemonkey at addons.mozzila.org.</a></p>
-
+	<p> Greasemonkey is a tool for Firefox, a totally free and open-source standard-compliant web browser. These are both good things and they are strongly recommended. You can <a href="http://www.firefox.com" target="_blank">download Firefox at firefox.com</a> and you can <a href="https://addons.mozilla.org/en-US/firefox/addon/748" target="_blank">download greasemonkey at addons.mozzila.org.</a></p>
+	
 	<p> If you're looking for more information on Greasemonkey <a href="http://en.wikipedia.org/wiki/Greasemonkey" target="_blank">check out the Wikipedia article on it</a>; <a href="http://en.wikipedia.org/wiki/Mozilla_Firefox" target="_blank">same goes for Firefox &mdash; check out Wikipedia for more information</a>.</p>
 </body>
 </html>
