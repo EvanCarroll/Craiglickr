@@ -9,8 +9,14 @@ $(document).ready(function(){
 			$('<button />')
 			.text( 'post: ' + $button.attr('alt') )
 			.click(function() {
-				$('#post1').append( $('<iframe style="height:210px;width:420px;border:0" src="http://google.com" name="iframe" />') );
-				$button.parents( "form" ).attr('target', 'iframe');
+				if ( $('iframe[name=easyReCaptcha]').size() == 0 ) {
+					$('#controller')
+						.append( $('<br />') )
+						.append( $('<iframe style="height:210px;width:420px;border:0" src="http://google.com" name="easyReCaptcha" />') )
+					;
+				}
+				
+				$button.parents( "form" ).attr('target', 'easyReCaptcha');
 				$button.click();
 				$(this).css('background-color','LightGreen');
 				return false;
