@@ -1,13 +1,18 @@
 // ==UserScript==
 // @name          Craiglickr - TOU Auto-Accept
 // @namespace     http://www.evancarroll.com
-// @description   Automagically accepts Craiglist - TOS
+// @description   Automagically accepts Craiglist - TOU
 // @include       https://post.craigslist.org/*
 // ==/UserScript==
 
-// CODE BASED FROM http://joanpiedra.com/jquery/greasemonkey/
-// MIT LICENSE
-// Add jQuery
+// Official TOU can be found at the following address (2009-09-25)
+// http://www.craigslist.org/about/terms.of.use
+
+// CODE BASED ON MIT LICENSED EXAMPLE CODE FROM http://joanpiedra.com/jquery/greasemonkey
+// COPYRIGHT Evan Carroll http://www.evancarroll.com
+// CODE RELEASED UNDER CC-BY-SA 3.0
+// http://creativecommons.org/licenses/by-sa/3.0/
+
 var GM_JQ = document.createElement('script');
 GM_JQ.src = 'http://jquery.com/src/jquery-latest.js';
 GM_JQ.type = 'text/javascript';
