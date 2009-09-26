@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Craiglickr posting tool</title>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+</head>
+<body>
+	<h1>Configure Craiglickr</h1>
+	<p> Configuring Craiglickr is easy: </p>
+	<ol>
+		<li>Pick your cities</li>
+		<li>Pick your boards</li>
+	</ol>
+
+	<p> Craiglickr provides <a href="/static/gm/craiglickr.user.js">a Greasemonkey script</a> to ease the redundancy in posting Craigslist.<p>
+
+	<p> Greasemonkey is a tool for Firefox, a totally free open-source standard compliant web browser. These are both good things and they are strongly recommended. You can <a href="http://www.firefox.com" target="_blank">download Firefox at firefox.com</a> and you can <a href="https://addons.mozilla.org/en-US/firefox/addon/748" target="_blank">download greasemonkey at addons.mozzila.org.</a></p>
+
+	<p> If you're looking for more information on Greasemonkey <a href="http://en.wikipedia.org/wiki/Greasemonkey" target="_blank">check out the Wikipedia article on it</a>; <a href="http://en.wikipedia.org/wiki/Mozilla_Firefox" target="_blank">same goes for Firefox &mdash; check out Wikipedia for more information</a>.</p>
+</body>
+</html>
