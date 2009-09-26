@@ -9,7 +9,7 @@ $(document).ready(function(){
 			$('<button />')
 			.text( 'post: ' + $button.attr('alt') )
 			.click(function() {
-				$('#post1').append( $('<iframe style="height:225px;width:520px" src="http://google.com" name="iframe" />') );
+				$('#post1').append( $('<iframe style="height:210px;width:420px;border:0" src="http://google.com" name="iframe" />') );
 				$button.parents( "form" ).attr('target', 'iframe');
 				$button.click();
 				$(this).css('background-color','LightGreen');
