@@ -37,7 +37,16 @@ function letsJQuery() {
 				function () { return ( ! $(this).val() ) }
 			).size() == 0
 		) {
-			$(":button[value=Continue]").click();
+			// only if the TOU has been accepted before, accept now.
+			if ( GM_getValue( 'touAccepted', false ) ) {
+				$(":button[value=Continue]").click();
+			}
+			else {
+				// set it on first click.
+				$(":button[value=Contineu]").submit(
+					function(){ GM_setValue( 'touAccepted', true ) }
+				);
+			}
 		}
 	}
 
