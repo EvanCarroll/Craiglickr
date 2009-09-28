@@ -1,0 +1,4304 @@
+---
+'':
+  name: ~
+  subsites:
+    caribbean islands:
+      name: caribbean islands
+      uid: crb
+      uri_dest: http://caribbean.craigslist.org/
+      uri_orig: http://caribbean.craigslist.org/
+    guam-micronesia:
+      name: guam-micronesia
+      uid: gum
+      uri_dest: http://micronesia.craigslist.org/
+      uri_orig: http://micronesia.craigslist.org/
+  uri_dest: http://geo.craigslist.org/iso
+  uri_orig: http://geo.craigslist.org/iso
+Canada:
+  description: All Canada boards
+  name: Canada
+  subsites:
+    alberta:
+      description: 'Alberta, Canada'
+      name: alberta
+      subsites:
+        calgary:
+          name: calgary
+          uid: clg
+          uri_dest: http://calgary.en.craigslist.ca/
+          uri_orig: http://calgary.craigslist.ca/
+        edmonton:
+          name: edmonton
+          uid: edm
+          uri_dest: http://edmonton.en.craigslist.ca/
+          uri_orig: http://edmonton.craigslist.ca/
+        ft mcmurray:
+          name: ft mcmurray
+          uid: fmc
+          uri_dest: http://ftmcmurray.en.craigslist.ca/
+          uri_orig: http://ftmcmurray.craigslist.ca/
+        lethbridge:
+          name: lethbridge
+          uid: lth
+          uri_dest: http://lethbridge.en.craigslist.ca/
+          uri_orig: http://lethbridge.craigslist.ca/
+        medicine hat:
+          name: medicine hat
+          uid: hat
+          uri_dest: http://hat.en.craigslist.ca/
+          uri_orig: http://hat.craigslist.ca/
+        peace river country:
+          name: peace river country
+          uid: pax
+          uri_dest: http://peace.en.craigslist.ca/
+          uri_orig: http://peace.craigslist.ca/
+        red deer:
+          name: red deer
+          uid: red
+          uri_dest: http://reddeer.en.craigslist.ca/
+          uri_orig: http://reddeer.craigslist.ca/
+      uri_dest: http://geo.craigslist.org/iso/ca/ab
+      uri_orig: http://geo.craigslist.org/iso/ca/ab
+    british columbia:
+      description: 'British Columbia, Canada'
+      name: british columbia
+      subsites:
+        cariboo:
+          name: cariboo
+          uid: cbo
+          uri_dest: http://cariboo.en.craigslist.ca/
+          uri_orig: http://cariboo.craigslist.ca/
+        comox valley:
+          name: comox valley
+          uid: cmx
+          uri_dest: http://comoxvalley.en.craigslist.ca/
+          uri_orig: http://comoxvalley.craigslist.ca/
+        fraser valley:
+          name: fraser valley
+          uid: abb
+          uri_dest: http://abbotsford.en.craigslist.ca/
+          uri_orig: http://abbotsford.craigslist.ca/
+        kamloops:
+          name: kamloops
+          uid: kml
+          uri_dest: http://kamloops.en.craigslist.ca/
+          uri_orig: http://kamloops.craigslist.ca/
+        kelowna / okangan:
+          name: kelowna / okangan
+          uid: kel
+          uri_dest: http://kelowna.en.craigslist.ca/
+          uri_orig: http://kelowna.craigslist.ca/
+        kootenays:
+          name: kootenays
+          uid: koo
+          uri_dest: http://cranbrook.en.craigslist.ca/
+          uri_orig: http://cranbrook.craigslist.ca/
+        nanaimo:
+          name: nanaimo
+          uid: nmo
+          uri_dest: http://nanaimo.en.craigslist.ca/
+          uri_orig: http://nanaimo.craigslist.ca/
+        peace river country:
+          name: peace river country
+          uid: pax
+          uri_dest: http://peace.en.craigslist.ca/
+          uri_orig: http://peace.craigslist.ca/
+        prince george:
+          name: prince george
+          uid: yxs
+          uri_dest: http://princegeorge.en.craigslist.ca/
+          uri_orig: http://princegeorge.craigslist.ca/
+        skeena-bulkley:
+          name: skeena-bulkley
+          uid: ske
+          uri_dest: http://skeena.en.craigslist.ca/
+          uri_orig: http://skeena.craigslist.ca/
+        sunshine coast:
+          name: sunshine coast
+          uid: sun
+          uri_dest: http://sunshine.en.craigslist.ca/
+          uri_orig: http://sunshine.craigslist.ca/
+        vancouver:
+          name: vancouver
+          uid: van
+          uri_dest: http://vancouver.en.craigslist.ca/
+          uri_orig: http://vancouver.craigslist.ca/
+        victoria:
+          name: victoria
+          uid: vic
+          uri_dest: http://victoria.en.craigslist.ca/
+          uri_orig: http://victoria.craigslist.ca/
+        whistler:
+          name: whistler
+          uid: whi
+          uri_dest: http://whistler.en.craigslist.ca/
+          uri_orig: http://whistler.craigslist.ca/
+      uri_dest: http://geo.craigslist.org/iso/ca/bc
+      uri_orig: http://geo.craigslist.org/iso/ca/bc
+    canada:
+      description: 'Saskatchewan, Canada'
+      name: canada
+      subsites:
+        regina:
+          name: regina
+          uid: reg
+          uri_dest: http://regina.en.craigslist.ca/
+          uri_orig: http://regina.craigslist.ca/
+        saskatoon:
+          name: saskatoon
+          uid: skt
+          uri_dest: http://saskatoon.en.craigslist.ca/
+          uri_orig: http://saskatoon.craigslist.ca/
+      uri_dest: http://geo.craigslist.org/iso/ca/sk
+      uri_orig: http://geo.craigslist.org/iso/ca/sk
+    halifax:
+      description: 'Nova Scotia, Canada'
+      name: halifax
+      uid: hfx
+      uri_dest: http://halifax.en.craigslist.ca
+      uri_orig: http://geo.craigslist.org/iso/ca/ns
+    new brunswick:
+      description: 'New Brunswick, Canada'
+      name: new brunswick
+      uid: nbw
+      uri_dest: http://newbrunswick.en.craigslist.ca
+      uri_orig: http://geo.craigslist.org/iso/ca/nb
+    ontario:
+      description: 'Ontario, Canada'
+      name: ontario
+      subsites:
+        barrie:
+          name: barrie
+          uid: brr
+          uri_dest: http://barrie.en.craigslist.ca/
+          uri_orig: http://barrie.craigslist.ca/
+        belleville:
+          name: belleville
+          uid: bel
+          uri_dest: http://belleville.en.craigslist.ca/
+          uri_orig: http://belleville.craigslist.ca/
+        brantford-woodstock:
+          name: brantford-woodstock
+          uid: bfd
+          uri_dest: http://brantford.en.craigslist.ca/
+          uri_orig: http://brantford.craigslist.ca/
+        chatham-kent:
+          name: chatham-kent
+          uid: chk
+          uri_dest: http://chatham.en.craigslist.ca/
+          uri_orig: http://chatham.craigslist.ca/
+        cornwall:
+          name: cornwall
+          uid: ycc
+          uri_dest: http://cornwall.en.craigslist.ca/
+          uri_orig: http://cornwall.craigslist.ca/
+        guelph:
+          name: guelph
+          uid: gph
+          uri_dest: http://guelph.en.craigslist.ca/
+          uri_orig: http://guelph.craigslist.ca/
+        hamilton-burlington:
+          name: hamilton-burlington
+          uid: hml
+          uri_dest: http://hamilton.en.craigslist.ca/
+          uri_orig: http://hamilton.craigslist.ca/
+        kingston:
+          name: kingston
+          uid: kng
+          uri_dest: http://kingston.en.craigslist.ca/
+          uri_orig: http://kingston.craigslist.ca/
+        kitchener-waterloo-cambridge:
+          name: kitchener-waterloo-cambridge
+          uid: kch
+          uri_dest: http://kitchener.en.craigslist.ca/
+          uri_orig: http://kitchener.craigslist.ca/
+        london:
+          name: london
+          uid: lon
+          uri_dest: http://londonon.en.craigslist.ca/
+          uri_orig: http://londonon.craigslist.ca/
+        niagara region:
+          name: niagara region
+          uid: nsc
+          uri_dest: http://niagara.en.craigslist.ca/
+          uri_orig: http://niagara.craigslist.ca/
+        ottawa-hull-gatineau:
+          name: ottawa-hull-gatineau
+          uid: ott
+          uri_dest: http://ottawa.en.craigslist.ca/
+          uri_orig: http://ottawa.craigslist.ca/
+        owen sound:
+          name: owen sound
+          uid: ows
+          uri_dest: http://owensound.en.craigslist.ca/
+          uri_orig: http://owensound.craigslist.ca/
+        peterborough:
+          name: peterborough
+          uid: ypq
+          uri_dest: http://peterborough.en.craigslist.ca/
+          uri_orig: http://peterborough.craigslist.ca/
+        sarnia:
+          name: sarnia
+          uid: srn
+          uri_dest: http://sarnia.en.craigslist.ca/
+          uri_orig: http://sarnia.craigslist.ca/
+        sault ste marie:
+          name: sault ste marie
+          uid: soo
+          uri_dest: http://soo.en.craigslist.ca/
+          uri_orig: http://soo.craigslist.ca/
+        sudbury:
+          name: sudbury
+          uid: sud
+          uri_dest: http://sudbury.en.craigslist.ca/
+          uri_orig: http://sudbury.craigslist.ca/
+        thunder bay:
+          name: thunder bay
+          uid: tby
+          uri_dest: http://thunderbay.en.craigslist.ca/
+          uri_orig: http://thunderbay.craigslist.ca/
+        toronto:
+          name: toronto
+          uid: tor
+          uri_dest: http://toronto.en.craigslist.ca/
+          uri_orig: http://toronto.craigslist.ca/
+        windsor:
+          name: windsor
+          uid: wsr
+          uri_dest: http://windsor.en.craigslist.ca/
+          uri_orig: http://windsor.craigslist.ca/
+      uri_dest: http://geo.craigslist.org/iso/ca/on
+      uri_orig: http://geo.craigslist.org/iso/ca/on
+    prince edward island:
+      description: 'Prince Edward Island, Canada'
+      name: prince edward island
+      uid: pei
+      uri_dest: http://pei.en.craigslist.ca
+      uri_orig: http://geo.craigslist.org/iso/ca/pe
+    quebec:
+      description: 'Quebec, Canada'
+      name: quebec
+      subsites:
+        montreal:
+          name: montreal
+          uid: mon
+          uri_dest: http://montreal.en.craigslist.ca/
+          uri_orig: http://montreal.craigslist.ca/
+        ottawa-hull-gatineau:
+          name: ottawa-hull-gatineau
+          uid: ott
+          uri_dest: http://ottawa.en.craigslist.ca/
+          uri_orig: http://ottawa.craigslist.ca/
+        quebec city:
+          name: quebec city
+          uid: qbc
+          uri_dest: http://quebec.en.craigslist.ca/
+          uri_orig: http://quebec.craigslist.ca/
+        saguenay:
+          name: saguenay
+          uid: sgy
+          uri_dest: http://saguenay.en.craigslist.ca/
+          uri_orig: http://saguenay.craigslist.ca/
+        sherbrooke:
+          name: sherbrooke
+          uid: shb
+          uri_dest: http://sherbrooke.en.craigslist.ca/
+          uri_orig: http://sherbrooke.craigslist.ca/
+        trois-rivieres:
+          name: trois-rivieres
+          uid: trs
+          uri_dest: http://troisrivieres.en.craigslist.ca/
+          uri_orig: http://troisrivieres.craigslist.ca/
+      uri_dest: http://geo.craigslist.org/iso/ca/qc
+      uri_orig: http://geo.craigslist.org/iso/ca/qc
+    "st john's, NL":
+      description: 'Newfoundland, Canada'
+      name: "st john's, NL"
+      uid: nfl
+      uri_dest: http://newfoundland.en.craigslist.ca
+      uri_orig: http://geo.craigslist.org/iso/ca/nl
+    winnipeg:
+      description: 'Manitoba, Canada'
+      name: winnipeg
+      uid: win
+      uri_dest: http://winnipeg.en.craigslist.ca
+      uri_orig: http://geo.craigslist.org/iso/ca/mb
+  uri_dest: http://geo.craigslist.org/iso/ca/
+  uri_orig: http://geo.craigslist.org/iso/ca/
+United States:
+  description: All United States boards
+  name: United States
+  subsites:
+    alabama:
+      description: 'Alabama, United States'
+      name: alabama
+      subsites:
+        auburn:
+          name: auburn
+          uid: aub
+          uri_dest: http://auburn.craigslist.org/
+          uri_orig: http://auburn.craigslist.org/
+        birmingham:
+          name: birmingham
+          uid: bhm
+          uri_dest: http://bham.craigslist.org/
+          uri_orig: http://bham.craigslist.org/
+        'columbus, GA':
+          name: 'columbus, GA'
+          uid: csg
+          uri_dest: http://columbusga.craigslist.org/
+          uri_orig: http://columbusga.craigslist.org/
+        dothan:
+          name: dothan
+          uid: dhn
+          uri_dest: http://dothan.craigslist.org/
+          uri_orig: http://dothan.craigslist.org/
+        florence / muscle shoals:
+          name: florence / muscle shoals
+          uid: msl
+          uri_dest: http://shoals.craigslist.org/
+          uri_orig: http://shoals.craigslist.org/
+        gadsden-anniston:
+          name: gadsden-anniston
+          uid: anb
+          uri_dest: http://gadsden.craigslist.org/
+          uri_orig: http://gadsden.craigslist.org/
+        huntsville / decatur:
+          name: huntsville / decatur
+          uid: hsv
+          uri_dest: http://huntsville.craigslist.org/
+          uri_orig: http://huntsville.craigslist.org/
+        mobile:
+          name: mobile
+          uid: mob
+          uri_dest: http://mobile.craigslist.org/
+          uri_orig: http://mobile.craigslist.org/
+        montgomery:
+          name: montgomery
+          uid: mgm
+          uri_dest: http://montgomery.craigslist.org/
+          uri_orig: http://montgomery.craigslist.org/
+        tuscaloosa:
+          name: tuscaloosa
+          uid: tsc
+          uri_dest: http://tuscaloosa.craigslist.org/
+          uri_orig: http://tuscaloosa.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/al
+      uri_orig: http://geo.craigslist.org/iso/us/al
+    arizona:
+      description: 'Arizona, United States'
+      name: arizona
+      subsites:
+        flagstaff / sedona:
+          name: flagstaff / sedona
+          uid: flg
+          uri_dest: http://flagstaff.craigslist.org/
+          uri_orig: http://flagstaff.craigslist.org/
+        mohave county:
+          name: mohave county
+          uid: mhv
+          uri_dest: http://mohave.craigslist.org/
+          uri_orig: http://mohave.craigslist.org/
+        phoenix:
+          name: phoenix
+          uid: phx
+          uri_dest: http://phoenix.craigslist.org/
+          uri_orig: http://phoenix.craigslist.org/
+        prescott:
+          name: prescott
+          uid: prc
+          uri_dest: http://prescott.craigslist.org/
+          uri_orig: http://prescott.craigslist.org/
+        show low:
+          name: show low
+          uid: sow
+          uri_dest: http://showlow.craigslist.org/
+          uri_orig: http://showlow.craigslist.org/
+        sierra vista:
+          name: sierra vista
+          uid: fhu
+          uri_dest: http://sierravista.craigslist.org/
+          uri_orig: http://sierravista.craigslist.org/
+        tucson:
+          name: tucson
+          uid: tus
+          uri_dest: http://tucson.craigslist.org/
+          uri_orig: http://tucson.craigslist.org/
+        yuma:
+          name: yuma
+          uid: yum
+          uri_dest: http://yuma.craigslist.org/
+          uri_orig: http://yuma.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/az
+      uri_orig: http://geo.craigslist.org/iso/us/az
+    arkansas:
+      description: 'Arkansas, United States'
+      name: arkansas
+      subsites:
+        fayetteville:
+          name: fayetteville
+          uid: fyv
+          uri_dest: http://fayar.craigslist.org/
+          uri_orig: http://fayar.craigslist.org/
+        fort smith:
+          name: fort smith
+          uid: fsm
+          uri_dest: http://fortsmith.craigslist.org/
+          uri_orig: http://fortsmith.craigslist.org/
+        jonesboro:
+          name: jonesboro
+          uid: jbr
+          uri_dest: http://jonesboro.craigslist.org/
+          uri_orig: http://jonesboro.craigslist.org/
+        little rock:
+          name: little rock
+          uid: lit
+          uri_dest: http://littlerock.craigslist.org/
+          uri_orig: http://littlerock.craigslist.org/
+        'memphis, TN':
+          name: 'memphis, TN'
+          uid: mem
+          uri_dest: http://memphis.craigslist.org/
+          uri_orig: http://memphis.craigslist.org/
+        texarkana:
+          name: texarkana
+          uid: txk
+          uri_dest: http://texarkana.craigslist.org/
+          uri_orig: http://texarkana.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/ar
+      uri_orig: http://geo.craigslist.org/iso/us/ar
+    california:
+      description: 'California, United States'
+      name: california
+      subsites:
+        SF bay area:
+          name: SF bay area
+          uid: sfo
+          uri_dest: http://sfbay.craigslist.org/
+          uri_orig: http://sfbay.craigslist.org/
+        bakersfield:
+          name: bakersfield
+          uid: bak
+          uri_dest: http://bakersfield.craigslist.org/
+          uri_orig: http://bakersfield.craigslist.org/
+        chico:
+          name: chico
+          uid: chc
+          uri_dest: http://chico.craigslist.org/
+          uri_orig: http://chico.craigslist.org/
+        fresno / madera:
+          name: fresno / madera
+          uid: fre
+          uri_dest: http://fresno.craigslist.org/
+          uri_orig: http://fresno.craigslist.org/
+        gold country:
+          name: gold country
+          uid: gld
+          uri_dest: http://goldcountry.craigslist.org/
+          uri_orig: http://goldcountry.craigslist.org/
+        hanford-corcoran:
+          name: hanford-corcoran
+          uid: hnf
+          uri_dest: http://hanford.craigslist.org/
+          uri_orig: http://hanford.craigslist.org/
+        humboldt county:
+          name: humboldt county
+          uid: hmb
+          uri_dest: http://humboldt.craigslist.org/
+          uri_orig: http://humboldt.craigslist.org/
+        imperial county:
+          name: imperial county
+          uid: imp
+          uri_dest: http://imperial.craigslist.org/
+          uri_orig: http://imperial.craigslist.org/
+        inland empire:
+          name: inland empire
+          uid: inl
+          uri_dest: http://inlandempire.craigslist.org/
+          uri_orig: http://inlandempire.craigslist.org/
+        los angeles:
+          name: los angeles
+          uid: lax
+          uri_dest: http://losangeles.craigslist.org/
+          uri_orig: http://losangeles.craigslist.org/
+        mendocino county:
+          name: mendocino county
+          uid: mdo
+          uri_dest: http://mendocino.craigslist.org/
+          uri_orig: http://mendocino.craigslist.org/
+        merced:
+          name: merced
+          uid: mer
+          uri_dest: http://merced.craigslist.org/
+          uri_orig: http://merced.craigslist.org/
+        modesto:
+          name: modesto
+          uid: mod
+          uri_dest: http://modesto.craigslist.org/
+          uri_orig: http://modesto.craigslist.org/
+        monterey bay:
+          name: monterey bay
+          uid: mtb
+          uri_dest: http://monterey.craigslist.org/
+          uri_orig: http://monterey.craigslist.org/
+        orange county:
+          name: orange county
+          uid: orc
+          uri_dest: http://orangecounty.craigslist.org/
+          uri_orig: http://orangecounty.craigslist.org/
+        palm springs:
+          name: palm springs
+          uid: psp
+          uri_dest: http://palmsprings.craigslist.org/
+          uri_orig: http://palmsprings.craigslist.org/
+        redding:
+          name: redding
+          uid: rdd
+          uri_dest: http://redding.craigslist.org/
+          uri_orig: http://redding.craigslist.org/
+        reno / tahoe:
+          name: reno / tahoe
+          uid: rno
+          uri_dest: http://reno.craigslist.org/
+          uri_orig: http://reno.craigslist.org/
+        sacramento:
+          name: sacramento
+          uid: sac
+          uri_dest: http://sacramento.craigslist.org/
+          uri_orig: http://sacramento.craigslist.org/
+        san diego:
+          name: san diego
+          uid: sdo
+          uri_dest: http://sandiego.craigslist.org/
+          uri_orig: http://sandiego.craigslist.org/
+        san luis obispo:
+          name: san luis obispo
+          uid: slo
+          uri_dest: http://slo.craigslist.org/
+          uri_orig: http://slo.craigslist.org/
+        santa barbara:
+          name: santa barbara
+          uid: sba
+          uri_dest: http://santabarbara.craigslist.org/
+          uri_orig: http://santabarbara.craigslist.org/
+        santa maria:
+          name: santa maria
+          uid: smx
+          uri_dest: http://santamaria.craigslist.org/
+          uri_orig: http://santamaria.craigslist.org/
+        siskiyou county:
+          name: siskiyou county
+          uid: ssk
+          uri_dest: http://siskiyou.craigslist.org/
+          uri_orig: http://siskiyou.craigslist.org/
+        stockton:
+          name: stockton
+          uid: stk
+          uri_dest: http://stockton.craigslist.org/
+          uri_orig: http://stockton.craigslist.org/
+        susanville:
+          name: susanville
+          uid: ssn
+          uri_dest: http://susanville.craigslist.org/
+          uri_orig: http://susanville.craigslist.org/
+        ventura county:
+          name: ventura county
+          uid: oxr
+          uri_dest: http://ventura.craigslist.org/
+          uri_orig: http://ventura.craigslist.org/
+        visalia-tulare:
+          name: visalia-tulare
+          uid: vis
+          uri_dest: http://visalia.craigslist.org/
+          uri_orig: http://visalia.craigslist.org/
+        yuba-sutter:
+          name: yuba-sutter
+          uid: ybs
+          uri_dest: http://yubasutter.craigslist.org/
+          uri_orig: http://yubasutter.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/ca
+      uri_orig: http://geo.craigslist.org/iso/us/ca
+    colorado:
+      description: 'Colorado, United States'
+      name: colorado
+      subsites:
+        boulder:
+          name: boulder
+          uid: bou
+          uri_dest: http://boulder.craigslist.org/
+          uri_orig: http://boulder.craigslist.org/
+        colorado springs:
+          name: colorado springs
+          uid: cos
+          uri_dest: http://cosprings.craigslist.org/
+          uri_orig: http://cosprings.craigslist.org/
+        denver:
+          name: denver
+          uid: den
+          uri_dest: http://denver.craigslist.org/
+          uri_orig: http://denver.craigslist.org/
+        eastern CO:
+          name: eastern CO
+          uid: eco
+          uri_dest: http://eastco.craigslist.org/
+          uri_orig: http://eastco.craigslist.org/
+        fort collins / north CO:
+          name: fort collins / north CO
+          uid: ftc
+          uri_dest: http://fortcollins.craigslist.org/
+          uri_orig: http://fortcollins.craigslist.org/
+        high rockies:
+          name: high rockies
+          uid: rck
+          uri_dest: http://rockies.craigslist.org/
+          uri_orig: http://rockies.craigslist.org/
+        pueblo:
+          name: pueblo
+          uid: pub
+          uri_dest: http://pueblo.craigslist.org/
+          uri_orig: http://pueblo.craigslist.org/
+        western slope:
+          name: western slope
+          uid: gjt
+          uri_dest: http://westslope.craigslist.org/
+          uri_orig: http://westslope.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/co
+      uri_orig: http://geo.craigslist.org/iso/us/co
+    connecticut:
+      description: 'Connecticut, United States'
+      name: connecticut
+      subsites:
+        eastern CT:
+          name: eastern CT
+          uid: nlo
+          uri_dest: http://newlondon.craigslist.org/
+          uri_orig: http://newlondon.craigslist.org/
+        fairfield county:
+          name: fairfield county
+          uid: nyc
+          uri_dest: http://newyork.craigslist.org/fct/
+          uri_orig: http://newyork.craigslist.org/fct/
+        hartford:
+          name: hartford
+          uid: htf
+          uri_dest: http://hartford.craigslist.org/
+          uri_orig: http://hartford.craigslist.org/
+        new haven:
+          name: new haven
+          uid: hvn
+          uri_dest: http://newhaven.craigslist.org/
+          uri_orig: http://newhaven.craigslist.org/
+        northwest CT:
+          name: northwest CT
+          uid: nct
+          uri_dest: http://nwct.craigslist.org/
+          uri_orig: http://nwct.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/ct
+      uri_orig: http://geo.craigslist.org/iso/us/ct
+    delaware:
+      description: 'Delaware, United States'
+      name: delaware
+      uid: dlw
+      uri_dest: http://delaware.craigslist.org/
+      uri_orig: http://geo.craigslist.org/iso/us/de
+    florida:
+      description: 'Florida, United States'
+      name: florida
+      subsites:
+        daytona beach:
+          name: daytona beach
+          uid: dab
+          uri_dest: http://daytona.craigslist.org/
+          uri_orig: http://daytona.craigslist.org/
+        florida keys:
+          name: florida keys
+          uid: key
+          uri_dest: http://keys.craigslist.org/
+          uri_orig: http://keys.craigslist.org/
+        ft myers / SW florida:
+          name: ft myers / SW florida
+          uid: fmy
+          uri_dest: http://fortmyers.craigslist.org/
+          uri_orig: http://fortmyers.craigslist.org/
+        gainesville:
+          name: gainesville
+          uid: gnv
+          uri_dest: http://gainesville.craigslist.org/
+          uri_orig: http://gainesville.craigslist.org/
+        heartland florida:
+          name: heartland florida
+          uid: cfl
+          uri_dest: http://cfl.craigslist.org/
+          uri_orig: http://cfl.craigslist.org/
+        jacksonville:
+          name: jacksonville
+          uid: jax
+          uri_dest: http://jacksonville.craigslist.org/
+          uri_orig: http://jacksonville.craigslist.org/
+        lakeland:
+          name: lakeland
+          uid: lal
+          uri_dest: http://lakeland.craigslist.org/
+          uri_orig: http://lakeland.craigslist.org/
+        north central FL:
+          name: north central FL
+          uid: lcq
+          uri_dest: http://lakecity.craigslist.org/
+          uri_orig: http://lakecity.craigslist.org/
+        ocala:
+          name: ocala
+          uid: oca
+          uri_dest: http://ocala.craigslist.org/
+          uri_orig: http://ocala.craigslist.org/
+        okaloosa / walton:
+          name: okaloosa / walton
+          uid: vps
+          uri_dest: http://okaloosa.craigslist.org/
+          uri_orig: http://okaloosa.craigslist.org/
+        orlando:
+          name: orlando
+          uid: orl
+          uri_dest: http://orlando.craigslist.org/
+          uri_orig: http://orlando.craigslist.org/
+        panama city:
+          name: panama city
+          uid: pfn
+          uri_dest: http://panamacity.craigslist.org/
+          uri_orig: http://panamacity.craigslist.org/
+        pensacola:
+          name: pensacola
+          uid: pns
+          uri_dest: http://pensacola.craigslist.org/
+          uri_orig: http://pensacola.craigslist.org/
+        sarasota-bradenton:
+          name: sarasota-bradenton
+          uid: srq
+          uri_dest: http://sarasota.craigslist.org/
+          uri_orig: http://sarasota.craigslist.org/
+        south florida:
+          name: south florida
+          uid: mia
+          uri_dest: http://miami.craigslist.org/
+          uri_orig: http://miami.craigslist.org/
+        space coast:
+          name: space coast
+          uid: mlb
+          uri_dest: http://spacecoast.craigslist.org/
+          uri_orig: http://spacecoast.craigslist.org/
+        st augustine:
+          name: st augustine
+          uid: ust
+          uri_dest: http://staugustine.craigslist.org/
+          uri_orig: http://staugustine.craigslist.org/
+        tallahassee:
+          name: tallahassee
+          uid: tal
+          uri_dest: http://tallahassee.craigslist.org/
+          uri_orig: http://tallahassee.craigslist.org/
+        tampa bay area:
+          name: tampa bay area
+          uid: tpa
+          uri_dest: http://tampa.craigslist.org/
+          uri_orig: http://tampa.craigslist.org/
+        treasure coast:
+          name: treasure coast
+          uid: psl
+          uri_dest: http://treasure.craigslist.org/
+          uri_orig: http://treasure.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/fl
+      uri_orig: http://geo.craigslist.org/iso/us/fl
+    georgia:
+      description: 'Georgia, United States'
+      name: georgia
+      subsites:
+        albany:
+          name: albany
+          uid: aby
+          uri_dest: http://albanyga.craigslist.org/
+          uri_orig: http://albanyga.craigslist.org/
+        athens:
+          name: athens
+          uid: ahn
+          uri_dest: http://athensga.craigslist.org/
+          uri_orig: http://athensga.craigslist.org/
+        atlanta:
+          name: atlanta
+          uid: atl
+          uri_dest: http://atlanta.craigslist.org/
+          uri_orig: http://atlanta.craigslist.org/
+        augusta:
+          name: augusta
+          uid: aug
+          uri_dest: http://augusta.craigslist.org/
+          uri_orig: http://augusta.craigslist.org/
+        brunswick:
+          name: brunswick
+          uid: bwk
+          uri_dest: http://brunswick.craigslist.org/
+          uri_orig: http://brunswick.craigslist.org/
+        columbus:
+          name: columbus
+          uid: csg
+          uri_dest: http://columbusga.craigslist.org/
+          uri_orig: http://columbusga.craigslist.org/
+        macon / warner robins:
+          name: macon / warner robins
+          uid: mcn
+          uri_dest: http://macon.craigslist.org/
+          uri_orig: http://macon.craigslist.org/
+        northwest GA:
+          name: northwest GA
+          uid: nwg
+          uri_dest: http://nwga.craigslist.org/
+          uri_orig: http://nwga.craigslist.org/
+        savannah / hinesville:
+          name: savannah / hinesville
+          uid: sav
+          uri_dest: http://savannah.craigslist.org/
+          uri_orig: http://savannah.craigslist.org/
+        statesboro:
+          name: statesboro
+          uid: tbr
+          uri_dest: http://statesboro.craigslist.org/
+          uri_orig: http://statesboro.craigslist.org/
+        valdosta:
+          name: valdosta
+          uid: vld
+          uri_dest: http://valdosta.craigslist.org/
+          uri_orig: http://valdosta.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/ga
+      uri_orig: http://geo.craigslist.org/iso/us/ga
+    hawaii:
+      description: 'Hawaii, United States'
+      name: hawaii
+      uid: hnl
+      uri_dest: http://honolulu.craigslist.org/
+      uri_orig: http://geo.craigslist.org/iso/us/hi
+    idaho:
+      description: 'Idaho, United States'
+      name: idaho
+      subsites:
+        boise:
+          name: boise
+          uid: boi
+          uri_dest: http://boise.craigslist.org/
+          uri_orig: http://boise.craigslist.org/
+        east idaho:
+          name: east idaho
+          uid: eid
+          uri_dest: http://eastidaho.craigslist.org/
+          uri_orig: http://eastidaho.craigslist.org/
+        lewiston / clarkston:
+          name: lewiston / clarkston
+          uid: lws
+          uri_dest: http://lewiston.craigslist.org/
+          uri_orig: http://lewiston.craigslist.org/
+        pullman / moscow:
+          name: pullman / moscow
+          uid: plm
+          uri_dest: http://pullman.craigslist.org/
+          uri_orig: http://pullman.craigslist.org/
+        spokane / coeur d'alene:
+          name: spokane / coeur d'alene
+          uid: spk
+          uri_dest: http://spokane.craigslist.org/
+          uri_orig: http://spokane.craigslist.org/
+        twin falls:
+          name: twin falls
+          uid: twf
+          uri_dest: http://twinfalls.craigslist.org/
+          uri_orig: http://twinfalls.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/id
+      uri_orig: http://geo.craigslist.org/iso/us/id
+    illinois:
+      description: 'Illinois, United States'
+      name: illinois
+      subsites:
+        bloomington-normal:
+          name: bloomington-normal
+          uid: bln
+          uri_dest: http://bn.craigslist.org/
+          uri_orig: http://bn.craigslist.org/
+        champaign urbana:
+          name: champaign urbana
+          uid: chm
+          uri_dest: http://chambana.craigslist.org/
+          uri_orig: http://chambana.craigslist.org/
+        chicago:
+          name: chicago
+          uid: chi
+          uri_dest: http://chicago.craigslist.org/
+          uri_orig: http://chicago.craigslist.org/
+        decatur:
+          name: decatur
+          uid: dil
+          uri_dest: http://decatur.craigslist.org/
+          uri_orig: http://decatur.craigslist.org/
+        la salle co:
+          name: la salle co
+          uid: lsl
+          uri_dest: http://lasalle.craigslist.org/
+          uri_orig: http://lasalle.craigslist.org/
+        mattoon-charleston:
+          name: mattoon-charleston
+          uid: mto
+          uri_dest: http://mattoon.craigslist.org/
+          uri_orig: http://mattoon.craigslist.org/
+        peoria:
+          name: peoria
+          uid: pia
+          uri_dest: http://peoria.craigslist.org/
+          uri_orig: http://peoria.craigslist.org/
+        'quad cities, IA/IL':
+          name: 'quad cities, IA/IL'
+          uid: mli
+          uri_dest: http://quadcities.craigslist.org/
+          uri_orig: http://quadcities.craigslist.org/
+        rockford:
+          name: rockford
+          uid: rfd
+          uri_dest: http://rockford.craigslist.org/
+          uri_orig: http://rockford.craigslist.org/
+        southern illinois:
+          name: southern illinois
+          uid: cbd
+          uri_dest: http://carbondale.craigslist.org/
+          uri_orig: http://carbondale.craigslist.org/
+        springfield:
+          name: springfield
+          uid: spi
+          uri_dest: http://springfieldil.craigslist.org/
+          uri_orig: http://springfieldil.craigslist.org/
+        'st louis, MO':
+          name: 'st louis, MO'
+          uid: stl
+          uri_dest: http://stlouis.craigslist.org/
+          uri_orig: http://stlouis.craigslist.org/
+        western IL:
+          name: western IL
+          uid: qcy
+          uri_dest: http://quincy.craigslist.org/
+          uri_orig: http://quincy.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/il
+      uri_orig: http://geo.craigslist.org/iso/us/il
+    indiana:
+      description: 'Indiana, United States'
+      name: indiana
+      subsites:
+        bloomington:
+          name: bloomington
+          uid: bmg
+          uri_dest: http://bloomington.craigslist.org/
+          uri_orig: http://bloomington.craigslist.org/
+        evansville:
+          name: evansville
+          uid: evv
+          uri_dest: http://evansville.craigslist.org/
+          uri_orig: http://evansville.craigslist.org/
+        fort wayne:
+          name: fort wayne
+          uid: fwa
+          uri_dest: http://fortwayne.craigslist.org/
+          uri_orig: http://fortwayne.craigslist.org/
+        indianapolis:
+          name: indianapolis
+          uid: ind
+          uri_dest: http://indianapolis.craigslist.org/
+          uri_orig: http://indianapolis.craigslist.org/
+        kokomo:
+          name: kokomo
+          uid: okk
+          uri_dest: http://kokomo.craigslist.org/
+          uri_orig: http://kokomo.craigslist.org/
+        lafayette / west lafayette:
+          name: lafayette / west lafayette
+          uid: laf
+          uri_dest: http://tippecanoe.craigslist.org/
+          uri_orig: http://tippecanoe.craigslist.org/
+        muncie / anderson:
+          name: muncie / anderson
+          uid: mun
+          uri_dest: http://muncie.craigslist.org/
+          uri_orig: http://muncie.craigslist.org/
+        northwest indiana:
+          name: northwest indiana
+          uid: chi
+          uri_dest: http://chicago.craigslist.org/nwi/
+          uri_orig: http://chicago.craigslist.org/nwi/
+        richmond:
+          name: richmond
+          uid: rin
+          uri_dest: http://richmondin.craigslist.org/
+          uri_orig: http://richmondin.craigslist.org/
+        south bend / michiana:
+          name: south bend / michiana
+          uid: sbn
+          uri_dest: http://southbend.craigslist.org/
+          uri_orig: http://southbend.craigslist.org/
+        terre haute:
+          name: terre haute
+          uid: tha
+          uri_dest: http://terrahaute.craigslist.org/
+          uri_orig: http://terrahaute.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/in
+      uri_orig: http://geo.craigslist.org/iso/us/in
+    iowa:
+      description: 'Iowa, United States'
+      name: iowa
+      subsites:
+        ames:
+          name: ames
+          uid: ame
+          uri_dest: http://ames.craigslist.org/
+          uri_orig: http://ames.craigslist.org/
+        cedar rapids:
+          name: cedar rapids
+          uid: ced
+          uri_dest: http://cedarrapids.craigslist.org/
+          uri_orig: http://cedarrapids.craigslist.org/
+        des moines:
+          name: des moines
+          uid: dsm
+          uri_dest: http://desmoines.craigslist.org/
+          uri_orig: http://desmoines.craigslist.org/
+        dubuque:
+          name: dubuque
+          uid: dbq
+          uri_dest: http://dubuque.craigslist.org/
+          uri_orig: http://dubuque.craigslist.org/
+        fort dodge:
+          name: fort dodge
+          uid: ftd
+          uri_dest: http://fortdodge.craigslist.org/
+          uri_orig: http://fortdodge.craigslist.org/
+        iowa city:
+          name: iowa city
+          uid: iac
+          uri_dest: http://iowacity.craigslist.org/
+          uri_orig: http://iowacity.craigslist.org/
+        mason city:
+          name: mason city
+          uid: msc
+          uri_dest: http://masoncity.craigslist.org/
+          uri_orig: http://masoncity.craigslist.org/
+        omaha / council bluffs:
+          name: omaha / council bluffs
+          uid: oma
+          uri_dest: http://omaha.craigslist.org/
+          uri_orig: http://omaha.craigslist.org/
+        'quad cities, IA/IL':
+          name: 'quad cities, IA/IL'
+          uid: mli
+          uri_dest: http://quadcities.craigslist.org/
+          uri_orig: http://quadcities.craigslist.org/
+        sioux city:
+          name: sioux city
+          uid: sux
+          uri_dest: http://siouxcity.craigslist.org/
+          uri_orig: http://siouxcity.craigslist.org/
+        southeast IA:
+          name: southeast IA
+          uid: otu
+          uri_dest: http://ottumwa.craigslist.org/
+          uri_orig: http://ottumwa.craigslist.org/
+        waterloo / cedar falls:
+          name: waterloo / cedar falls
+          uid: wlo
+          uri_dest: http://waterloo.craigslist.org/
+          uri_orig: http://waterloo.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/ia
+      uri_orig: http://geo.craigslist.org/iso/us/ia
+    kansas:
+      description: 'Kansas, United States'
+      name: kansas
+      subsites:
+        'kansas city, MO':
+          name: 'kansas city, MO'
+          uid: ksc
+          uri_dest: http://kansascity.craigslist.org/
+          uri_orig: http://kansascity.craigslist.org/
+        lawrence:
+          name: lawrence
+          uid: lwr
+          uri_dest: http://lawrence.craigslist.org/
+          uri_orig: http://lawrence.craigslist.org/
+        manhattan:
+          name: manhattan
+          uid: mhk
+          uri_dest: http://ksu.craigslist.org/
+          uri_orig: http://ksu.craigslist.org/
+        northwest KS:
+          name: northwest KS
+          uid: nwk
+          uri_dest: http://nwks.craigslist.org/
+          uri_orig: http://nwks.craigslist.org/
+        salina:
+          name: salina
+          uid: sns
+          uri_dest: http://salina.craigslist.org/
+          uri_orig: http://salina.craigslist.org/
+        southeast KS:
+          name: southeast KS
+          uid: sek
+          uri_dest: http://seks.craigslist.org/
+          uri_orig: http://seks.craigslist.org/
+        southwest KS:
+          name: southwest KS
+          uid: swk
+          uri_dest: http://swks.craigslist.org/
+          uri_orig: http://swks.craigslist.org/
+        topeka:
+          name: topeka
+          uid: tpk
+          uri_dest: http://topeka.craigslist.org/
+          uri_orig: http://topeka.craigslist.org/
+        wichita:
+          name: wichita
+          uid: wic
+          uri_dest: http://wichita.craigslist.org/
+          uri_orig: http://wichita.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/ks
+      uri_orig: http://geo.craigslist.org/iso/us/ks
+    kentucky:
+      description: 'Kentucky, United States'
+      name: kentucky
+      subsites:
+        bowling green:
+          name: bowling green
+          uid: blg
+          uri_dest: http://bgky.craigslist.org/
+          uri_orig: http://bgky.craigslist.org/
+        'cincinnati, OH':
+          name: 'cincinnati, OH'
+          uid: cin
+          uri_dest: http://cincinnati.craigslist.org/
+          uri_orig: http://cincinnati.craigslist.org/
+        eastern kentucky:
+          name: eastern kentucky
+          uid: eky
+          uri_dest: http://eastky.craigslist.org/
+          uri_orig: http://eastky.craigslist.org/
+        huntington-ashland:
+          name: huntington-ashland
+          uid: hts
+          uri_dest: http://huntington.craigslist.org/
+          uri_orig: http://huntington.craigslist.org/
+        lexington:
+          name: lexington
+          uid: lex
+          uri_dest: http://lexington.craigslist.org/
+          uri_orig: http://lexington.craigslist.org/
+        louisville:
+          name: louisville
+          uid: lou
+          uri_dest: http://louisville.craigslist.org/
+          uri_orig: http://louisville.craigslist.org/
+        owensboro:
+          name: owensboro
+          uid: owb
+          uri_dest: http://owensboro.craigslist.org/
+          uri_orig: http://owensboro.craigslist.org/
+        western KY:
+          name: western KY
+          uid: wky
+          uri_dest: http://westky.craigslist.org/
+          uri_orig: http://westky.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/ky
+      uri_orig: http://geo.craigslist.org/iso/us/ky
+    louisiana:
+      description: 'Louisiana, United States'
+      name: louisiana
+      subsites:
+        baton rouge:
+          name: baton rouge
+          uid: btr
+          uri_dest: http://batonrouge.craigslist.org/
+          uri_orig: http://batonrouge.craigslist.org/
+        central louisiana:
+          name: central louisiana
+          uid: aex
+          uri_dest: http://cenla.craigslist.org/
+          uri_orig: http://cenla.craigslist.org/
+        houma:
+          name: houma
+          uid: hum
+          uri_dest: http://houma.craigslist.org/
+          uri_orig: http://houma.craigslist.org/
+        lafayette:
+          name: lafayette
+          uid: lft
+          uri_dest: http://lafayette.craigslist.org/
+          uri_orig: http://lafayette.craigslist.org/
+        lake charles:
+          name: lake charles
+          uid: lkc
+          uri_dest: http://lakecharles.craigslist.org/
+          uri_orig: http://lakecharles.craigslist.org/
+        monroe:
+          name: monroe
+          uid: mlu
+          uri_dest: http://monroe.craigslist.org/
+          uri_orig: http://monroe.craigslist.org/
+        new orleans:
+          name: new orleans
+          uid: nor
+          uri_dest: http://neworleans.craigslist.org/
+          uri_orig: http://neworleans.craigslist.org/
+        shreveport:
+          name: shreveport
+          uid: shv
+          uri_dest: http://shreveport.craigslist.org/
+          uri_orig: http://shreveport.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/la
+      uri_orig: http://geo.craigslist.org/iso/us/la
+    maine:
+      description: 'Maine, United States'
+      name: maine
+      uid: mne
+      uri_dest: http://maine.craigslist.org/
+      uri_orig: http://geo.craigslist.org/iso/us/me
+    maryland:
+      description: 'Maryland, United States'
+      name: maryland
+      subsites:
+        MD suburbs of DC:
+          name: MD suburbs of DC
+          uid: wdc
+          uri_dest: http://washingtondc.craigslist.org/mld/
+          uri_orig: http://washingtondc.craigslist.org/mld/
+        annapolis:
+          name: annapolis
+          uid: anp
+          uri_dest: http://annapolis.craigslist.org/
+          uri_orig: http://annapolis.craigslist.org/
+        baltimore:
+          name: baltimore
+          uid: bal
+          uri_dest: http://baltimore.craigslist.org/
+          uri_orig: http://baltimore.craigslist.org/
+        cumberland valley:
+          name: cumberland valley
+          uid: cbg
+          uri_dest: http://chambersburg.craigslist.org/
+          uri_orig: http://chambersburg.craigslist.org/
+        eastern shore:
+          name: eastern shore
+          uid: esh
+          uri_dest: http://easternshore.craigslist.org/
+          uri_orig: http://easternshore.craigslist.org/
+        frederick:
+          name: frederick
+          uid: fdk
+          uri_dest: http://frederick.craigslist.org/
+          uri_orig: http://frederick.craigslist.org/
+        southern maryland:
+          name: southern maryland
+          uid: smd
+          uri_dest: http://smd.craigslist.org/
+          uri_orig: http://smd.craigslist.org/
+        western maryland:
+          name: western maryland
+          uid: wmd
+          uri_dest: http://westmd.craigslist.org/
+          uri_orig: http://westmd.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/md
+      uri_orig: http://geo.craigslist.org/iso/us/md
+    massachusetts:
+      description: 'Massachusetts, United States'
+      name: massachusetts
+      subsites:
+        boston:
+          name: boston
+          uid: bos
+          uri_dest: http://boston.craigslist.org/
+          uri_orig: http://boston.craigslist.org/
+        cape cod / islands:
+          name: cape cod / islands
+          uid: cap
+          uri_dest: http://capecod.craigslist.org/
+          uri_orig: http://capecod.craigslist.org/
+        south coast:
+          name: south coast
+          uid: sma
+          uri_dest: http://southcoast.craigslist.org/
+          uri_orig: http://southcoast.craigslist.org/
+        western massachusetts:
+          name: western massachusetts
+          uid: wma
+          uri_dest: http://westernmass.craigslist.org/
+          uri_orig: http://westernmass.craigslist.org/
+        worcester / central MA:
+          name: worcester / central MA
+          uid: wor
+          uri_dest: http://worcester.craigslist.org/
+          uri_orig: http://worcester.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/ma
+      uri_orig: http://geo.craigslist.org/iso/us/ma
+    michigan:
+      description: 'Michigan, United States'
+      name: michigan
+      subsites:
+        ann arbor:
+          name: ann arbor
+          uid: aaa
+          uri_dest: http://annarbor.craigslist.org/
+          uri_orig: http://annarbor.craigslist.org/
+        battle creek:
+          name: battle creek
+          uid: btc
+          uri_dest: http://battlecreek.craigslist.org/
+          uri_orig: http://battlecreek.craigslist.org/
+        central michigan:
+          name: central michigan
+          uid: cmu
+          uri_dest: http://centralmich.craigslist.org/
+          uri_orig: http://centralmich.craigslist.org/
+        detroit metro:
+          name: detroit metro
+          uid: det
+          uri_dest: http://detroit.craigslist.org/
+          uri_orig: http://detroit.craigslist.org/
+        flint:
+          name: flint
+          uid: fnt
+          uri_dest: http://flint.craigslist.org/
+          uri_orig: http://flint.craigslist.org/
+        grand rapids:
+          name: grand rapids
+          uid: grr
+          uri_dest: http://grandrapids.craigslist.org/
+          uri_orig: http://grandrapids.craigslist.org/
+        holland:
+          name: holland
+          uid: hld
+          uri_dest: http://holland.craigslist.org/
+          uri_orig: http://holland.craigslist.org/
+        jackson:
+          name: jackson
+          uid: jxn
+          uri_dest: http://jxn.craigslist.org/
+          uri_orig: http://jxn.craigslist.org/
+        kalamazoo:
+          name: kalamazoo
+          uid: kzo
+          uri_dest: http://kalamazoo.craigslist.org/
+          uri_orig: http://kalamazoo.craigslist.org/
+        lansing:
+          name: lansing
+          uid: lan
+          uri_dest: http://lansing.craigslist.org/
+          uri_orig: http://lansing.craigslist.org/
+        monroe:
+          name: monroe
+          uid: mnr
+          uri_dest: http://monroemi.craigslist.org/
+          uri_orig: http://monroemi.craigslist.org/
+        muskegon:
+          name: muskegon
+          uid: mkg
+          uri_dest: http://muskegon.craigslist.org/
+          uri_orig: http://muskegon.craigslist.org/
+        northern michigan:
+          name: northern michigan
+          uid: nmi
+          uri_dest: http://nmi.craigslist.org/
+          uri_orig: http://nmi.craigslist.org/
+        port huron:
+          name: port huron
+          uid: phn
+          uri_dest: http://porthuron.craigslist.org/
+          uri_orig: http://porthuron.craigslist.org/
+        saginaw-midland-baycity:
+          name: saginaw-midland-baycity
+          uid: mbs
+          uri_dest: http://saginaw.craigslist.org/
+          uri_orig: http://saginaw.craigslist.org/
+        south bend / michiana:
+          name: south bend / michiana
+          uid: sbn
+          uri_dest: http://southbend.craigslist.org/
+          uri_orig: http://southbend.craigslist.org/
+        southwest michigan:
+          name: southwest michigan
+          uid: swm
+          uri_dest: http://swmi.craigslist.org/
+          uri_orig: http://swmi.craigslist.org/
+        the thumb:
+          name: the thumb
+          uid: thb
+          uri_dest: http://thumb.craigslist.org/
+          uri_orig: http://thumb.craigslist.org/
+        upper peninsula:
+          name: upper peninsula
+          uid: yup
+          uri_dest: http://up.craigslist.org/
+          uri_orig: http://up.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/mi
+      uri_orig: http://geo.craigslist.org/iso/us/mi
+    minnesota:
+      description: 'Minnesota, United States'
+      name: minnesota
+      subsites:
+        bemidji:
+          name: bemidji
+          uid: bji
+          uri_dest: http://bemidji.craigslist.org/
+          uri_orig: http://bemidji.craigslist.org/
+        brainerd:
+          name: brainerd
+          uid: brd
+          uri_dest: http://brainerd.craigslist.org/
+          uri_orig: http://brainerd.craigslist.org/
+        duluth / superior:
+          name: duluth / superior
+          uid: dlh
+          uri_dest: http://duluth.craigslist.org/
+          uri_orig: http://duluth.craigslist.org/
+        fargo / moorhead:
+          name: fargo / moorhead
+          uid: far
+          uri_dest: http://fargo.craigslist.org/
+          uri_orig: http://fargo.craigslist.org/
+        mankato:
+          name: mankato
+          uid: mkt
+          uri_dest: http://mankato.craigslist.org/
+          uri_orig: http://mankato.craigslist.org/
+        minneapolis / st paul:
+          name: minneapolis / st paul
+          uid: min
+          uri_dest: http://minneapolis.craigslist.org/
+          uri_orig: http://minneapolis.craigslist.org/
+        rochester:
+          name: rochester
+          uid: rmn
+          uri_dest: http://rmn.craigslist.org/
+          uri_orig: http://rmn.craigslist.org/
+        southwest MN:
+          name: southwest MN
+          uid: mml
+          uri_dest: http://marshall.craigslist.org/
+          uri_orig: http://marshall.craigslist.org/
+        st cloud:
+          name: st cloud
+          uid: stc
+          uri_dest: http://stcloud.craigslist.org/
+          uri_orig: http://stcloud.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/mn
+      uri_orig: http://geo.craigslist.org/iso/us/mn
+    mississippi:
+      description: 'Mississippi, United States'
+      name: mississippi
+      subsites:
+        gulfport / biloxi:
+          name: gulfport / biloxi
+          uid: gpt
+          uri_dest: http://gulfport.craigslist.org/
+          uri_orig: http://gulfport.craigslist.org/
+        hattiesburg:
+          name: hattiesburg
+          uid: usm
+          uri_dest: http://hattiesburg.craigslist.org/
+          uri_orig: http://hattiesburg.craigslist.org/
+        jackson:
+          name: jackson
+          uid: jan
+          uri_dest: http://jackson.craigslist.org/
+          uri_orig: http://jackson.craigslist.org/
+        'memphis, TN':
+          name: 'memphis, TN'
+          uid: mem
+          uri_dest: http://memphis.craigslist.org/
+          uri_orig: http://memphis.craigslist.org/
+        meridian:
+          name: meridian
+          uid: mei
+          uri_dest: http://meridian.craigslist.org/
+          uri_orig: http://meridian.craigslist.org/
+        north mississippi:
+          name: north mississippi
+          uid: nms
+          uri_dest: http://northmiss.craigslist.org/
+          uri_orig: http://northmiss.craigslist.org/
+        southwest MS:
+          name: southwest MS
+          uid: hez
+          uri_dest: http://natchez.craigslist.org/
+          uri_orig: http://natchez.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/ms
+      uri_orig: http://geo.craigslist.org/iso/us/ms
+    missouri:
+      description: 'Missouri, United States'
+      name: missouri
+      subsites:
+        columbia / jeff city:
+          name: columbia / jeff city
+          uid: cou
+          uri_dest: http://columbiamo.craigslist.org/
+          uri_orig: http://columbiamo.craigslist.org/
+        joplin:
+          name: joplin
+          uid: jln
+          uri_dest: http://joplin.craigslist.org/
+          uri_orig: http://joplin.craigslist.org/
+        kansas city:
+          name: kansas city
+          uid: ksc
+          uri_dest: http://kansascity.craigslist.org/
+          uri_orig: http://kansascity.craigslist.org/
+        kirksville:
+          name: kirksville
+          uid: krk
+          uri_dest: http://kirksville.craigslist.org/
+          uri_orig: http://kirksville.craigslist.org/
+        lake of the ozarks:
+          name: lake of the ozarks
+          uid: loz
+          uri_dest: http://loz.craigslist.org/
+          uri_orig: http://loz.craigslist.org/
+        southeast missouri:
+          name: southeast missouri
+          uid: smo
+          uri_dest: http://semo.craigslist.org/
+          uri_orig: http://semo.craigslist.org/
+        springfield:
+          name: springfield
+          uid: sgf
+          uri_dest: http://springfield.craigslist.org/
+          uri_orig: http://springfield.craigslist.org/
+        st joseph:
+          name: st joseph
+          uid: stj
+          uri_dest: http://stjoseph.craigslist.org/
+          uri_orig: http://stjoseph.craigslist.org/
+        st louis:
+          name: st louis
+          uid: stl
+          uri_dest: http://stlouis.craigslist.org/
+          uri_orig: http://stlouis.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/mo
+      uri_orig: http://geo.craigslist.org/iso/us/mo
+    montana:
+      description: 'Montana, United States'
+      name: montana
+      subsites:
+        billings:
+          name: billings
+          uid: bil
+          uri_dest: http://billings.craigslist.org/
+          uri_orig: http://billings.craigslist.org/
+        bozeman:
+          name: bozeman
+          uid: bzn
+          uri_dest: http://bozeman.craigslist.org/
+          uri_orig: http://bozeman.craigslist.org/
+        butte:
+          name: butte
+          uid: btm
+          uri_dest: http://butte.craigslist.org/
+          uri_orig: http://butte.craigslist.org/
+        great falls:
+          name: great falls
+          uid: gtf
+          uri_dest: http://greatfalls.craigslist.org/
+          uri_orig: http://greatfalls.craigslist.org/
+        helena:
+          name: helena
+          uid: hln
+          uri_dest: http://helena.craigslist.org/
+          uri_orig: http://helena.craigslist.org/
+        kalispell:
+          name: kalispell
+          uid: fca
+          uri_dest: http://kalispell.craigslist.org/
+          uri_orig: http://kalispell.craigslist.org/
+        missoula:
+          name: missoula
+          uid: mso
+          uri_dest: http://missoula.craigslist.org/
+          uri_orig: http://missoula.craigslist.org/
+        montana (old):
+          name: montana (old)
+          uid: mnt
+          uri_dest: http://montana.craigslist.org/
+          uri_orig: http://montana.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/mt
+      uri_orig: http://geo.craigslist.org/iso/us/mt
+    nebraska:
+      description: 'Nebraska, United States'
+      name: nebraska
+      subsites:
+        grand island:
+          name: grand island
+          uid: gil
+          uri_dest: http://grandisland.craigslist.org/
+          uri_orig: http://grandisland.craigslist.org/
+        lincoln:
+          name: lincoln
+          uid: lnk
+          uri_dest: http://lincoln.craigslist.org/
+          uri_orig: http://lincoln.craigslist.org/
+        north platte:
+          name: north platte
+          uid: lbf
+          uri_dest: http://northplatte.craigslist.org/
+          uri_orig: http://northplatte.craigslist.org/
+        omaha / council bluffs:
+          name: omaha / council bluffs
+          uid: oma
+          uri_dest: http://omaha.craigslist.org/
+          uri_orig: http://omaha.craigslist.org/
+        scottsbluff / panhandle:
+          name: scottsbluff / panhandle
+          uid: bff
+          uri_dest: http://scottsbluff.craigslist.org/
+          uri_orig: http://scottsbluff.craigslist.org/
+        'sioux city, IA':
+          name: 'sioux city, IA'
+          uid: sux
+          uri_dest: http://siouxcity.craigslist.org/
+          uri_orig: http://siouxcity.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/ne
+      uri_orig: http://geo.craigslist.org/iso/us/ne
+    nevada:
+      description: 'Nevada, United States'
+      name: nevada
+      subsites:
+        elko:
+          name: elko
+          uid: elk
+          uri_dest: http://elko.craigslist.org/
+          uri_orig: http://elko.craigslist.org/
+        las vegas:
+          name: las vegas
+          uid: lvg
+          uri_dest: http://lasvegas.craigslist.org/
+          uri_orig: http://lasvegas.craigslist.org/
+        reno / tahoe:
+          name: reno / tahoe
+          uid: rno
+          uri_dest: http://reno.craigslist.org/
+          uri_orig: http://reno.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/nv
+      uri_orig: http://geo.craigslist.org/iso/us/nv
+    new hampshire:
+      description: 'New Hampshire, United States'
+      name: new hampshire
+      uid: nhm
+      uri_dest: http://nh.craigslist.org/
+      uri_orig: http://geo.craigslist.org/iso/us/nh
+    new jersey:
+      description: 'New Jersey, United States'
+      name: new jersey
+      subsites:
+        NJ suburbs of NYC:
+          name: NJ suburbs of NYC
+          uid: nyc
+          uri_dest: http://newyork.craigslist.org/jsy/
+          uri_orig: http://newyork.craigslist.org/jsy/
+        central NJ:
+          name: central NJ
+          uid: cnj
+          uri_dest: http://cnj.craigslist.org/
+          uri_orig: http://cnj.craigslist.org/
+        jersey shore:
+          name: jersey shore
+          uid: jys
+          uri_dest: http://jerseyshore.craigslist.org/
+          uri_orig: http://jerseyshore.craigslist.org/
+        north jersey:
+          name: north jersey
+          uid: njy
+          uri_dest: http://newjersey.craigslist.org/
+          uri_orig: http://newjersey.craigslist.org/
+        south jersey:
+          name: south jersey
+          uid: snj
+          uri_dest: http://southjersey.craigslist.org/
+          uri_orig: http://southjersey.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/nj
+      uri_orig: http://geo.craigslist.org/iso/us/nj
+    new mexico:
+      description: 'New Mexico, United States'
+      name: new mexico
+      subsites:
+        albuquerque:
+          name: albuquerque
+          uid: abq
+          uri_dest: http://albuquerque.craigslist.org/
+          uri_orig: http://albuquerque.craigslist.org/
+        clovis / portales:
+          name: clovis / portales
+          uid: cvn
+          uri_dest: http://clovis.craigslist.org/
+          uri_orig: http://clovis.craigslist.org/
+        farmington:
+          name: farmington
+          uid: fnm
+          uri_dest: http://farmington.craigslist.org/
+          uri_orig: http://farmington.craigslist.org/
+        las cruces:
+          name: las cruces
+          uid: lcr
+          uri_dest: http://lascruces.en.craigslist.org/
+          uri_orig: http://lascruces.craigslist.org/
+        roswell / carlsbad:
+          name: roswell / carlsbad
+          uid: row
+          uri_dest: http://roswell.craigslist.org/
+          uri_orig: http://roswell.craigslist.org/
+        santa fe / taos:
+          name: santa fe / taos
+          uid: saf
+          uri_dest: http://santafe.craigslist.org/
+          uri_orig: http://santafe.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/nm
+      uri_orig: http://geo.craigslist.org/iso/us/nm
+    new york:
+      description: 'New York, United States'
+      name: new york
+      subsites:
+        albany:
+          name: albany
+          uid: alb
+          uri_dest: http://albany.craigslist.org/
+          uri_orig: http://albany.craigslist.org/
+        binghamton:
+          name: binghamton
+          uid: bgm
+          uri_dest: http://binghamton.craigslist.org/
+          uri_orig: http://binghamton.craigslist.org/
+        buffalo:
+          name: buffalo
+          uid: buf
+          uri_dest: http://buffalo.craigslist.org/
+          uri_orig: http://buffalo.craigslist.org/
+        catskills:
+          name: catskills
+          uid: cat
+          uri_dest: http://catskills.craigslist.org/
+          uri_orig: http://catskills.craigslist.org/
+        chautauqua:
+          name: chautauqua
+          uid: chq
+          uri_dest: http://chautauqua.craigslist.org/
+          uri_orig: http://chautauqua.craigslist.org/
+        elmira-corning:
+          name: elmira-corning
+          uid: elm
+          uri_dest: http://elmira.craigslist.org/
+          uri_orig: http://elmira.craigslist.org/
+        finger lakes:
+          name: finger lakes
+          uid: fgl
+          uri_dest: http://fingerlakes.craigslist.org/
+          uri_orig: http://fingerlakes.craigslist.org/
+        glens falls:
+          name: glens falls
+          uid: gfl
+          uri_dest: http://glensfalls.craigslist.org/
+          uri_orig: http://glensfalls.craigslist.org/
+        hudson valley:
+          name: hudson valley
+          uid: hud
+          uri_dest: http://hudsonvalley.craigslist.org/
+          uri_orig: http://hudsonvalley.craigslist.org/
+        ithaca:
+          name: ithaca
+          uid: ith
+          uri_dest: http://ithaca.craigslist.org/
+          uri_orig: http://ithaca.craigslist.org/
+        long island:
+          name: long island
+          uid: isp
+          uri_dest: http://longisland.craigslist.org/
+          uri_orig: http://longisland.craigslist.org/
+        new york city:
+          name: new york city
+          uid: nyc
+          uri_dest: http://newyork.craigslist.org/
+          uri_orig: http://newyork.craigslist.org/
+        oneonta:
+          name: oneonta
+          uid: onh
+          uri_dest: http://oneonta.craigslist.org/
+          uri_orig: http://oneonta.craigslist.org/
+        plattsburgh-adirondacks:
+          name: plattsburgh-adirondacks
+          uid: plb
+          uri_dest: http://plattsburgh.craigslist.org/
+          uri_orig: http://plattsburgh.craigslist.org/
+        potsdam-canton-massena:
+          name: potsdam-canton-massena
+          uid: ptd
+          uri_dest: http://potsdam.craigslist.org/
+          uri_orig: http://potsdam.craigslist.org/
+        rochester:
+          name: rochester
+          uid: rcs
+          uri_dest: http://rochester.craigslist.org/
+          uri_orig: http://rochester.craigslist.org/
+        syracuse:
+          name: syracuse
+          uid: syr
+          uri_dest: http://syracuse.craigslist.org/
+          uri_orig: http://syracuse.craigslist.org/
+        twin tiers NY/PA:
+          name: twin tiers NY/PA
+          uid: tts
+          uri_dest: http://twintiers.craigslist.org/
+          uri_orig: http://twintiers.craigslist.org/
+        utica-rome-oneida:
+          name: utica-rome-oneida
+          uid: uti
+          uri_dest: http://utica.craigslist.org/
+          uri_orig: http://utica.craigslist.org/
+        watertown:
+          name: watertown
+          uid: wtn
+          uri_dest: http://watertown.craigslist.org/
+          uri_orig: http://watertown.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/ny
+      uri_orig: http://geo.craigslist.org/iso/us/ny
+    north carolina:
+      description: 'North Carolina, United States'
+      name: north carolina
+      subsites:
+        asheville:
+          name: asheville
+          uid: ash
+          uri_dest: http://asheville.craigslist.org/
+          uri_orig: http://asheville.craigslist.org/
+        boone:
+          name: boone
+          uid: bnc
+          uri_dest: http://boone.craigslist.org/
+          uri_orig: http://boone.craigslist.org/
+        charlotte:
+          name: charlotte
+          uid: cha
+          uri_dest: http://charlotte.craigslist.org/
+          uri_orig: http://charlotte.craigslist.org/
+        eastern NC:
+          name: eastern NC
+          uid: enc
+          uri_dest: http://eastnc.craigslist.org/
+          uri_orig: http://eastnc.craigslist.org/
+        fayetteville:
+          name: fayetteville
+          uid: fay
+          uri_dest: http://fayetteville.craigslist.org/
+          uri_orig: http://fayetteville.craigslist.org/
+        greensboro:
+          name: greensboro
+          uid: gbo
+          uri_dest: http://greensboro.craigslist.org/
+          uri_orig: http://greensboro.craigslist.org/
+        hickory / lenoir:
+          name: hickory / lenoir
+          uid: hky
+          uri_dest: http://hickory.craigslist.org/
+          uri_orig: http://hickory.craigslist.org/
+        jacksonville:
+          name: jacksonville
+          uid: oaj
+          uri_dest: http://onslow.craigslist.org/
+          uri_orig: http://onslow.craigslist.org/
+        outer banks:
+          name: outer banks
+          uid: obx
+          uri_dest: http://outerbanks.craigslist.org/
+          uri_orig: http://outerbanks.craigslist.org/
+        raleigh / durham / CH:
+          name: raleigh / durham / CH
+          uid: ral
+          uri_dest: http://raleigh.craigslist.org/
+          uri_orig: http://raleigh.craigslist.org/
+        wilmington:
+          name: wilmington
+          uid: wnc
+          uri_dest: http://wilmington.craigslist.org/
+          uri_orig: http://wilmington.craigslist.org/
+        winston-salem:
+          name: winston-salem
+          uid: wsl
+          uri_dest: http://winstonsalem.craigslist.org/
+          uri_orig: http://winstonsalem.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/nc
+      uri_orig: http://geo.craigslist.org/iso/us/nc
+    north dakota:
+      description: 'North Dakota, United States'
+      name: north dakota
+      subsites:
+        bismarck:
+          name: bismarck
+          uid: bis
+          uri_dest: http://bismarck.craigslist.org/
+          uri_orig: http://bismarck.craigslist.org/
+        fargo / moorhead:
+          name: fargo / moorhead
+          uid: far
+          uri_dest: http://fargo.craigslist.org/
+          uri_orig: http://fargo.craigslist.org/
+        grand forks:
+          name: grand forks
+          uid: gfk
+          uri_dest: http://grandforks.craigslist.org/
+          uri_orig: http://grandforks.craigslist.org/
+        north dakota:
+          name: north dakota
+          uid: ndk
+          uri_dest: http://nd.craigslist.org/
+          uri_orig: http://nd.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/nd
+      uri_orig: http://geo.craigslist.org/iso/us/nd
+    ohio:
+      description: 'Ohio, United States'
+      name: ohio
+      subsites:
+        akron / canton:
+          name: akron / canton
+          uid: cak
+          uri_dest: http://akroncanton.craigslist.org/
+          uri_orig: http://akroncanton.craigslist.org/
+        ashtabula:
+          name: ashtabula
+          uid: jfn
+          uri_dest: http://ashtabula.craigslist.org/
+          uri_orig: http://ashtabula.craigslist.org/
+        athens:
+          name: athens
+          uid: ohu
+          uri_dest: http://athensohio.craigslist.org/
+          uri_orig: http://athensohio.craigslist.org/
+        chillicothe:
+          name: chillicothe
+          uid: chl
+          uri_dest: http://chillicothe.craigslist.org/
+          uri_orig: http://chillicothe.craigslist.org/
+        cincinnati:
+          name: cincinnati
+          uid: cin
+          uri_dest: http://cincinnati.craigslist.org/
+          uri_orig: http://cincinnati.craigslist.org/
+        cleveland:
+          name: cleveland
+          uid: cle
+          uri_dest: http://cleveland.craigslist.org/
+          uri_orig: http://cleveland.craigslist.org/
+        columbus:
+          name: columbus
+          uid: col
+          uri_dest: http://columbus.craigslist.org/
+          uri_orig: http://columbus.craigslist.org/
+        dayton / springfield:
+          name: dayton / springfield
+          uid: day
+          uri_dest: http://dayton.craigslist.org/
+          uri_orig: http://dayton.craigslist.org/
+        huntington-ashland:
+          name: huntington-ashland
+          uid: hts
+          uri_dest: http://huntington.craigslist.org/
+          uri_orig: http://huntington.craigslist.org/
+        lima / findlay:
+          name: lima / findlay
+          uid: lma
+          uri_dest: http://limaohio.craigslist.org/
+          uri_orig: http://limaohio.craigslist.org/
+        mansfield:
+          name: mansfield
+          uid: mfd
+          uri_dest: http://mansfield.craigslist.org/
+          uri_orig: http://mansfield.craigslist.org/
+        northern panhandle:
+          name: northern panhandle
+          uid: whl
+          uri_dest: http://wheeling.craigslist.org/
+          uri_orig: http://wheeling.craigslist.org/
+        parkersburg-marietta:
+          name: parkersburg-marietta
+          uid: pkb
+          uri_dest: http://parkersburg.craigslist.org/
+          uri_orig: http://parkersburg.craigslist.org/
+        sandusky:
+          name: sandusky
+          uid: sky
+          uri_dest: http://sandusky.craigslist.org/
+          uri_orig: http://sandusky.craigslist.org/
+        toledo:
+          name: toledo
+          uid: tol
+          uri_dest: http://toledo.craigslist.org/
+          uri_orig: http://toledo.craigslist.org/
+        tuscarawas co:
+          name: tuscarawas co
+          uid: nph
+          uri_dest: http://tuscarawas.craigslist.org/
+          uri_orig: http://tuscarawas.craigslist.org/
+        youngstown:
+          name: youngstown
+          uid: yng
+          uri_dest: http://youngstown.craigslist.org/
+          uri_orig: http://youngstown.craigslist.org/
+        zanesville / cambridge:
+          name: zanesville / cambridge
+          uid: zvl
+          uri_dest: http://zanesville.craigslist.org/
+          uri_orig: http://zanesville.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/oh
+      uri_orig: http://geo.craigslist.org/iso/us/oh
+    oklahoma:
+      description: 'Oklahoma, United States'
+      name: oklahoma
+      subsites:
+        'fort smith, AR':
+          name: 'fort smith, AR'
+          uid: fsm
+          uri_dest: http://fortsmith.craigslist.org/
+          uri_orig: http://fortsmith.craigslist.org/
+        lawton:
+          name: lawton
+          uid: law
+          uri_dest: http://lawton.craigslist.org/
+          uri_orig: http://lawton.craigslist.org/
+        northwest OK:
+          name: northwest OK
+          uid: end
+          uri_dest: http://enid.craigslist.org/
+          uri_orig: http://enid.craigslist.org/
+        oklahoma city:
+          name: oklahoma city
+          uid: okc
+          uri_dest: http://oklahomacity.craigslist.org/
+          uri_orig: http://oklahomacity.craigslist.org/
+        stillwater:
+          name: stillwater
+          uid: osu
+          uri_dest: http://stillwater.craigslist.org/
+          uri_orig: http://stillwater.craigslist.org/
+        texoma:
+          name: texoma
+          uid: txm
+          uri_dest: http://texoma.craigslist.org/
+          uri_orig: http://texoma.craigslist.org/
+        tulsa:
+          name: tulsa
+          uid: tul
+          uri_dest: http://tulsa.craigslist.org/
+          uri_orig: http://tulsa.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/ok
+      uri_orig: http://geo.craigslist.org/iso/us/ok
+    oregon:
+      description: 'Oregon, United States'
+      name: oregon
+      subsites:
+        bend:
+          name: bend
+          uid: bnd
+          uri_dest: http://bend.craigslist.org/
+          uri_orig: http://bend.craigslist.org/
+        corvallis/albany:
+          name: corvallis/albany
+          uid: crv
+          uri_dest: http://corvallis.craigslist.org/
+          uri_orig: http://corvallis.craigslist.org/
+        east oregon:
+          name: east oregon
+          uid: eor
+          uri_dest: http://eastoregon.craigslist.org/
+          uri_orig: http://eastoregon.craigslist.org/
+        eugene:
+          name: eugene
+          uid: eug
+          uri_dest: http://eugene.craigslist.org/
+          uri_orig: http://eugene.craigslist.org/
+        klamath falls:
+          name: klamath falls
+          uid: klf
+          uri_dest: http://klamath.craigslist.org/
+          uri_orig: http://klamath.craigslist.org/
+        medford-ashland:
+          name: medford-ashland
+          uid: mfr
+          uri_dest: http://medford.craigslist.org/
+          uri_orig: http://medford.craigslist.org/
+        oregon coast:
+          name: oregon coast
+          uid: cor
+          uri_dest: http://oregoncoast.craigslist.org/
+          uri_orig: http://oregoncoast.craigslist.org/
+        portland:
+          name: portland
+          uid: pdx
+          uri_dest: http://portland.craigslist.org/
+          uri_orig: http://portland.craigslist.org/
+        roseburg:
+          name: roseburg
+          uid: rbg
+          uri_dest: http://roseburg.craigslist.org/
+          uri_orig: http://roseburg.craigslist.org/
+        salem:
+          name: salem
+          uid: sle
+          uri_dest: http://salem.craigslist.org/
+          uri_orig: http://salem.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/or
+      uri_orig: http://geo.craigslist.org/iso/us/or
+    pennsylvania:
+      description: 'Pennsylvania, United States'
+      name: pennsylvania
+      subsites:
+        altoona-johnstown:
+          name: altoona-johnstown
+          uid: aoo
+          uri_dest: http://altoona.craigslist.org/
+          uri_orig: http://altoona.craigslist.org/
+        cumberland valley:
+          name: cumberland valley
+          uid: cbg
+          uri_dest: http://chambersburg.craigslist.org/
+          uri_orig: http://chambersburg.craigslist.org/
+        erie:
+          name: erie
+          uid: eri
+          uri_dest: http://erie.craigslist.org/
+          uri_orig: http://erie.craigslist.org/
+        harrisburg:
+          name: harrisburg
+          uid: hrs
+          uri_dest: http://harrisburg.craigslist.org/
+          uri_orig: http://harrisburg.craigslist.org/
+        lancaster:
+          name: lancaster
+          uid: lns
+          uri_dest: http://lancaster.craigslist.org/
+          uri_orig: http://lancaster.craigslist.org/
+        lehigh valley:
+          name: lehigh valley
+          uid: alt
+          uri_dest: http://allentown.craigslist.org/
+          uri_orig: http://allentown.craigslist.org/
+        meadville:
+          name: meadville
+          uid: mdv
+          uri_dest: http://meadville.craigslist.org/
+          uri_orig: http://meadville.craigslist.org/
+        philadelphia:
+          name: philadelphia
+          uid: phi
+          uri_dest: http://philadelphia.craigslist.org/
+          uri_orig: http://philadelphia.craigslist.org/
+        pittsburgh:
+          name: pittsburgh
+          uid: pit
+          uri_dest: http://pittsburgh.craigslist.org/
+          uri_orig: http://pittsburgh.craigslist.org/
+        poconos:
+          name: poconos
+          uid: poc
+          uri_dest: http://poconos.craigslist.org/
+          uri_orig: http://poconos.craigslist.org/
+        reading:
+          name: reading
+          uid: rea
+          uri_dest: http://reading.craigslist.org/
+          uri_orig: http://reading.craigslist.org/
+        scranton / wilkes-barre:
+          name: scranton / wilkes-barre
+          uid: avp
+          uri_dest: http://scranton.craigslist.org/
+          uri_orig: http://scranton.craigslist.org/
+        state college:
+          name: state college
+          uid: psu
+          uri_dest: http://pennstate.craigslist.org/
+          uri_orig: http://pennstate.craigslist.org/
+        twin tiers NY/PA:
+          name: twin tiers NY/PA
+          uid: tts
+          uri_dest: http://twintiers.craigslist.org/
+          uri_orig: http://twintiers.craigslist.org/
+        williamsport:
+          name: williamsport
+          uid: wpt
+          uri_dest: http://williamsport.craigslist.org/
+          uri_orig: http://williamsport.craigslist.org/
+        york:
+          name: york
+          uid: yrk
+          uri_dest: http://york.craigslist.org/
+          uri_orig: http://york.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/pa
+      uri_orig: http://geo.craigslist.org/iso/us/pa
+    rhode island:
+      description: 'Rhode Island, United States'
+      name: rhode island
+      uid: prv
+      uri_dest: http://providence.craigslist.org/
+      uri_orig: http://geo.craigslist.org/iso/us/ri
+    south carolina:
+      description: 'South Carolina, United States'
+      name: south carolina
+      subsites:
+        charleston:
+          name: charleston
+          uid: chs
+          uri_dest: http://charleston.craigslist.org/
+          uri_orig: http://charleston.craigslist.org/
+        columbia:
+          name: columbia
+          uid: cae
+          uri_dest: http://columbia.craigslist.org/
+          uri_orig: http://columbia.craigslist.org/
+        florence:
+          name: florence
+          uid: flo
+          uri_dest: http://florencesc.craigslist.org/
+          uri_orig: http://florencesc.craigslist.org/
+        greenville / upstate:
+          name: greenville / upstate
+          uid: gsp
+          uri_dest: http://greenville.craigslist.org/
+          uri_orig: http://greenville.craigslist.org/
+        hilton head:
+          name: hilton head
+          uid: hhi
+          uri_dest: http://hiltonhead.craigslist.org/
+          uri_orig: http://hiltonhead.craigslist.org/
+        myrtle beach:
+          name: myrtle beach
+          uid: myr
+          uri_dest: http://myrtlebeach.craigslist.org/
+          uri_orig: http://myrtlebeach.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/sc
+      uri_orig: http://geo.craigslist.org/iso/us/sc
+    south dakota:
+      description: 'South Dakota, United States'
+      name: south dakota
+      subsites:
+        northeast SD:
+          name: northeast SD
+          uid: abr
+          uri_dest: http://nesd.craigslist.org/
+          uri_orig: http://nesd.craigslist.org/
+        pierre / central SD:
+          name: pierre / central SD
+          uid: csd
+          uri_dest: http://csd.craigslist.org/
+          uri_orig: http://csd.craigslist.org/
+        rapid city / west SD:
+          name: rapid city / west SD
+          uid: rap
+          uri_dest: http://rapidcity.craigslist.org/
+          uri_orig: http://rapidcity.craigslist.org/
+        sioux falls / SE SD:
+          name: sioux falls / SE SD
+          uid: fsd
+          uri_dest: http://siouxfalls.craigslist.org/
+          uri_orig: http://siouxfalls.craigslist.org/
+        south dakota:
+          name: south dakota
+          uid: sdk
+          uri_dest: http://sd.craigslist.org/
+          uri_orig: http://sd.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/sd
+      uri_orig: http://geo.craigslist.org/iso/us/sd
+    tennessee:
+      description: 'Tennessee, United States'
+      name: tennessee
+      subsites:
+        chattanooga:
+          name: chattanooga
+          uid: cht
+          uri_dest: http://chattanooga.craigslist.org/
+          uri_orig: http://chattanooga.craigslist.org/
+        clarksville:
+          name: clarksville
+          uid: ckv
+          uri_dest: http://clarksville.craigslist.org/
+          uri_orig: http://clarksville.craigslist.org/
+        cookeville:
+          name: cookeville
+          uid: coo
+          uri_dest: http://cookeville.craigslist.org/
+          uri_orig: http://cookeville.craigslist.org/
+        jackson:
+          name: jackson
+          uid: jxt
+          uri_dest: http://jacksontn.craigslist.org/
+          uri_orig: http://jacksontn.craigslist.org/
+        knoxville:
+          name: knoxville
+          uid: knx
+          uri_dest: http://knoxville.craigslist.org/
+          uri_orig: http://knoxville.craigslist.org/
+        memphis:
+          name: memphis
+          uid: mem
+          uri_dest: http://memphis.craigslist.org/
+          uri_orig: http://memphis.craigslist.org/
+        nashville:
+          name: nashville
+          uid: nsh
+          uri_dest: http://nashville.craigslist.org/
+          uri_orig: http://nashville.craigslist.org/
+        tri-cities:
+          name: tri-cities
+          uid: tri
+          uri_dest: http://tricities.craigslist.org/
+          uri_orig: http://tricities.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/tn
+      uri_orig: http://geo.craigslist.org/iso/us/tn
+    texas:
+      description: 'Texas, United States'
+      name: texas
+      subsites:
+        abilene:
+          name: abilene
+          uid: abi
+          uri_dest: http://abilene.craigslist.org/
+          uri_orig: http://abilene.craigslist.org/
+        amarillo:
+          name: amarillo
+          uid: ama
+          uri_dest: http://amarillo.craigslist.org/
+          uri_orig: http://amarillo.craigslist.org/
+        austin:
+          name: austin
+          uid: aus
+          uri_dest: http://austin.craigslist.org/
+          uri_orig: http://austin.craigslist.org/
+        beaumont / port arthur:
+          name: beaumont / port arthur
+          uid: bpt
+          uri_dest: http://beaumont.craigslist.org/
+          uri_orig: http://beaumont.craigslist.org/
+        brownsville:
+          name: brownsville
+          uid: bro
+          uri_dest: http://brownsville.en.craigslist.org/
+          uri_orig: http://brownsville.craigslist.org/
+        college station:
+          name: college station
+          uid: cst
+          uri_dest: http://collegestation.craigslist.org/
+          uri_orig: http://collegestation.craigslist.org/
+        corpus christi:
+          name: corpus christi
+          uid: crp
+          uri_dest: http://corpuschristi.craigslist.org/
+          uri_orig: http://corpuschristi.craigslist.org/
+        dallas / fort worth:
+          name: dallas / fort worth
+          uid: dal
+          uri_dest: http://dallas.craigslist.org/
+          uri_orig: http://dallas.craigslist.org/
+        deep east texas:
+          name: deep east texas
+          uid: och
+          uri_dest: http://nacogdoches.craigslist.org/
+          uri_orig: http://nacogdoches.craigslist.org/
+        del rio / eagle pass:
+          name: del rio / eagle pass
+          uid: drt
+          uri_dest: http://delrio.craigslist.org/
+          uri_orig: http://delrio.craigslist.org/
+        el paso:
+          name: el paso
+          uid: elp
+          uri_dest: http://elpaso.en.craigslist.org/
+          uri_orig: http://elpaso.craigslist.org/
+        galveston:
+          name: galveston
+          uid: gls
+          uri_dest: http://galveston.craigslist.org/
+          uri_orig: http://galveston.craigslist.org/
+        houston:
+          name: houston
+          uid: hou
+          uri_dest: http://houston.craigslist.org/
+          uri_orig: http://houston.craigslist.org/
+        killeen / temple / ft hood:
+          name: killeen / temple / ft hood
+          uid: grk
+          uri_dest: http://killeen.craigslist.org/
+          uri_orig: http://killeen.craigslist.org/
+        laredo:
+          name: laredo
+          uid: lrd
+          uri_dest: http://laredo.craigslist.org/
+          uri_orig: http://laredo.craigslist.org/
+        lubbock:
+          name: lubbock
+          uid: lbb
+          uri_dest: http://lubbock.craigslist.org/
+          uri_orig: http://lubbock.craigslist.org/
+        mcallen / edinburg:
+          name: mcallen / edinburg
+          uid: mca
+          uri_dest: http://mcallen.en.craigslist.org/
+          uri_orig: http://mcallen.craigslist.org/
+        odessa / midland:
+          name: odessa / midland
+          uid: odm
+          uri_dest: http://odessa.craigslist.org/
+          uri_orig: http://odessa.craigslist.org/
+        san angelo:
+          name: san angelo
+          uid: sjt
+          uri_dest: http://sanangelo.craigslist.org/
+          uri_orig: http://sanangelo.craigslist.org/
+        san antonio:
+          name: san antonio
+          uid: sat
+          uri_dest: http://sanantonio.craigslist.org/
+          uri_orig: http://sanantonio.craigslist.org/
+        san marcos:
+          name: san marcos
+          uid: tsu
+          uri_dest: http://sanmarcos.craigslist.org/
+          uri_orig: http://sanmarcos.craigslist.org/
+        southwest TX:
+          name: southwest TX
+          uid: wtx
+          uri_dest: http://bigbend.craigslist.org/
+          uri_orig: http://bigbend.craigslist.org/
+        texarkana:
+          name: texarkana
+          uid: txk
+          uri_dest: http://texarkana.craigslist.org/
+          uri_orig: http://texarkana.craigslist.org/
+        texoma:
+          name: texoma
+          uid: txm
+          uri_dest: http://texoma.craigslist.org/
+          uri_orig: http://texoma.craigslist.org/
+        tyler / east TX:
+          name: tyler / east TX
+          uid: etx
+          uri_dest: http://easttexas.craigslist.org/
+          uri_orig: http://easttexas.craigslist.org/
+        victoria:
+          name: victoria
+          uid: vtx
+          uri_dest: http://victoriatx.craigslist.org/
+          uri_orig: http://victoriatx.craigslist.org/
+        waco:
+          name: waco
+          uid: wco
+          uri_dest: http://waco.craigslist.org/
+          uri_orig: http://waco.craigslist.org/
+        wichita falls:
+          name: wichita falls
+          uid: wtf
+          uri_dest: http://wichitafalls.craigslist.org/
+          uri_orig: http://wichitafalls.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/tx
+      uri_orig: http://geo.craigslist.org/iso/us/tx
+    united states:
+      description: 'Alaska, United States'
+      name: united states
+      subsites:
+        anchorage / mat-su:
+          name: anchorage / mat-su
+          uid: anc
+          uri_dest: http://anchorage.craigslist.org/
+          uri_orig: http://anchorage.craigslist.org/
+        fairbanks:
+          name: fairbanks
+          uid: fai
+          uri_dest: http://fairbanks.craigslist.org/
+          uri_orig: http://fairbanks.craigslist.org/
+        kenai peninsula:
+          name: kenai peninsula
+          uid: ena
+          uri_dest: http://kenai.craigslist.org/
+          uri_orig: http://kenai.craigslist.org/
+        southeast alaska:
+          name: southeast alaska
+          uid: jnu
+          uri_dest: http://juneau.craigslist.org/
+          uri_orig: http://juneau.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/ak
+      uri_orig: http://geo.craigslist.org/iso/us/ak
+    utah:
+      description: 'Utah, United States'
+      name: utah
+      subsites:
+        logan:
+          name: logan
+          uid: lgu
+          uri_dest: http://logan.craigslist.org/
+          uri_orig: http://logan.craigslist.org/
+        ogden-clearfield:
+          name: ogden-clearfield
+          uid: ogd
+          uri_dest: http://ogden.craigslist.org/
+          uri_orig: http://ogden.craigslist.org/
+        provo / orem:
+          name: provo / orem
+          uid: pvu
+          uri_dest: http://provo.craigslist.org/
+          uri_orig: http://provo.craigslist.org/
+        salt lake city:
+          name: salt lake city
+          uid: slc
+          uri_dest: http://saltlakecity.craigslist.org/
+          uri_orig: http://saltlakecity.craigslist.org/
+        st george:
+          name: st george
+          uid: stg
+          uri_dest: http://stgeorge.craigslist.org/
+          uri_orig: http://stgeorge.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/ut
+      uri_orig: http://geo.craigslist.org/iso/us/ut
+    vermont:
+      description: 'Vermont, United States'
+      name: vermont
+      uid: brl
+      uri_dest: http://burlington.craigslist.org/
+      uri_orig: http://geo.craigslist.org/iso/us/vt
+    virginia:
+      description: 'Virginia, United States'
+      name: virginia
+      subsites:
+        charlottesville:
+          name: charlottesville
+          uid: uva
+          uri_dest: http://charlottesville.craigslist.org/
+          uri_orig: http://charlottesville.craigslist.org/
+        danville:
+          name: danville
+          uid: dnv
+          uri_dest: http://danville.craigslist.org/
+          uri_orig: http://danville.craigslist.org/
+        eastern shore:
+          name: eastern shore
+          uid: esh
+          uri_dest: http://easternshore.craigslist.org/
+          uri_orig: http://easternshore.craigslist.org/
+        fredericksburg:
+          name: fredericksburg
+          uid: ezf
+          uri_dest: http://fredericksburg.craigslist.org/
+          uri_orig: http://fredericksburg.craigslist.org/
+        hampton roads:
+          name: hampton roads
+          uid: nfk
+          uri_dest: http://norfolk.craigslist.org/
+          uri_orig: http://norfolk.craigslist.org/
+        harrisonburg:
+          name: harrisonburg
+          uid: shd
+          uri_dest: http://harrisonburg.craigslist.org/
+          uri_orig: http://harrisonburg.craigslist.org/
+        lynchburg:
+          name: lynchburg
+          uid: lyn
+          uri_dest: http://lynchburg.craigslist.org/
+          uri_orig: http://lynchburg.craigslist.org/
+        new river valley:
+          name: new river valley
+          uid: vpi
+          uri_dest: http://blacksburg.craigslist.org/
+          uri_orig: http://blacksburg.craigslist.org/
+        northern virginia:
+          name: northern virginia
+          uid: wdc
+          uri_dest: http://washingtondc.craigslist.org/nva/
+          uri_orig: http://washingtondc.craigslist.org/nva/
+        richmond:
+          name: richmond
+          uid: ric
+          uri_dest: http://richmond.craigslist.org/
+          uri_orig: http://richmond.craigslist.org/
+        roanoke:
+          name: roanoke
+          uid: roa
+          uri_dest: http://roanoke.craigslist.org/
+          uri_orig: http://roanoke.craigslist.org/
+        southwest VA:
+          name: southwest VA
+          uid: vaw
+          uri_dest: http://swva.craigslist.org/
+          uri_orig: http://swva.craigslist.org/
+        winchester:
+          name: winchester
+          uid: okv
+          uri_dest: http://winchester.craigslist.org/
+          uri_orig: http://winchester.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/va
+      uri_orig: http://geo.craigslist.org/iso/us/va
+    washington:
+      description: 'Washington, United States'
+      name: washington
+      subsites:
+        bellingham:
+          name: bellingham
+          uid: bli
+          uri_dest: http://bellingham.craigslist.org/
+          uri_orig: http://bellingham.craigslist.org/
+        clark co / SW WA:
+          name: clark co / SW WA
+          uid: pdx
+          uri_dest: http://portland.craigslist.org/clk/
+          uri_orig: http://portland.craigslist.org/clk/
+        kennewick-pasco-richland:
+          name: kennewick-pasco-richland
+          uid: kpr
+          uri_dest: http://kpr.craigslist.org/
+          uri_orig: http://kpr.craigslist.org/
+        lewiston / clarkston:
+          name: lewiston / clarkston
+          uid: lws
+          uri_dest: http://lewiston.craigslist.org/
+          uri_orig: http://lewiston.craigslist.org/
+        moses lake:
+          name: moses lake
+          uid: mlk
+          uri_dest: http://moseslake.craigslist.org/
+          uri_orig: http://moseslake.craigslist.org/
+        olympic peninsula:
+          name: olympic peninsula
+          uid: olp
+          uri_dest: http://olympic.craigslist.org/
+          uri_orig: http://olympic.craigslist.org/
+        pullman / moscow:
+          name: pullman / moscow
+          uid: plm
+          uri_dest: http://pullman.craigslist.org/
+          uri_orig: http://pullman.craigslist.org/
+        seattle-tacoma:
+          name: seattle-tacoma
+          uid: sea
+          uri_dest: http://seattle.craigslist.org/
+          uri_orig: http://seattle.craigslist.org/
+        skagit / island / SJI:
+          name: skagit / island / SJI
+          uid: mvw
+          uri_dest: http://skagit.craigslist.org/
+          uri_orig: http://skagit.craigslist.org/
+        spokane / coeur d'alene:
+          name: spokane / coeur d'alene
+          uid: spk
+          uri_dest: http://spokane.craigslist.org/
+          uri_orig: http://spokane.craigslist.org/
+        wenatchee:
+          name: wenatchee
+          uid: wen
+          uri_dest: http://wenatchee.craigslist.org/
+          uri_orig: http://wenatchee.craigslist.org/
+        yakima:
+          name: yakima
+          uid: yak
+          uri_dest: http://yakima.craigslist.org/
+          uri_orig: http://yakima.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/wa
+      uri_orig: http://geo.craigslist.org/iso/us/wa
+    'washington, DC':
+      description: 'District of Columbia, United States'
+      name: 'washington, DC'
+      uid: wdc
+      uri_dest: http://washingtondc.craigslist.org/
+      uri_orig: http://geo.craigslist.org/iso/us/dc
+    west virginia:
+      description: 'West Virginia, United States'
+      name: west virginia
+      subsites:
+        charleston:
+          name: charleston
+          uid: crw
+          uri_dest: http://charlestonwv.craigslist.org/
+          uri_orig: http://charlestonwv.craigslist.org/
+        eastern panhandle:
+          name: eastern panhandle
+          uid: ewv
+          uri_dest: http://martinsburg.craigslist.org/
+          uri_orig: http://martinsburg.craigslist.org/
+        huntington-ashland:
+          name: huntington-ashland
+          uid: hts
+          uri_dest: http://huntington.craigslist.org/
+          uri_orig: http://huntington.craigslist.org/
+        morgantown:
+          name: morgantown
+          uid: wvu
+          uri_dest: http://morgantown.craigslist.org/
+          uri_orig: http://morgantown.craigslist.org/
+        northern panhandle:
+          name: northern panhandle
+          uid: whl
+          uri_dest: http://wheeling.craigslist.org/
+          uri_orig: http://wheeling.craigslist.org/
+        parkersburg-marietta:
+          name: parkersburg-marietta
+          uid: pkb
+          uri_dest: http://parkersburg.craigslist.org/
+          uri_orig: http://parkersburg.craigslist.org/
+        southern WV:
+          name: southern WV
+          uid: swv
+          uri_dest: http://swv.craigslist.org/
+          uri_orig: http://swv.craigslist.org/
+        west virginia (old):
+          name: west virginia (old)
+          uid: wva
+          uri_dest: http://wv.craigslist.org/
+          uri_orig: http://wv.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/wv
+      uri_orig: http://geo.craigslist.org/iso/us/wv
+    wisconsin:
+      description: 'Wisconsin, United States'
+      name: wisconsin
+      subsites:
+        appleton-oshkosh-FDL:
+          name: appleton-oshkosh-FDL
+          uid: app
+          uri_dest: http://appleton.craigslist.org/
+          uri_orig: http://appleton.craigslist.org/
+        duluth / superior:
+          name: duluth / superior
+          uid: dlh
+          uri_dest: http://duluth.craigslist.org/
+          uri_orig: http://duluth.craigslist.org/
+        eau claire:
+          name: eau claire
+          uid: eau
+          uri_dest: http://eauclaire.craigslist.org/
+          uri_orig: http://eauclaire.craigslist.org/
+        green bay:
+          name: green bay
+          uid: grb
+          uri_dest: http://greenbay.craigslist.org/
+          uri_orig: http://greenbay.craigslist.org/
+        janesville:
+          name: janesville
+          uid: jvl
+          uri_dest: http://janesville.craigslist.org/
+          uri_orig: http://janesville.craigslist.org/
+        kenosha-racine:
+          name: kenosha-racine
+          uid: rac
+          uri_dest: http://racine.craigslist.org/
+          uri_orig: http://racine.craigslist.org/
+        la crosse:
+          name: la crosse
+          uid: lse
+          uri_dest: http://lacrosse.craigslist.org/
+          uri_orig: http://lacrosse.craigslist.org/
+        madison:
+          name: madison
+          uid: mad
+          uri_dest: http://madison.craigslist.org/
+          uri_orig: http://madison.craigslist.org/
+        milwaukee:
+          name: milwaukee
+          uid: mil
+          uri_dest: http://milwaukee.craigslist.org/
+          uri_orig: http://milwaukee.craigslist.org/
+        northern WI:
+          name: northern WI
+          uid: nwi
+          uri_dest: http://northernwi.craigslist.org/
+          uri_orig: http://northernwi.craigslist.org/
+        sheboygan:
+          name: sheboygan
+          uid: sbm
+          uri_dest: http://sheboygan.craigslist.org/
+          uri_orig: http://sheboygan.craigslist.org/
+        wausau:
+          name: wausau
+          uid: wau
+          uri_dest: http://wausau.craigslist.org/
+          uri_orig: http://wausau.craigslist.org/
+      uri_dest: http://geo.craigslist.org/iso/us/wi
+      uri_orig: http://geo.craigslist.org/iso/us/wi
+    wyoming:
+      description: 'Wyoming, United States'
+      name: wyoming
+      uid: wyo
+      uri_dest: http://wyoming.craigslist.org/
+      uri_orig: http://geo.craigslist.org/iso/us/wy
+  uri_dest: http://geo.craigslist.org/iso/us/
+  uri_orig: http://geo.craigslist.org/iso/us/
+amsterdam / randstad:
+  name: amsterdam / randstad
+  uid: ams
+  uri_dest: http://amsterdam.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/nl
+australia:
+  name: australia
+  subsites:
+    adelaide:
+      name: adelaide
+      uid: adl
+      uri_dest: http://adelaide.craigslist.com.au/
+      uri_orig: http://adelaide.craigslist.com.au/
+    brisbane:
+      name: brisbane
+      uid: bne
+      uri_dest: http://brisbane.craigslist.com.au/
+      uri_orig: http://brisbane.craigslist.com.au/
+    cairns:
+      name: cairns
+      uid: cns
+      uri_dest: http://cairns.craigslist.com.au/
+      uri_orig: http://cairns.craigslist.com.au/
+    canberra:
+      name: canberra
+      uid: cbr
+      uri_dest: http://canberra.craigslist.com.au/
+      uri_orig: http://canberra.craigslist.com.au/
+    darwin:
+      name: darwin
+      uid: drw
+      uri_dest: http://darwin.craigslist.com.au/
+      uri_orig: http://darwin.craigslist.com.au/
+    gold coast:
+      name: gold coast
+      uid: ool
+      uri_dest: http://goldcoast.craigslist.com.au/
+      uri_orig: http://goldcoast.craigslist.com.au/
+    melbourne:
+      name: melbourne
+      uid: mel
+      uri_dest: http://melbourne.craigslist.com.au/
+      uri_orig: http://melbourne.craigslist.com.au/
+    'newcastle, NSW':
+      name: 'newcastle, NSW'
+      uid: ntl
+      uri_dest: http://ntl.craigslist.com.au/
+      uri_orig: http://ntl.craigslist.com.au/
+    perth:
+      name: perth
+      uid: per
+      uri_dest: http://perth.craigslist.com.au/
+      uri_orig: http://perth.craigslist.com.au/
+    sydney:
+      name: sydney
+      uid: syd
+      uri_dest: http://sydney.craigslist.com.au/
+      uri_orig: http://sydney.craigslist.com.au/
+    tasmania:
+      name: tasmania
+      uid: hba
+      uri_dest: http://hobart.craigslist.com.au/
+      uri_orig: http://hobart.craigslist.com.au/
+    wollongong:
+      name: wollongong
+      uid: wol
+      uri_dest: http://wollongong.craigslist.com.au/
+      uri_orig: http://wollongong.craigslist.com.au/
+  uri_dest: http://geo.craigslist.org/iso/au
+  uri_orig: http://geo.craigslist.org/iso/au
+bangladesh:
+  name: bangladesh
+  uid: bgl
+  uri_dest: http://bangladesh.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/bd
+'beirut, lebanon':
+  name: 'beirut, lebanon'
+  uid: bey
+  uri_dest: http://beirut.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/lb
+belgium:
+  name: belgium
+  uid: bru
+  uri_dest: http://brussels.en.craigslist.org
+  uri_orig: http://geo.craigslist.org/iso/be
+bolivia:
+  name: bolivia
+  uid: lpb
+  uri_dest: http://lapaz.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/bo
+brazil:
+  name: brazil
+  subsites:
+    belo horizonte:
+      name: belo horizonte
+      uid: cnf
+      uri_dest: http://belohorizonte.en.craigslist.org/
+      uri_orig: http://belohorizonte.craigslist.org/
+    brasilia:
+      name: brasilia
+      uid: bsb
+      uri_dest: http://brasilia.en.craigslist.org/
+      uri_orig: http://brasilia.craigslist.org/
+    curitiba:
+      name: curitiba
+      uid: cwb
+      uri_dest: http://curitiba.en.craigslist.org/
+      uri_orig: http://curitiba.craigslist.org/
+    fortaleza:
+      name: fortaleza
+      uid: ftl
+      uri_dest: http://fortaleza.en.craigslist.org/
+      uri_orig: http://fortaleza.craigslist.org/
+    porto alegre:
+      name: porto alegre
+      uid: pgp
+      uri_dest: http://portoalegre.en.craigslist.org/
+      uri_orig: http://portoalegre.craigslist.org/
+    recife:
+      name: recife
+      uid: rec
+      uri_dest: http://recife.en.craigslist.org/
+      uri_orig: http://recife.craigslist.org/
+    rio de janeiro:
+      name: rio de janeiro
+      uid: rio
+      uri_dest: http://rio.en.craigslist.org/
+      uri_orig: http://rio.craigslist.org/
+    'salvador, bahia':
+      name: 'salvador, bahia'
+      uid: ssa
+      uri_dest: http://salvador.en.craigslist.org/
+      uri_orig: http://salvador.craigslist.org/
+    sao paulo:
+      name: sao paulo
+      uid: spo
+      uri_dest: http://saopaulo.en.craigslist.org/
+      uri_orig: http://saopaulo.craigslist.org/
+  uri_dest: http://geo.craigslist.org/iso/br
+  uri_orig: http://geo.craigslist.org/iso/br
+budapest:
+  name: budapest
+  uid: bud
+  uri_dest: http://budapest.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/hu
+buenos aires:
+  name: buenos aires
+  uid: bue
+  uri_dest: http://buenosaires.en.craigslist.org
+  uri_orig: http://geo.craigslist.org/iso/ar
+bulgaria:
+  name: bulgaria
+  uid: sof
+  uri_dest: http://bulgaria.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/bg
+canada:
+  name: canada
+  subsites:
+    barrie:
+      name: barrie
+      uid: brr
+      uri_dest: http://barrie.en.craigslist.ca/
+      uri_orig: http://barrie.craigslist.ca/
+    'belleville, ON':
+      name: 'belleville, ON'
+      uid: bel
+      uri_dest: http://belleville.en.craigslist.ca/
+      uri_orig: http://belleville.craigslist.ca/
+    brantford-woodstock:
+      name: brantford-woodstock
+      uid: bfd
+      uri_dest: http://brantford.en.craigslist.ca/
+      uri_orig: http://brantford.craigslist.ca/
+    calgary:
+      name: calgary
+      uid: clg
+      uri_dest: http://calgary.en.craigslist.ca/
+      uri_orig: http://calgary.craigslist.ca/
+    cariboo:
+      name: cariboo
+      uid: cbo
+      uri_dest: http://cariboo.en.craigslist.ca/
+      uri_orig: http://cariboo.craigslist.ca/
+    chatham-kent:
+      name: chatham-kent
+      uid: chk
+      uri_dest: http://chatham.en.craigslist.ca/
+      uri_orig: http://chatham.craigslist.ca/
+    comox valley:
+      name: comox valley
+      uid: cmx
+      uri_dest: http://comoxvalley.en.craigslist.ca/
+      uri_orig: http://comoxvalley.craigslist.ca/
+    'cornwall, ON':
+      name: 'cornwall, ON'
+      uid: ycc
+      uri_dest: http://cornwall.en.craigslist.ca/
+      uri_orig: http://cornwall.craigslist.ca/
+    edmonton:
+      name: edmonton
+      uid: edm
+      uri_dest: http://edmonton.en.craigslist.ca/
+      uri_orig: http://edmonton.craigslist.ca/
+    fraser valley:
+      name: fraser valley
+      uid: abb
+      uri_dest: http://abbotsford.en.craigslist.ca/
+      uri_orig: http://abbotsford.craigslist.ca/
+    ft mcmurray:
+      name: ft mcmurray
+      uid: fmc
+      uri_dest: http://ftmcmurray.en.craigslist.ca/
+      uri_orig: http://ftmcmurray.craigslist.ca/
+    guelph:
+      name: guelph
+      uid: gph
+      uri_dest: http://guelph.en.craigslist.ca/
+      uri_orig: http://guelph.craigslist.ca/
+    halifax:
+      name: halifax
+      uid: hfx
+      uri_dest: http://halifax.en.craigslist.ca/
+      uri_orig: http://halifax.craigslist.ca/
+    hamilton-burlington:
+      name: hamilton-burlington
+      uid: hml
+      uri_dest: http://hamilton.en.craigslist.ca/
+      uri_orig: http://hamilton.craigslist.ca/
+    kamloops:
+      name: kamloops
+      uid: kml
+      uri_dest: http://kamloops.en.craigslist.ca/
+      uri_orig: http://kamloops.craigslist.ca/
+    kelowna / okangan:
+      name: kelowna / okangan
+      uid: kel
+      uri_dest: http://kelowna.en.craigslist.ca/
+      uri_orig: http://kelowna.craigslist.ca/
+    'kingston, ON':
+      name: 'kingston, ON'
+      uid: kng
+      uri_dest: http://kingston.en.craigslist.ca/
+      uri_orig: http://kingston.craigslist.ca/
+    kitchener-waterloo-cambridge:
+      name: kitchener-waterloo-cambridge
+      uid: kch
+      uri_dest: http://kitchener.en.craigslist.ca/
+      uri_orig: http://kitchener.craigslist.ca/
+    kootenays:
+      name: kootenays
+      uid: koo
+      uri_dest: http://cranbrook.en.craigslist.ca/
+      uri_orig: http://cranbrook.craigslist.ca/
+    lethbridge:
+      name: lethbridge
+      uid: lth
+      uri_dest: http://lethbridge.en.craigslist.ca/
+      uri_orig: http://lethbridge.craigslist.ca/
+    'london, ON':
+      name: 'london, ON'
+      uid: lon
+      uri_dest: http://londonon.en.craigslist.ca/
+      uri_orig: http://londonon.craigslist.ca/
+    medicine hat:
+      name: medicine hat
+      uid: hat
+      uri_dest: http://hat.en.craigslist.ca/
+      uri_orig: http://hat.craigslist.ca/
+    montreal:
+      name: montreal
+      uid: mon
+      uri_dest: http://montreal.en.craigslist.ca/
+      uri_orig: http://montreal.craigslist.ca/
+    nanaimo:
+      name: nanaimo
+      uid: nmo
+      uri_dest: http://nanaimo.en.craigslist.ca/
+      uri_orig: http://nanaimo.craigslist.ca/
+    new brunswick:
+      name: new brunswick
+      uid: nbw
+      uri_dest: http://newbrunswick.en.craigslist.ca/
+      uri_orig: http://newbrunswick.craigslist.ca/
+    niagara region:
+      name: niagara region
+      uid: nsc
+      uri_dest: http://niagara.en.craigslist.ca/
+      uri_orig: http://niagara.craigslist.ca/
+    ottawa-hull-gatineau:
+      name: ottawa-hull-gatineau
+      uid: ott
+      uri_dest: http://ottawa.en.craigslist.ca/
+      uri_orig: http://ottawa.craigslist.ca/
+    owen sound:
+      name: owen sound
+      uid: ows
+      uri_dest: http://owensound.en.craigslist.ca/
+      uri_orig: http://owensound.craigslist.ca/
+    peace river country:
+      name: peace river country
+      uid: pax
+      uri_dest: http://peace.en.craigslist.ca/
+      uri_orig: http://peace.craigslist.ca/
+    peterborough:
+      name: peterborough
+      uid: ypq
+      uri_dest: http://peterborough.en.craigslist.ca/
+      uri_orig: http://peterborough.craigslist.ca/
+    prince edward island:
+      name: prince edward island
+      uid: pei
+      uri_dest: http://pei.en.craigslist.ca/
+      uri_orig: http://pei.craigslist.ca/
+    prince george:
+      name: prince george
+      uid: yxs
+      uri_dest: http://princegeorge.en.craigslist.ca/
+      uri_orig: http://princegeorge.craigslist.ca/
+    quebec city:
+      name: quebec city
+      uid: qbc
+      uri_dest: http://quebec.en.craigslist.ca/
+      uri_orig: http://quebec.craigslist.ca/
+    red deer:
+      name: red deer
+      uid: red
+      uri_dest: http://reddeer.en.craigslist.ca/
+      uri_orig: http://reddeer.craigslist.ca/
+    regina:
+      name: regina
+      uid: reg
+      uri_dest: http://regina.en.craigslist.ca/
+      uri_orig: http://regina.craigslist.ca/
+    saguenay:
+      name: saguenay
+      uid: sgy
+      uri_dest: http://saguenay.en.craigslist.ca/
+      uri_orig: http://saguenay.craigslist.ca/
+    sarnia:
+      name: sarnia
+      uid: srn
+      uri_dest: http://sarnia.en.craigslist.ca/
+      uri_orig: http://sarnia.craigslist.ca/
+    saskatoon:
+      name: saskatoon
+      uid: skt
+      uri_dest: http://saskatoon.en.craigslist.ca/
+      uri_orig: http://saskatoon.craigslist.ca/
+    'sault ste marie, ON':
+      name: 'sault ste marie, ON'
+      uid: soo
+      uri_dest: http://soo.en.craigslist.ca/
+      uri_orig: http://soo.craigslist.ca/
+    sherbrooke:
+      name: sherbrooke
+      uid: shb
+      uri_dest: http://sherbrooke.en.craigslist.ca/
+      uri_orig: http://sherbrooke.craigslist.ca/
+    skeena-bulkley:
+      name: skeena-bulkley
+      uid: ske
+      uri_dest: http://skeena.en.craigslist.ca/
+      uri_orig: http://skeena.craigslist.ca/
+    "st john's, NL":
+      name: "st john's, NL"
+      uid: nfl
+      uri_dest: http://newfoundland.en.craigslist.ca/
+      uri_orig: http://newfoundland.craigslist.ca/
+    sudbury:
+      name: sudbury
+      uid: sud
+      uri_dest: http://sudbury.en.craigslist.ca/
+      uri_orig: http://sudbury.craigslist.ca/
+    sunshine coast:
+      name: sunshine coast
+      uid: sun
+      uri_dest: http://sunshine.en.craigslist.ca/
+      uri_orig: http://sunshine.craigslist.ca/
+    territories:
+      name: territories
+      uid: toc
+      uri_dest: http://territories.en.craigslist.ca/
+      uri_orig: http://territories.craigslist.ca/
+    thunder bay:
+      name: thunder bay
+      uid: tby
+      uri_dest: http://thunderbay.en.craigslist.ca/
+      uri_orig: http://thunderbay.craigslist.ca/
+    toronto:
+      name: toronto
+      uid: tor
+      uri_dest: http://toronto.en.craigslist.ca/
+      uri_orig: http://toronto.craigslist.ca/
+    trois-rivieres:
+      name: trois-rivieres
+      uid: trs
+      uri_dest: http://troisrivieres.en.craigslist.ca/
+      uri_orig: http://troisrivieres.craigslist.ca/
+    'vancouver, BC':
+      name: 'vancouver, BC'
+      uid: van
+      uri_dest: http://vancouver.en.craigslist.ca/
+      uri_orig: http://vancouver.craigslist.ca/
+    victoria:
+      name: victoria
+      uid: vic
+      uri_dest: http://victoria.en.craigslist.ca/
+      uri_orig: http://victoria.craigslist.ca/
+    'whistler, BC':
+      name: 'whistler, BC'
+      uid: whi
+      uri_dest: http://whistler.en.craigslist.ca/
+      uri_orig: http://whistler.craigslist.ca/
+    whitehorse:
+      name: whitehorse
+      uid: whh
+      uri_dest: http://whitehorse.en.craigslist.ca/
+      uri_orig: http://whitehorse.craigslist.ca/
+    windsor:
+      name: windsor
+      uid: wsr
+      uri_dest: http://windsor.en.craigslist.ca/
+      uri_orig: http://windsor.craigslist.ca/
+    winnipeg:
+      name: winnipeg
+      uid: win
+      uri_dest: http://winnipeg.en.craigslist.ca/
+      uri_orig: http://winnipeg.craigslist.ca/
+    yellowknife:
+      name: yellowknife
+      uid: ykf
+      uri_dest: http://yellowknife.en.craigslist.ca/
+      uri_orig: http://yellowknife.craigslist.ca/
+  uri_dest: http://geo.craigslist.org/iso/ca
+  uri_orig: http://geo.craigslist.org/iso/ca
+chile:
+  name: chile
+  uid: scl
+  uri_dest: http://santiago.en.craigslist.org
+  uri_orig: http://geo.craigslist.org/iso/cl
+china:
+  name: china
+  subsites:
+    beijing:
+      name: beijing
+      uid: pek
+      uri_dest: http://beijing.craigslist.com.cn/
+      uri_orig: http://beijing.craigslist.com.cn/
+    chengdu:
+      name: chengdu
+      uid: ctu
+      uri_dest: http://chengdu.craigslist.com.cn/
+      uri_orig: http://chengdu.craigslist.com.cn/
+    chongqing:
+      name: chongqing
+      uid: ckg
+      uri_dest: http://chongqing.craigslist.com.cn/
+      uri_orig: http://chongqing.craigslist.com.cn/
+    dalian:
+      name: dalian
+      uid: dlc
+      uri_dest: http://dalian.craigslist.com.cn/
+      uri_orig: http://dalian.craigslist.com.cn/
+    guangzhou:
+      name: guangzhou
+      uid: can
+      uri_dest: http://guangzhou.craigslist.com.cn/
+      uri_orig: http://guangzhou.craigslist.com.cn/
+    hangzhou:
+      name: hangzhou
+      uid: hgh
+      uri_dest: http://hangzhou.craigslist.com.cn/
+      uri_orig: http://hangzhou.craigslist.com.cn/
+    hong kong:
+      name: hong kong
+      uid: hkg
+      uri_dest: http://hongkong.craigslist.hk/
+      uri_orig: http://hongkong.craigslist.hk/
+    nanjing:
+      name: nanjing
+      uid: nkg
+      uri_dest: http://nanjing.craigslist.com.cn/
+      uri_orig: http://nanjing.craigslist.com.cn/
+    shanghai:
+      name: shanghai
+      uid: sha
+      uri_dest: http://shanghai.craigslist.com.cn/
+      uri_orig: http://shanghai.craigslist.com.cn/
+    shenyang:
+      name: shenyang
+      uid: she
+      uri_dest: http://shenyang.craigslist.com.cn/
+      uri_orig: http://shenyang.craigslist.com.cn/
+    shenzhen:
+      name: shenzhen
+      uid: szx
+      uri_dest: http://shenzhen.craigslist.com.cn/
+      uri_orig: http://shenzhen.craigslist.com.cn/
+    wuhan:
+      name: wuhan
+      uid: wuh
+      uri_dest: http://wuhan.craigslist.com.cn/
+      uri_orig: http://wuhan.craigslist.com.cn/
+    xi'an:
+      name: xi'an
+      uid: xiy
+      uri_dest: http://xian.craigslist.com.cn/
+      uri_orig: http://xian.craigslist.com.cn/
+  uri_dest: http://geo.craigslist.org/iso/cn
+  uri_orig: http://geo.craigslist.org/iso/cn
+colombia:
+  name: colombia
+  uid: bog
+  uri_dest: http://colombia.en.craigslist.org
+  uri_orig: http://geo.craigslist.org/iso/co
+copenhagen:
+  name: copenhagen
+  uid: cop
+  uri_dest: http://copenhagen.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/dk
+costa rica:
+  name: costa rica
+  uid: cri
+  uri_dest: http://costarica.en.craigslist.org
+  uri_orig: http://geo.craigslist.org/iso/cr
+croatia:
+  name: croatia
+  uid: zag
+  uri_dest: http://zagreb.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/hr
+dominican republic:
+  name: dominican republic
+  uid: sdq
+  uri_dest: http://santodomingo.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/do
+dublin:
+  name: dublin
+  uid: dub
+  uri_dest: http://dublin.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/ie
+ecuador:
+  name: ecuador
+  uid: qui
+  uri_dest: http://quito.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/ec
+egypt:
+  name: egypt
+  uid: cai
+  uri_dest: http://cairo.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/eg
+el salvador:
+  name: el salvador
+  uid: sal
+  uri_dest: http://elsalvador.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/sv
+ethiopia:
+  name: ethiopia
+  uid: add
+  uri_dest: http://addisababa.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/et
+finland:
+  name: finland
+  uid: hel
+  uri_dest: http://helsinki.craigslist.fi/
+  uri_orig: http://geo.craigslist.org/iso/fi
+france:
+  name: france
+  subsites:
+    bordeaux:
+      name: bordeaux
+      uid: bod
+      uri_dest: http://bordeaux.en.craigslist.org/
+      uri_orig: http://bordeaux.craigslist.org/
+    brittany:
+      name: brittany
+      uid: rns
+      uri_dest: http://rennes.en.craigslist.org/
+      uri_orig: http://rennes.craigslist.org/
+    grenoble:
+      name: grenoble
+      uid: gnb
+      uri_dest: http://grenoble.en.craigslist.org/
+      uri_orig: http://grenoble.craigslist.org/
+    lille:
+      name: lille
+      uid: lil
+      uri_dest: http://lille.en.craigslist.org/
+      uri_orig: http://lille.craigslist.org/
+    loire valley:
+      name: loire valley
+      uid: nte
+      uri_dest: http://loire.en.craigslist.org/
+      uri_orig: http://loire.craigslist.org/
+    lyon:
+      name: lyon
+      uid: lys
+      uri_dest: http://lyon.en.craigslist.org/
+      uri_orig: http://lyon.craigslist.org/
+    marseille:
+      name: marseille
+      uid: mrs
+      uri_dest: http://marseilles.en.craigslist.org/
+      uri_orig: http://marseilles.craigslist.org/
+    montpellier:
+      name: montpellier
+      uid: mpl
+      uri_dest: http://montpellier.en.craigslist.org/
+      uri_orig: http://montpellier.craigslist.org/
+    nice / cote d'azur:
+      name: nice / cote d'azur
+      uid: nce
+      uri_dest: http://cotedazur.en.craigslist.org/
+      uri_orig: http://cotedazur.craigslist.org/
+    normandy:
+      name: normandy
+      uid: rou
+      uri_dest: http://rouen.en.craigslist.org/
+      uri_orig: http://rouen.craigslist.org/
+    paris:
+      name: paris
+      uid: par
+      uri_dest: http://paris.en.craigslist.org/
+      uri_orig: http://paris.craigslist.org/
+    strasbourg:
+      name: strasbourg
+      uid: sxb
+      uri_dest: http://strasbourg.en.craigslist.org/
+      uri_orig: http://strasbourg.craigslist.org/
+    toulouse:
+      name: toulouse
+      uid: tls
+      uri_dest: http://toulouse.en.craigslist.org/
+      uri_orig: http://toulouse.craigslist.org/
+  uri_dest: http://geo.craigslist.org/iso/fr
+  uri_orig: http://geo.craigslist.org/iso/fr
+germany:
+  name: germany
+  subsites:
+    berlin:
+      name: berlin
+      uid: ber
+      uri_dest: http://berlin.en.craigslist.de/
+      uri_orig: http://berlin.craigslist.de/
+    bremen:
+      name: bremen
+      uid: brm
+      uri_dest: http://bremen.en.craigslist.de/
+      uri_orig: http://bremen.craigslist.de/
+    cologne:
+      name: cologne
+      uid: cgn
+      uri_dest: http://cologne.en.craigslist.de/
+      uri_orig: http://cologne.craigslist.de/
+    dresden:
+      name: dresden
+      uid: drs
+      uri_dest: http://dresden.en.craigslist.de/
+      uri_orig: http://dresden.craigslist.de/
+    dusseldorf:
+      name: dusseldorf
+      uid: dus
+      uri_dest: http://dusseldorf.en.craigslist.de/
+      uri_orig: http://dusseldorf.craigslist.de/
+    essen / ruhr:
+      name: essen / ruhr
+      uid: ess
+      uri_dest: http://essen.en.craigslist.de/
+      uri_orig: http://essen.craigslist.de/
+    frankfurt:
+      name: frankfurt
+      uid: fra
+      uri_dest: http://frankfurt.en.craigslist.de/
+      uri_orig: http://frankfurt.craigslist.de/
+    hamburg:
+      name: hamburg
+      uid: ham
+      uri_dest: http://hamburg.en.craigslist.de/
+      uri_orig: http://hamburg.craigslist.de/
+    hannover:
+      name: hannover
+      uid: haj
+      uri_dest: http://hannover.en.craigslist.de/
+      uri_orig: http://hannover.craigslist.de/
+    heidelberg:
+      name: heidelberg
+      uid: hdb
+      uri_dest: http://heidelberg.en.craigslist.de/
+      uri_orig: http://heidelberg.craigslist.de/
+    kaiserslautern:
+      name: kaiserslautern
+      uid: klt
+      uri_dest: http://kaiserslautern.en.craigslist.de/
+      uri_orig: http://kaiserslautern.craigslist.de/
+    leipzig:
+      name: leipzig
+      uid: lej
+      uri_dest: http://leipzig.en.craigslist.de/
+      uri_orig: http://leipzig.craigslist.de/
+    munich:
+      name: munich
+      uid: muc
+      uri_dest: http://munich.en.craigslist.de/
+      uri_orig: http://munich.craigslist.de/
+    nuremberg:
+      name: nuremberg
+      uid: nue
+      uri_dest: http://nuremberg.en.craigslist.de/
+      uri_orig: http://nuremberg.craigslist.de/
+    stuttgart:
+      name: stuttgart
+      uid: str
+      uri_dest: http://stuttgart.en.craigslist.de/
+      uri_orig: http://stuttgart.craigslist.de/
+  uri_dest: http://geo.craigslist.org/iso/de
+  uri_orig: http://geo.craigslist.org/iso/de
+ghana:
+  name: ghana
+  uid: acc
+  uri_dest: http://accra.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/gh
+greece:
+  name: greece
+  uid: ath
+  uri_dest: http://athens.craigslist.gr/
+  uri_orig: http://geo.craigslist.org/iso/gr
+guatemala:
+  name: guatemala
+  uid: gua
+  uri_dest: http://guatemala.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/gt
+india:
+  name: india
+  subsites:
+    ahmedabad:
+      name: ahmedabad
+      uid: amd
+      uri_dest: http://ahmedabad.craigslist.co.in/
+      uri_orig: http://ahmedabad.craigslist.co.in/
+    bangalore:
+      name: bangalore
+      uid: bng
+      uri_dest: http://bangalore.craigslist.co.in/
+      uri_orig: http://bangalore.craigslist.co.in/
+    bhubaneswar:
+      name: bhubaneswar
+      uid: bbi
+      uri_dest: http://bhubaneswar.craigslist.co.in/
+      uri_orig: http://bhubaneswar.craigslist.co.in/
+    chandigarh:
+      name: chandigarh
+      uid: ixc
+      uri_dest: http://chandigarh.craigslist.co.in/
+      uri_orig: http://chandigarh.craigslist.co.in/
+    chennai (madras):
+      name: chennai (madras)
+      uid: che
+      uri_dest: http://chennai.craigslist.co.in/
+      uri_orig: http://chennai.craigslist.co.in/
+    delhi:
+      name: delhi
+      uid: del
+      uri_dest: http://delhi.craigslist.co.in/
+      uri_orig: http://delhi.craigslist.co.in/
+    goa:
+      name: goa
+      uid: goa
+      uri_dest: http://goa.craigslist.co.in/
+      uri_orig: http://goa.craigslist.co.in/
+    hyderabad:
+      name: hyderabad
+      uid: hyd
+      uri_dest: http://hyderabad.craigslist.co.in/
+      uri_orig: http://hyderabad.craigslist.co.in/
+    indore:
+      name: indore
+      uid: idr
+      uri_dest: http://indore.craigslist.co.in/
+      uri_orig: http://indore.craigslist.co.in/
+    jaipur:
+      name: jaipur
+      uid: jai
+      uri_dest: http://jaipur.craigslist.co.in/
+      uri_orig: http://jaipur.craigslist.co.in/
+    kerala:
+      name: kerala
+      uid: cok
+      uri_dest: http://kerala.craigslist.co.in/
+      uri_orig: http://kerala.craigslist.co.in/
+    kolkata (calcutta):
+      name: kolkata (calcutta)
+      uid: kol
+      uri_dest: http://kolkata.craigslist.co.in/
+      uri_orig: http://kolkata.craigslist.co.in/
+    lucknow:
+      name: lucknow
+      uid: lko
+      uri_dest: http://lucknow.craigslist.co.in/
+      uri_orig: http://lucknow.craigslist.co.in/
+    mumbai:
+      name: mumbai
+      uid: mum
+      uri_dest: http://mumbai.craigslist.co.in/
+      uri_orig: http://mumbai.craigslist.co.in/
+    pune:
+      name: pune
+      uid: pnq
+      uri_dest: http://pune.craigslist.co.in/
+      uri_orig: http://pune.craigslist.co.in/
+    surat surat:
+      name: surat surat
+      uid: svt
+      uri_dest: http://surat.craigslist.co.in/
+      uri_orig: http://surat.craigslist.co.in/
+  uri_dest: http://geo.craigslist.org/iso/in
+  uri_orig: http://geo.craigslist.org/iso/in
+indonesia:
+  name: indonesia
+  uid: jkt
+  uri_dest: http://jakarta.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/id
+iran:
+  name: iran
+  uid: trh
+  uri_dest: http://tehran.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/ir
+iraq:
+  name: iraq
+  uid: bgd
+  uri_dest: http://baghdad.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/iq
+italy:
+  name: italy
+  subsites:
+    bologna:
+      name: bologna
+      uid: blq
+      uri_dest: http://bologna.en.craigslist.it/
+      uri_orig: http://bologna.craigslist.it/
+    florence / tuscany:
+      name: florence / tuscany
+      uid: flr
+      uri_dest: http://florence.en.craigslist.it/
+      uri_orig: http://florence.craigslist.it/
+    genoa:
+      name: genoa
+      uid: gen
+      uri_dest: http://genoa.en.craigslist.it/
+      uri_orig: http://genoa.craigslist.it/
+    milan:
+      name: milan
+      uid: mxp
+      uri_dest: http://milan.en.craigslist.it/
+      uri_orig: http://milan.craigslist.it/
+    napoli / campania:
+      name: napoli / campania
+      uid: nap
+      uri_dest: http://naples.en.craigslist.it/
+      uri_orig: http://naples.craigslist.it/
+    perugia:
+      name: perugia
+      uid: peg
+      uri_dest: http://perugia.en.craigslist.it/
+      uri_orig: http://perugia.craigslist.it/
+    rome:
+      name: rome
+      uid: rom
+      uri_dest: http://rome.en.craigslist.it/
+      uri_orig: http://rome.craigslist.it/
+    sardinia:
+      name: sardinia
+      uid: srd
+      uri_dest: http://sardinia.en.craigslist.it/
+      uri_orig: http://sardinia.craigslist.it/
+    sicilia:
+      name: sicilia
+      uid: sic
+      uri_dest: http://sicily.en.craigslist.it/
+      uri_orig: http://sicily.craigslist.it/
+    torino:
+      name: torino
+      uid: trn
+      uri_dest: http://torino.en.craigslist.it/
+      uri_orig: http://torino.craigslist.it/
+    venice / veneto:
+      name: venice / veneto
+      uid: vce
+      uri_dest: http://venice.en.craigslist.it/
+      uri_orig: http://venice.craigslist.it/
+  uri_dest: http://geo.craigslist.org/iso/it
+  uri_orig: http://geo.craigslist.org/iso/it
+japan:
+  name: japan
+  subsites:
+    fukuoka:
+      name: fukuoka
+      uid: fuk
+      uri_dest: http://fukuoka.craigslist.jp/
+      uri_orig: http://fukuoka.craigslist.jp/
+    hiroshima:
+      name: hiroshima
+      uid: hij
+      uri_dest: http://hiroshima.craigslist.jp/
+      uri_orig: http://hiroshima.craigslist.jp/
+    nagoya:
+      name: nagoya
+      uid: ngo
+      uri_dest: http://nagoya.craigslist.jp/
+      uri_orig: http://nagoya.craigslist.jp/
+    okinawa:
+      name: okinawa
+      uid: oka
+      uri_dest: http://okinawa.craigslist.jp/
+      uri_orig: http://okinawa.craigslist.jp/
+    osaka-kobe-kyoto:
+      name: osaka-kobe-kyoto
+      uid: osa
+      uri_dest: http://osaka.craigslist.jp/
+      uri_orig: http://osaka.craigslist.jp/
+    sapporo:
+      name: sapporo
+      uid: spp
+      uri_dest: http://sapporo.craigslist.jp/
+      uri_orig: http://sapporo.craigslist.jp/
+    sendai:
+      name: sendai
+      uid: sdj
+      uri_dest: http://sendai.craigslist.jp/
+      uri_orig: http://sendai.craigslist.jp/
+    tokyo:
+      name: tokyo
+      uid: tok
+      uri_dest: http://tokyo.craigslist.jp/
+      uri_orig: http://tokyo.craigslist.jp/
+  uri_dest: http://geo.craigslist.org/iso/jp
+  uri_orig: http://geo.craigslist.org/iso/jp
+kenya:
+  name: kenya
+  uid: nbo
+  uri_dest: http://kenya.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/ke
+kuwait:
+  name: kuwait
+  uid: kwi
+  uri_dest: http://kuwait.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/kw
+luxembourg:
+  name: luxembourg
+  uid: lux
+  uri_dest: http://luxembourg.en.craigslist.org
+  uri_orig: http://geo.craigslist.org/iso/lu
+malaysia:
+  name: malaysia
+  uid: mly
+  uri_dest: http://malaysia.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/my
+mexico:
+  name: mexico
+  subsites:
+    acapulco:
+      name: acapulco
+      uid: aca
+      uri_dest: http://acapulco.en.craigslist.com.mx/
+      uri_orig: http://acapulco.craigslist.com.mx/
+    baja california sur:
+      name: baja california sur
+      uid: bcs
+      uri_dest: http://bajasur.en.craigslist.com.mx/
+      uri_orig: http://bajasur.craigslist.com.mx/
+    chihuahua:
+      name: chihuahua
+      uid: chh
+      uri_dest: http://chihuahua.en.craigslist.com.mx/
+      uri_orig: http://chihuahua.craigslist.com.mx/
+    ciudad juarez:
+      name: ciudad juarez
+      uid: cjs
+      uri_dest: http://juarez.en.craigslist.com.mx/
+      uri_orig: http://juarez.craigslist.com.mx/
+    guadalajara:
+      name: guadalajara
+      uid: gdl
+      uri_dest: http://guadalajara.en.craigslist.com.mx/
+      uri_orig: http://guadalajara.craigslist.com.mx/
+    guanajuato:
+      name: guanajuato
+      uid: bjx
+      uri_dest: http://guanajuato.en.craigslist.com.mx/
+      uri_orig: http://guanajuato.craigslist.com.mx/
+    hermosillo:
+      name: hermosillo
+      uid: hrm
+      uri_dest: http://hermosillo.en.craigslist.com.mx/
+      uri_orig: http://hermosillo.craigslist.com.mx/
+    mazatlan:
+      name: mazatlan
+      uid: mzt
+      uri_dest: http://mazatlan.en.craigslist.com.mx/
+      uri_orig: http://mazatlan.craigslist.com.mx/
+    mexico city:
+      name: mexico city
+      uid: mex
+      uri_dest: http://mexicocity.en.craigslist.com.mx/
+      uri_orig: http://mexicocity.craigslist.com.mx/
+    monterrey:
+      name: monterrey
+      uid: mty
+      uri_dest: http://monterrey.en.craigslist.com.mx/
+      uri_orig: http://monterrey.craigslist.com.mx/
+    oaxaca:
+      name: oaxaca
+      uid: oax
+      uri_dest: http://oaxaca.en.craigslist.com.mx/
+      uri_orig: http://oaxaca.craigslist.com.mx/
+    puebla:
+      name: puebla
+      uid: pbl
+      uri_dest: http://puebla.en.craigslist.com.mx/
+      uri_orig: http://puebla.craigslist.com.mx/
+    puerto vallarta:
+      name: puerto vallarta
+      uid: pvr
+      uri_dest: http://pv.en.craigslist.com.mx/
+      uri_orig: http://pv.craigslist.com.mx/
+    tijuana:
+      name: tijuana
+      uid: tij
+      uri_dest: http://tijuana.en.craigslist.com.mx/
+      uri_orig: http://tijuana.craigslist.com.mx/
+    veracruz:
+      name: veracruz
+      uid: vcz
+      uri_dest: http://veracruz.en.craigslist.com.mx/
+      uri_orig: http://veracruz.craigslist.com.mx/
+    yucatan:
+      name: yucatan
+      uid: yuc
+      uri_dest: http://yucatan.en.craigslist.com.mx/
+      uri_orig: http://yucatan.craigslist.com.mx/
+  uri_dest: http://geo.craigslist.org/iso/mx
+  uri_orig: http://geo.craigslist.org/iso/mx
+montevideo:
+  name: montevideo
+  uid: mvd
+  uri_dest: http://montevideo.en.craigslist.org
+  uri_orig: http://geo.craigslist.org/iso/uy
+morocco:
+  name: morocco
+  uid: cas
+  uri_dest: http://casablanca.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/ma
+nicaragua:
+  name: nicaragua
+  uid: mga
+  uri_dest: http://managua.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/nc
+norway:
+  name: norway
+  uid: osl
+  uri_dest: http://oslo.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/no
+pakistan:
+  name: pakistan
+  uid: pak
+  uri_dest: http://pakistan.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/pk
+panama:
+  name: panama
+  uid: pan
+  uri_dest: http://panama.en.craigslist.org
+  uri_orig: http://geo.craigslist.org/iso/pa
+peru:
+  name: peru
+  uid: lim
+  uri_dest: http://lima.en.craigslist.org
+  uri_orig: http://geo.craigslist.org/iso/pe
+phillipines:
+  name: phillipines
+  subsites:
+    bacolod:
+      name: bacolod
+      uid: bcd
+      uri_dest: http://bacolod.craigslist.com.ph/
+      uri_orig: http://bacolod.craigslist.com.ph/
+    bicol region:
+      name: bicol region
+      uid: wnp
+      uri_dest: http://naga.craigslist.com.ph/
+      uri_orig: http://naga.craigslist.com.ph/
+    cagayan de oro:
+      name: cagayan de oro
+      uid: cdo
+      uri_dest: http://cdo.craigslist.com.ph/
+      uri_orig: http://cdo.craigslist.com.ph/
+    cebu:
+      name: cebu
+      uid: ceb
+      uri_dest: http://cebu.craigslist.com.ph/
+      uri_orig: http://cebu.craigslist.com.ph/
+    davao city:
+      name: davao city
+      uid: dvo
+      uri_dest: http://davaocity.craigslist.com.ph/
+      uri_orig: http://davaocity.craigslist.com.ph/
+    iloilo:
+      name: iloilo
+      uid: ilo
+      uri_dest: http://iloilo.craigslist.com.ph/
+      uri_orig: http://iloilo.craigslist.com.ph/
+    manila:
+      name: manila
+      uid: mnl
+      uri_dest: http://manila.craigslist.com.ph/
+      uri_orig: http://manila.craigslist.com.ph/
+    pampanga:
+      name: pampanga
+      uid: crk
+      uri_dest: http://pampanga.craigslist.com.ph/
+      uri_orig: http://pampanga.craigslist.com.ph/
+    zamboanga:
+      name: zamboanga
+      uid: zam
+      uri_dest: http://zamboanga.craigslist.com.ph/
+      uri_orig: http://zamboanga.craigslist.com.ph/
+  uri_dest: http://geo.craigslist.org/iso/ph
+  uri_orig: http://geo.craigslist.org/iso/ph
+poland:
+  name: poland
+  uid: waw
+  uri_dest: http://warsaw.craigslist.pl/
+  uri_orig: http://geo.craigslist.org/iso/pl
+prague:
+  name: prague
+  uid: prg
+  uri_dest: http://prague.craigslist.cz/
+  uri_orig: http://geo.craigslist.org/iso/cz
+puerto rico:
+  name: puerto rico
+  uid: pri
+  uri_dest: http://puertorico.en.craigslist.org
+  uri_orig: http://geo.craigslist.org/iso/pr
+reykjavik:
+  name: reykjavik
+  uid: rkv
+  uri_dest: http://reykjavik.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/is
+romania:
+  name: romania
+  uid: buh
+  uri_dest: http://bucharest.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/ro
+russia:
+  name: russia
+  subsites:
+    moscow:
+      name: moscow
+      uid: mos
+      uri_dest: http://moscow.craigslist.org/
+      uri_orig: http://moscow.craigslist.org/
+    st petersburg:
+      name: st petersburg
+      uid: stp
+      uri_dest: http://stpetersburg.craigslist.org/
+      uri_orig: http://stpetersburg.craigslist.org/
+  uri_dest: http://geo.craigslist.org/iso/ru
+  uri_orig: http://geo.craigslist.org/iso/ru
+seoul:
+  name: seoul
+  uid: sel
+  uri_dest: http://seoul.craigslist.co.kr/
+  uri_orig: http://geo.craigslist.org/iso/kr
+singapore:
+  name: singapore
+  uid: sng
+  uri_dest: http://singapore.craigslist.com.sg/
+  uri_orig: http://geo.craigslist.org/iso/sg
+south africa:
+  name: south africa
+  subsites:
+    cape town:
+      name: cape town
+      uid: cpt
+      uri_dest: http://capetown.craigslist.co.za/
+      uri_orig: http://capetown.craigslist.co.za/
+    durban:
+      name: durban
+      uid: dur
+      uri_dest: http://durban.craigslist.co.za/
+      uri_orig: http://durban.craigslist.co.za/
+    johannesburg:
+      name: johannesburg
+      uid: jnb
+      uri_dest: http://johannesburg.craigslist.co.za/
+      uri_orig: http://johannesburg.craigslist.co.za/
+    pretoria:
+      name: pretoria
+      uid: hpr
+      uri_dest: http://pretoria.craigslist.co.za/
+      uri_orig: http://pretoria.craigslist.co.za/
+  uri_dest: http://geo.craigslist.org/iso/za
+  uri_orig: http://geo.craigslist.org/iso/za
+spain:
+  name: spain
+  subsites:
+    alicante:
+      name: alicante
+      uid: alc
+      uri_dest: http://alicante.en.craigslist.es/
+      uri_orig: http://alicante.craigslist.es/
+    baleares:
+      name: baleares
+      uid: ibz
+      uri_dest: http://baleares.en.craigslist.es/
+      uri_orig: http://baleares.craigslist.es/
+    barcelona:
+      name: barcelona
+      uid: bar
+      uri_dest: http://barcelona.en.craigslist.es/
+      uri_orig: http://barcelona.craigslist.es/
+    bilbao:
+      name: bilbao
+      uid: bio
+      uri_dest: http://bilbao.en.craigslist.es/
+      uri_orig: http://bilbao.craigslist.es/
+    cadiz:
+      name: cadiz
+      uid: cdz
+      uri_dest: http://cadiz.en.craigslist.es/
+      uri_orig: http://cadiz.craigslist.es/
+    canarias:
+      name: canarias
+      uid: tfn
+      uri_dest: http://canarias.en.craigslist.es/
+      uri_orig: http://canarias.craigslist.es/
+    granada:
+      name: granada
+      uid: grx
+      uri_dest: http://granada.en.craigslist.es/
+      uri_orig: http://granada.craigslist.es/
+    madrid:
+      name: madrid
+      uid: mdd
+      uri_dest: http://madrid.en.craigslist.es/
+      uri_orig: http://madrid.craigslist.es/
+    malaga:
+      name: malaga
+      uid: agp
+      uri_dest: http://malaga.en.craigslist.es/
+      uri_orig: http://malaga.craigslist.es/
+    sevilla:
+      name: sevilla
+      uid: sev
+      uri_dest: http://sevilla.en.craigslist.es/
+      uri_orig: http://sevilla.craigslist.es/
+    valencia:
+      name: valencia
+      uid: val
+      uri_dest: http://valencia.en.craigslist.es/
+      uri_orig: http://valencia.craigslist.es/
+  uri_dest: http://geo.craigslist.org/iso/es
+  uri_orig: http://geo.craigslist.org/iso/es
+sweden:
+  name: sweden
+  uid: sth
+  uri_dest: http://stockholm.craigslist.se/
+  uri_orig: http://geo.craigslist.org/iso/se
+switzerland:
+  name: switzerland
+  subsites:
+    basel:
+      name: basel
+      uid: bsl
+      uri_dest: http://basel.en.craigslist.ch/
+      uri_orig: http://basel.craigslist.ch/
+    bern:
+      name: bern
+      uid: brn
+      uri_dest: http://bern.en.craigslist.ch/
+      uri_orig: http://bern.craigslist.ch/
+    geneva:
+      name: geneva
+      uid: gva
+      uri_dest: http://geneva.en.craigslist.ch/
+      uri_orig: http://geneva.craigslist.ch/
+    lausanne:
+      name: lausanne
+      uid: lau
+      uri_dest: http://lausanne.craigslist.ch/
+      uri_orig: http://lausanne.craigslist.ch/
+    zurich:
+      name: zurich
+      uid: zur
+      uri_dest: http://zurich.en.craigslist.ch/
+      uri_orig: http://zurich.craigslist.ch/
+  uri_dest: http://geo.craigslist.org/iso/ch
+  uri_orig: http://geo.craigslist.org/iso/ch
+taiwan:
+  name: taiwan
+  uid: twd
+  uri_dest: http://taipei.craigslist.com.tw/
+  uri_orig: http://geo.craigslist.org/iso/tw
+thailand:
+  name: thailand
+  uid: bkk
+  uri_dest: http://bangkok.craigslist.co.th/
+  uri_orig: http://geo.craigslist.org/iso/th
+tunisia:
+  name: tunisia
+  uid: tun
+  uri_dest: http://tunis.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/tn
+turkey:
+  name: turkey
+  uid: ist
+  uri_dest: http://istanbul.craigslist.com.tr/
+  uri_orig: http://geo.craigslist.org/iso/tr
+ukraine:
+  name: ukraine
+  uid: kbp
+  uri_dest: http://ukraine.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/ua
+united arab emirates:
+  name: united arab emirates
+  uid: uae
+  uri_dest: http://dubai.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/ae
+united kingdom:
+  name: united kingdom
+  subsites:
+    aberdeen:
+      name: aberdeen
+      uid: abz
+      uri_dest: http://aberdeen.craigslist.co.uk/
+      uri_orig: http://aberdeen.craigslist.co.uk/
+    bath:
+      name: bath
+      uid: bth
+      uri_dest: http://bath.craigslist.co.uk/
+      uri_orig: http://bath.craigslist.co.uk/
+    belfast:
+      name: belfast
+      uid: blf
+      uri_dest: http://belfast.craigslist.co.uk/
+      uri_orig: http://belfast.craigslist.co.uk/
+    birmingham / west mids:
+      name: birmingham / west mids
+      uid: bhx
+      uri_dest: http://birmingham.craigslist.co.uk/
+      uri_orig: http://birmingham.craigslist.co.uk/
+    brighton:
+      name: brighton
+      uid: bri
+      uri_dest: http://brighton.craigslist.co.uk/
+      uri_orig: http://brighton.craigslist.co.uk/
+    bristol:
+      name: bristol
+      uid: brs
+      uri_dest: http://bristol.craigslist.co.uk/
+      uri_orig: http://bristol.craigslist.co.uk/
+    'cambridge, UK':
+      name: 'cambridge, UK'
+      uid: cam
+      uri_dest: http://cambridge.craigslist.co.uk/
+      uri_orig: http://cambridge.craigslist.co.uk/
+    cardiff / wales:
+      name: cardiff / wales
+      uid: cym
+      uri_dest: http://cardiff.craigslist.co.uk/
+      uri_orig: http://cardiff.craigslist.co.uk/
+    coventry:
+      name: coventry
+      uid: cov
+      uri_dest: http://coventry.craigslist.co.uk/
+      uri_orig: http://coventry.craigslist.co.uk/
+    derby:
+      name: derby
+      uid: dby
+      uri_dest: http://derby.craigslist.co.uk/
+      uri_orig: http://derby.craigslist.co.uk/
+    devon & cornwall:
+      name: devon & cornwall
+      uid: dvc
+      uri_dest: http://devon.craigslist.co.uk/
+      uri_orig: http://devon.craigslist.co.uk/
+    dundee:
+      name: dundee
+      uid: dnd
+      uri_dest: http://dundee.craigslist.co.uk/
+      uri_orig: http://dundee.craigslist.co.uk/
+    east anglia:
+      name: east anglia
+      uid: nwh
+      uri_dest: http://norwich.craigslist.co.uk/
+      uri_orig: http://norwich.craigslist.co.uk/
+    east midlands:
+      name: east midlands
+      uid: eml
+      uri_dest: http://eastmids.craigslist.co.uk/
+      uri_orig: http://eastmids.craigslist.co.uk/
+    edinburgh:
+      name: edinburgh
+      uid: edi
+      uri_dest: http://edinburgh.craigslist.co.uk/
+      uri_orig: http://edinburgh.craigslist.co.uk/
+    essex:
+      name: essex
+      uid: esx
+      uri_dest: http://essex.craigslist.co.uk/
+      uri_orig: http://essex.craigslist.co.uk/
+    glasgow:
+      name: glasgow
+      uid: gla
+      uri_dest: http://glasgow.craigslist.co.uk/
+      uri_orig: http://glasgow.craigslist.co.uk/
+    hampshire:
+      name: hampshire
+      uid: sou
+      uri_dest: http://hampshire.craigslist.co.uk/
+      uri_orig: http://hampshire.craigslist.co.uk/
+    kent:
+      name: kent
+      uid: ken
+      uri_dest: http://kent.craigslist.co.uk/
+      uri_orig: http://kent.craigslist.co.uk/
+    leeds:
+      name: leeds
+      uid: lds
+      uri_dest: http://leeds.craigslist.co.uk/
+      uri_orig: http://leeds.craigslist.co.uk/
+    liverpool:
+      name: liverpool
+      uid: liv
+      uri_dest: http://liverpool.craigslist.co.uk/
+      uri_orig: http://liverpool.craigslist.co.uk/
+    london:
+      name: london
+      uid: ldn
+      uri_dest: http://london.craigslist.co.uk/
+      uri_orig: http://london.craigslist.co.uk/
+    manchester:
+      name: manchester
+      uid: man
+      uri_dest: http://manchester.craigslist.co.uk/
+      uri_orig: http://manchester.craigslist.co.uk/
+    newcastle / NE england:
+      name: newcastle / NE england
+      uid: ncl
+      uri_dest: http://newcastle.craigslist.co.uk/
+      uri_orig: http://newcastle.craigslist.co.uk/
+    nottingham:
+      name: nottingham
+      uid: not
+      uri_dest: http://nottingham.craigslist.co.uk/
+      uri_orig: http://nottingham.craigslist.co.uk/
+    oxford:
+      name: oxford
+      uid: oxf
+      uri_dest: http://oxford.craigslist.co.uk/
+      uri_orig: http://oxford.craigslist.co.uk/
+    sheffield:
+      name: sheffield
+      uid: shf
+      uri_dest: http://sheffield.craigslist.co.uk/
+      uri_orig: http://sheffield.craigslist.co.uk/
+  uri_dest: http://geo.craigslist.org/iso/gb
+  uri_orig: http://geo.craigslist.org/iso/gb
+venezuela:
+  name: venezuela
+  uid: ccs
+  uri_dest: http://caracas.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/ve
+vienna:
+  name: vienna
+  uid: vie
+  uri_dest: http://vienna.en.craigslist.at
+  uri_orig: http://geo.craigslist.org/iso/at
+vietnam:
+  name: vietnam
+  uid: vtn
+  uri_dest: http://vietnam.craigslist.org/
+  uri_orig: http://geo.craigslist.org/iso/vn
