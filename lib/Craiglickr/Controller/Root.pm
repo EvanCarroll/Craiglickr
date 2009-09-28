@@ -22,7 +22,9 @@ sub cities :Chained('craiglickr') :CaptureArgs(1) {
 
 sub configureCities :Chained('craiglickr') :PathPart('cities') :Args(0) {
 	my ( $self, $c ) = @_;
-	$c->stash->{template} = 'configure.tt';
+	$c->stash->{cities} = $c->model('CraiglickrCities')->db;
+	$c->stash->{template} = 'cities.tt';
+
 }
 
 sub boards :Chained('cities') :Args(1) {
@@ -53,7 +55,7 @@ sub configureBoards :Chained('cities') :PathPart('boards') :Args(0) {
 
 sub default :Path {
 	my ( $self, $c ) = @_;
-	$c->response->body( 'Page not found' );
+	$c->response->body( 'Page not found, maybe you want to check out <a href="/craiglickr">/craiglickr</a>' );
 	$c->response->status(404);
 }
 
