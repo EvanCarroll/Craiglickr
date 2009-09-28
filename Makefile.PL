@@ -14,6 +14,9 @@ requires 'MooseX::AttributeHelpers';
 requires 'HTML::TreeBuilder';
 requires 'MooseX::Types';
 requires 'MooseX::Types::Email';
+requires 'File::ShareDir';
+
+install_share 'share';
 
 resources(
 	'license',      => 'http://creativecommons.org/licenses/by-sa/3.0/'
