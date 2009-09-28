@@ -5,8 +5,6 @@ use warnings;
 
 use base 'Catalyst::View::TT';
 
-__PACKAGE__->config(TEMPLATE_EXTENSION => '.tt');
-
 =head1 NAME
 
 Craiglickr::View::TT - TT View for Craiglickr

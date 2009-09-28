@@ -1,0 +1,16 @@
+~~~~
+name: Craiglickr
+default_view: TT
+static:
+  dirs:
+    - static
+View::TT:
+  DEBUG: 1
+  PRE_CHOMP: 1
+  TEMPLATE_EXTENTION: .tt
+Model::CraiglickrPost:
+  cities:
+    - hou
+  boards:
+    - ctd
+

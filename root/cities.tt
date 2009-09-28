@@ -1,14 +1,17 @@
 <select> [% INCLUDE  iterate db = cities %] </select>
 
 [% BLOCK iterate %]
-	
-	[% FOREACH x IN db.keys %]
-
-		[% IF db.$x.exists('uid') %] [% PROCESS option node = db.$x %]
-		[% ELSE %] <optgroup label="[%db.$x.name%]"> [% INCLUDE iterate db = db.$x %] </optgroup>
+	[% FOREACH x IN db.keys.sort %]
+		[% IF db.$x.exists('uid') %]
+			[% PROCESS option node = db.$x %]
+		[% ELSE %]
+			<optgroup label="[% db.$x.name %]">
+			[% INCLUDE iterate db = db.$x.subsites %]
+			</optgroup>
 		[% END %]
-
 	[% END %]
 [% END %]
 
-[% BLOCK option %] <option value="[%node.uid%]"> [%node.name%] </option> [% END %]
+[% BLOCK option %]
+	<option value="[%node.uid%]"> [%node.name%] </option>
+[% END %]
