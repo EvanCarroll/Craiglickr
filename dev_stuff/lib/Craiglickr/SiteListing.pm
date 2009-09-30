@@ -48,7 +48,7 @@ has 'directory' => (
 			)
 		;
 
- 	## ones without iso codes
+		## ones without iso codes
 		push @boards
 			, Craiglickr::CommunitySite->new({
 				uri_orig => URI->new('http://geo.craigslist.org/iso')
