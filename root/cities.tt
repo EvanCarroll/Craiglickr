@@ -1,17 +1,34 @@
-<select> [% INCLUDE  iterate db = cities %] </select>
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">  
+<head>
+	<title>Craiglickr - Pick your cities</title>
+	<style type="text/css">
+		select { display:block }
+		body { font-size:.8em; font-family:sans-serif }
+		.foo optgroup { background-color:black }
+	</style>
+</head>
+<body>
+	<h1> Pick your cities </h1>
+	<form>
+		<ol>
+			<li> <select name="city1"> [% INCLUDE iterate db = cities %] </select> </li>
+		</ol>
+		<input type="submit" />
+	</form>
+</body>
+</html>
 [% BLOCK iterate %]
 	[% FOREACH x IN db.keys.sort %]
-		[% IF db.$x.exists('uid') %]
+		[% IF NOT db.$x.exists('subsites') %]
 			[% PROCESS option node = db.$x %]
 		[% ELSE %]
-			<optgroup label="[% db.$x.name %]">
+			<optgroup label="[% db.$x.name |html%]">
 			[% INCLUDE iterate db = db.$x.subsites %]
 			</optgroup>
 		[% END %]
 	[% END %]
 [% END %]
-
 [% BLOCK option %]
-	<option value="[%node.uid%]"> [%node.name%] </option>
+	<option value="[%node.uid%]"> [%node.name |html%] </option>
 [% END %]
