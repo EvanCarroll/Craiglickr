@@ -2,33 +2,76 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">  
 <head>
 	<title>Craiglickr - Pick your cities</title>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
 	<style type="text/css">
-		select { display:block }
 		body { font-size:.8em; font-family:sans-serif }
-		.foo optgroup { background-color:black }
+		h1 { font-size:larger }
+		optgroup, option {
+			font-style:normal;
+			font-weight:normal;
+			font-size:1em;
+			font-family:sans-serif;
+		}
+		optgroup { color:rgb(100,100,100) }
+		option { color:black; width:200px }
+		option[disabled] { color:rgb(100,100,100) }
+		label { display: none }
+		.rank1 { padding-left:1em }
+		.rank2 { padding-left:2em }
+		.rank3 { padding-left:3em }
+		.rank4 { padding-left:4em }
+		.rank4 { padding-left:5em }
+		.rank6 { padding-left:6em }
 	</style>
 </head>
 <body>
-	<h1> Pick your cities </h1>
-	<form>
+	<h1> Pick your cities (USA hardcoded for the time being):</h1>
+	<form action="[% c.request.uri %]" method="post">
 		<ol>
-			<li> <select name="city1"> [% INCLUDE iterate db = cities %] </select> </li>
+			<li> <label for="city1"> City </label> <select id="city1" name="city1">
+				<option disabled="disabled" selected="selected"> Click here and pick a city one </option>
+				[% INCLUDE iterate db = cities %]
+			</select> </li>
+			<li> <label for="city2"> City </label> <select id="city2" name="city2">
+				<option disabled="disabled" selected="selected"> And another.. (if you want) </option>
+				[% INCLUDE iterate db = cities %]
+			</select> </li>
+			<li> <label for="city3"> City </label> <select id="city3" name="city3">
+				<option disabled="disabled" selected="selected"> And another.. (if you want) </option>
+				[% INCLUDE iterate db = cities %]
+			</select> </li>
+			<li> <label for="city4"> City </label> <select id="city4" name="city4">
+				<option disabled="disabled" selected="selected"> You get the idea. </option>
+				[% INCLUDE iterate db = cities %]
+			</select> </li>
 		</ol>
+		<button onclick="javascript:reset();return false">Reset</button>
 		<input type="submit" />
 	</form>
 </body>
 </html>
 [% BLOCK iterate %]
+	[% DEFAULT rank = 0 %]
 	[% FOREACH x IN db.keys.sort %]
 		[% IF NOT db.$x.exists('subsites') %]
-			[% PROCESS option node = db.$x %]
+			[% PROCESS option node = db.$x, rank = rank, disabled = 0 %]
 		[% ELSE %]
-			<optgroup label="[% db.$x.name |html%]">
-			[% INCLUDE iterate db = db.$x.subsites %]
-			</optgroup>
+
+			[% IF rank == 0 %]
+				<optgroup label="[% db.$x.name |html%]">
+					[% INCLUDE iterate db = db.$x.subsites, rank = rank+1 %]
+				</optgroup>
+			[% ELSE %]
+				[% PROCESS option node = db.$x, disabled = 1 %]
+				[% INCLUDE iterate db = db.$x.subsites, rank = rank+1 %]
+			[% END %]
+
 		[% END %]
 	[% END %]
 [% END %]
 [% BLOCK option %]
-	<option value="[%node.uid%]"> [%node.name |html%] </option>
+	[% DEFAULT disabled = 0 %]
+	<option class="rank[%rank%]" value="[%node.uid%]" [%IF disabled%]disabled="disabled"[%END%]>
+		[%node.name |html%]
+	</option>
 [% END %]
