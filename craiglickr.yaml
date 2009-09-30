@@ -13,4 +13,6 @@ Model::CraiglickrPost:
     - hou
   boards:
     - ctd
+Model::CraiglickrCities:
+  only: United States
 
