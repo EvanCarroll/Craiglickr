@@ -22,8 +22,18 @@ sub locations :Chained('craiglickr') :CaptureArgs(1) {
 
 sub configureLocations :Chained('craiglickr') :PathPart('locations') :Args(0) {
 	my ( $self, $c ) = @_;
-	$c->stash->{locations} = $c->model('CraigsList')->locations;
-	$c->stash->{template} = 'locations.tt';
+	
+	if ( my %p = %{$c->request->params} ) {
+		my %unique;
+		$unique{$_}=undef for @{$p{loc}};
+		$c->res->redirect(
+			$c->uri_for( $self->action_for('configureBoards'), [join ',', keys %unique] )
+		);
+	}
+	else {
+		$c->stash->{craigslist}{locations} = $c->model('CraigsList')->locations;
+		$c->stash->{template} = 'locations.tt';
+	}
 
 }
 
@@ -50,6 +60,7 @@ sub boards :Chained('locations') :Args(1) {
 
 sub configureBoards :Chained('locations') :PathPart('boards') :Args(0) {
 	my ( $self, $c ) = @_;
+	use XXX; XXX $c->model('Craigslist')->for_sale;
 	$c->stash->{template} = 'configure.tt';
 }
 
