@@ -12,11 +12,8 @@ use File::ShareDir;
 use File::Spec;
 use YAML;
 
-has 'config' => (
-	isa  => 'HashRef'
-	, is => 'ro'
-	, required => 1
-);
+has 'only' => ( isa => 'Str', is => 'ro' );
+has 'crop' => ( isa => 'Str', is => 'ro', default => 0 );
 
 has 'db' => (
 	isa  => 'HashRef'
@@ -27,14 +24,16 @@ has 'db' => (
 		my $abs_path = File::ShareDir::dist_file('Craiglickr', 'cities.yaml' );
 	 	my $hash = YAML::LoadFile( $abs_path );
 
-		if ( exists $self->config->{only} ) {
-			delete $hash->{$_} foreach grep $_ ne $self->config->{only}, keys %$hash;
+		if ( $self->only and $self->crop ) {
+			$hash = delete $hash->{ $self->only };
+			$hash = $hash->{subsites};
+		}
+		elsif ( $self->only ) {
+			delete $hash->{$_} foreach grep $_ ne $self->only, keys %$hash;
 		}
 
 		$hash;
 	}
 );
-
-sub BUILDARGS { return { config => $_[2] } }
 
 1;

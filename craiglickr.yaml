@@ -15,4 +15,5 @@ Model::CraiglickrPost:
     - ctd
 Model::CraiglickrCities:
   only: United States
+  crop: true
 
