@@ -12,13 +12,29 @@ use File::ShareDir;
 use File::Spec;
 use YAML;
 
-has 'db' => (
-	isa => 'HashRef'
+has 'config' => (
+	isa  => 'HashRef'
 	, is => 'ro'
+	, required => 1
+);
+
+has 'db' => (
+	isa  => 'HashRef'
+	, is => 'ro'
+	, lazy => 1 ## required for some weird fucking reason
 	, default => sub {
+		my $self = shift;
 		my $abs_path = File::ShareDir::dist_file('Craiglickr', 'cities.yaml' );
-		YAML::LoadFile( $abs_path );
+	 	my $hash = YAML::LoadFile( $abs_path );
+
+		if ( exists $self->config->{only} ) {
+			delete $hash->{$_} foreach grep $_ ne $self->config->{only}, keys %$hash;
+		}
+
+		$hash;
 	}
 );
+
+sub BUILDARGS { return { config => $_[2] } }
 
 1;
