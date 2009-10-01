@@ -13,7 +13,7 @@ Model::CraiglickrPost:
     - hou
   boards:
     - ctd
-Model::CraiglickrCities:
-  only: United States
-  crop: true
+Model::Craigslist:
+  locations_only: United States
+  locations_crop: true
 

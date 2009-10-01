@@ -1,10 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">  
 <head>
-	<title>Craiglickr - Pick your cities</title>
+	<title>Craiglickr - Pick your locations to post to</title>
 	<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
 	<style type="text/css">
-		body { font-size:.8em; font-family:sans-serif }
+		body { font-size:.8em; font-family:sans-serif; width:400px; margin:auto }
 		h1 { font-size:larger }
 		optgroup, option {
 			font-style:normal;
@@ -13,7 +13,7 @@
 			font-family:sans-serif;
 		}
 		optgroup { color:rgb(100,100,100) }
-		option { color:black; width:200px }
+		option { color:black; width:200px; margin:0; padding:0 }
 		option[disabled] { color:rgb(100,100,100) }
 		label { display: none }
 		.rank1 { padding-left:1em }
@@ -25,24 +25,24 @@
 	</style>
 </head>
 <body>
-	<h1> Pick your cities (USA hardcoded for the time being):</h1>
+	<h1> Pick your locations:</h1>
 	<form action="[% c.request.uri %]" method="post">
 		<ol>
-			<li> <label for="city1"> City </label> <select id="city1" name="city1">
-				<option disabled="disabled" selected="selected"> Click here and pick a city one </option>
-				[% INCLUDE iterate db = cities %]
+			<li> <label for="location1"> Location </label> <select id="location1" name="location1">
+				<option disabled="disabled" selected="selected"> Click here and pick a location </option>
+				[% INCLUDE iterate db = locations %]
 			</select> </li>
-			<li> <label for="city2"> City </label> <select id="city2" name="city2">
+			<li> <label for="location2"> Location </label> <select id="location2" name="location2">
 				<option disabled="disabled" selected="selected"> And another.. (if you want) </option>
-				[% INCLUDE iterate db = cities %]
+				[% INCLUDE iterate db = locations %]
 			</select> </li>
-			<li> <label for="city3"> City </label> <select id="city3" name="city3">
+			<li> <label for="location3"> Location </label> <select id="location3" name="location3">
 				<option disabled="disabled" selected="selected"> And another.. (if you want) </option>
-				[% INCLUDE iterate db = cities %]
+				[% INCLUDE iterate db = locations %]
 			</select> </li>
-			<li> <label for="city4"> City </label> <select id="city4" name="city4">
+			<li> <label for="location4"> Location </label> <select id="location4" name="location4">
 				<option disabled="disabled" selected="selected"> You get the idea. </option>
-				[% INCLUDE iterate db = cities %]
+				[% INCLUDE iterate db = locations %]
 			</select> </li>
 		</ol>
 		<button onclick="javascript:reset();return false">Reset</button>
@@ -58,7 +58,7 @@
 		[% ELSE %]
 
 			[% IF rank == 0 %]
-				<optgroup label="[% db.$x.name |html%]">
+				<optgroup label="[% db.$x.description OR db.$x.name |html%]">
 					[% INCLUDE iterate db = db.$x.subsites, rank = rank+1 %]
 				</optgroup>
 			[% ELSE %]
@@ -72,6 +72,6 @@
 [% BLOCK option %]
 	[% DEFAULT disabled = 0 %]
 	<option class="rank[%rank%]" value="[%node.uid%]" [%IF disabled%]disabled="disabled"[%END%]>
-		[%node.name |html%]
+		[%node.description OR node.name |html%]
 	</option>
 [% END %]

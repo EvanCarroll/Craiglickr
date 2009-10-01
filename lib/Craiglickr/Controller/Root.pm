@@ -15,24 +15,24 @@ sub configureAll :Chained('craiglickr') :PathPart('') :Args(0) {
 	$c->stash->{template} = 'configure.tt';
 }
 
-sub cities :Chained('craiglickr') :CaptureArgs(1) {
-	my ( $self, $c, $cities ) = @_;
-	$c->stash->{'cities'} = [split /,/, $cities];
+sub locations :Chained('craiglickr') :CaptureArgs(1) {
+	my ( $self, $c, $locations ) = @_;
+	$c->stash->{'locations'} = [split /,/, $locations];
 }
 
-sub configureCities :Chained('craiglickr') :PathPart('cities') :Args(0) {
+sub configureLocations :Chained('craiglickr') :PathPart('locations') :Args(0) {
 	my ( $self, $c ) = @_;
-	$c->stash->{cities} = $c->model('CraiglickrCities')->db;
-	$c->stash->{template} = 'cities.tt';
+	$c->stash->{locations} = $c->model('CraigsList')->locations;
+	$c->stash->{template} = 'locations.tt';
 
 }
 
-sub boards :Chained('cities') :Args(1) {
+sub boards :Chained('locations') :Args(1) {
 	my ( $self, $c, $boards ) = @_;
 	$c->stash->{'boards'} = [split /,/, $boards];
 	
 	$c->stash->{posts} = Craiglickr::Post->new({
-			cities   => $c->stash->{cities}
+			locations   => $c->stash->{locations}
 			, boards => $c->stash->{boards}
 	})->get_forms;
 	
@@ -48,7 +48,7 @@ sub boards :Chained('cities') :Args(1) {
 	$c->stash->{template} = 'post.tt';
 }
 
-sub configureBoards :Chained('cities') :PathPart('boards') :Args(0) {
+sub configureBoards :Chained('locations') :PathPart('boards') :Args(0) {
 	my ( $self, $c ) = @_;
 	$c->stash->{template} = 'configure.tt';
 }
