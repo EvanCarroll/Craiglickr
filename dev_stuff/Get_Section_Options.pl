@@ -50,7 +50,7 @@ foreach my $cat ( qw/S/ ) {
 		
 	}
 
-	YAML::DumpFile( "$cat.yaml", [ \%data ] );
+	YAML::DumpFile( "$cat.yaml", \%data );
 
 }
 
