@@ -32,7 +32,7 @@ sub configureLocations :Chained('craiglickr') :PathPart('locations') :Args(0) {
 	}
 	else {
 		$c->stash->{craigslist}{locations} = $c->model('CraigsList')->locations;
-		$c->stash->{template} = 'locations.tt';
+		$c->stash->{template} = 'setup/locations.tt';
 	}
 
 }
@@ -60,8 +60,8 @@ sub boards :Chained('locations') :Args(1) {
 
 sub configureBoards :Chained('locations') :PathPart('boards') :Args(0) {
 	my ( $self, $c ) = @_;
-	use XXX; XXX $c->model('Craigslist')->for_sale;
-	$c->stash->{template} = 'configure.tt';
+	$c->stash->{craigslist}{section}{s} = $c->model('Craigslist')->for_sale;
+	$c->stash->{template} = 'setup/type/catagory/forsale.tt';
 }
 
 sub default :Path {
