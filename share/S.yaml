@@ -1,0 +1,121 @@
+---
+app:
+  code: app
+  text: appliances
+art:
+  code: art
+  text: arts & crafts
+atq:
+  code: atq
+  text: antiques
+bab:
+  code: bab
+  text: baby & kid stuff
+bar:
+  code: bar
+  text: barter
+bfs:
+  code: bfs
+  text: business/commercial
+bik:
+  code: bik
+  text: bicycles
+bks:
+  code: bks
+  text: books & magazines
+boa:
+  code: boa
+  text: boats
+clo:
+  code: clo
+  text: clothing & accessories
+clt:
+  code: clt
+  text: collectibles
+ctd:
+  code: ctd
+  text: 'cars & trucks - by dealer'
+cto:
+  code: cto
+  text: 'cars & trucks - by owner'
+ele:
+  code: ele
+  text: electronics
+emd:
+  code: emd
+  comment: no pornography please
+  text: cds / dvds / vhs
+for:
+  code: for
+  text: general for sale
+fud:
+  code: fud
+  text: 'furniture - by dealer'
+fuo:
+  code: fuo
+  text: 'furniture - by owner'
+gms:
+  code: gms
+  comment: no online or virtual sales here please
+  text: garage & moving sales
+grd:
+  code: grd
+  comment: legal sales of agricultural livestock OK
+  text: farm & garden
+hab:
+  code: hab
+  text: health and beauty
+hsh:
+  code: hsh
+  text: household items
+jwl:
+  code: jwl
+  text: jewelry
+mat:
+  code: mat
+  text: materials
+mcy:
+  code: mcy
+  text: motorcycles/scooters
+mob:
+  code: mob
+  text: cell phones
+msg:
+  code: msg
+  text: musical instruments
+pho:
+  code: pho
+  text: photo/video
+pts:
+  code: pts
+  text: auto parts
+rvs:
+  code: rvs
+  text: recreational vehicles
+spo:
+  code: spo
+  comment: no firearms or weapons please
+  text: sporting goods
+sys:
+  code: sys
+  text: computers & tech
+tag:
+  code: tag
+  text: toys & games
+tix:
+  code: tix
+  comment: please do not sell tickets for more than face value
+  text: tickets
+tls:
+  code: tls
+  text: tools
+vgm:
+  code: vgm
+  text: video gaming
+wan:
+  code: wan
+  text: items wanted
+zip:
+  code: zip
+  comment: 'no "wanted" ads, pets, promotional giveaways, or intangible/digital items please'
+  text: free stuff
