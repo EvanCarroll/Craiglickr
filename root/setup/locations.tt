@@ -15,7 +15,6 @@
 		optgroup { color:rgb(100,100,100) }
 		option { color:black; width:200px; margin:0; padding:0 }
 		option[disabled] { color:rgb(100,100,100) }
-		label { display: none }
 		.rank1 { padding-left:1em }
 		.rank2 { padding-left:2em }
 		.rank3 { padding-left:3em }
@@ -28,19 +27,19 @@
 	<h1> Pick your locations:</h1>
 	<form action="[% c.request.uri %]" method="post">
 		<ol>
-			<li> <label for="location1"> Location </label> <select id="location1" name="loc">
+			<li> <label for="location1"> <em>Required</em> &mdash; Primary Location </label> <select id="location1" name="loc">
 				<option disabled="disabled" selected="selected"> Click here and pick a location </option>
 				[% INCLUDE iterate db = craigslist.locations %]
 			</select> </li>
-			<li> <label for="location2"> Location </label> <select id="location2" name="loc">
+			<li> <label for="location2"> <em>Optional</em> &mdash; Secondary Location </label> <select id="location2" name="loc">
 				<option disabled="disabled" selected="selected"> And another.. (if you want) </option>
 				[% INCLUDE iterate db = craigslist.locations %]
 			</select> </li>
-			<li> <label for="location3"> Location </label> <select id="location3" name="loc">
+			<li> <label for="location3"> <em>Optional</em> &mdash; Third Location </label> <select id="location3" name="loc">
 				<option disabled="disabled" selected="selected"> And another.. (if you want) </option>
 				[% INCLUDE iterate db = craigslist.locations %]
 			</select> </li>
-			<li> <label for="location4"> Location </label> <select id="location4" name="loc">
+			<li> <label for="location4"> <em>Optional</em> &mdash; Fourth Location </label> <select id="location4" name="loc">
 				<option disabled="disabled" selected="selected"> You get the idea. </option>
 				[% INCLUDE iterate db = craigslist.locations %]
 			</select> </li>
