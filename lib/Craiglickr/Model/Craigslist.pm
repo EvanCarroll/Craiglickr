@@ -15,6 +15,19 @@ use YAML;
 has 'locations_only' => ( isa => 'Str', is => 'ro' );
 has 'locations_crop' => ( isa => 'Str', is => 'ro', default => 0 );
 
+has 'for_sale' => (
+	isa  => 'HashRef'
+	, is => 'ro'
+	, lazy => 1 ## required for some weird fucking reason
+	, default => sub {
+		my $self = shift;
+		my $abs_path = File::ShareDir::dist_file('Craiglickr', 'S.yaml' );
+	 	my $hash = YAML::LoadFile( $abs_path );
+
+		$hash;
+	}
+);
+
 has 'locations' => (
 	isa  => 'HashRef'
 	, is => 'ro'
