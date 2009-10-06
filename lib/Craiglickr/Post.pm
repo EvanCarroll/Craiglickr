@@ -9,13 +9,13 @@ use Craiglickr::Ad;
 
 use namespace::clean -except => 'meta';
 
-has 'cities' => (
+has 'locations' => (
 	isa  => 'ArrayRef[Str]'
 	, is => 'ro'
 	, default => sub { +[] }
 
 	, metaclass => 'Collection::Array'
-	, provides => { 'push' => 'add_city' }
+	, provides => { 'push' => 'add_location' }
 );
 
 has 'boards' => (
@@ -31,11 +31,11 @@ sub get_forms {
 	my $self = shift;
 
 	my @forms;
-	foreach my $city ( @{$self->cities} ) {
+	foreach my $location ( @{$self->locations} ) {
 		foreach my $board ( @{$self->boards} ) {
 
 			my $form = Craiglickr::HTTP::FormRetrieve->new({
-				city => $city
+				location => $location
 				, board   => $board
 				, section => 'S'
 			});
@@ -62,7 +62,7 @@ Craiglickr::Post
 
 Object that prep a post to Craigslist.
 
-Stores an array of cities to post to and an array of boards to post to, and then works by calling ->get_form, which will return a list of valid L<Craiglickr::HTTP::FormRetrieve>s.
+Stores an array of locations to post to and an array of boards to post to, and then works by calling ->get_form, which will return a list of valid L<Craiglickr::HTTP::FormRetrieve>s.
 
 =head1 Methods
 
@@ -72,7 +72,7 @@ Stores an array of cities to post to and an array of boards to post to, and then
 
 =item new_ad()
 
-=item add_city()
+=item add_location()
 
 =item add_board()
 

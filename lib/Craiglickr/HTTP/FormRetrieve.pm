@@ -13,7 +13,7 @@ use constant URI_HOSTNAME => URI->new( 'https://post.craigslist.org' );
 use namespace::clean -except => 'meta';
 
 ## all codes
-has [qw/ city section board /] => (
+has [qw/ location section board /] => (
 	isa  => 'Str'
 	, is => 'ro'
 	, trigger => \&_check_uri_or_prereq
@@ -28,7 +28,7 @@ has 'uri' => (
 	, default => sub {
 		my $self = shift;
 		my $uri = URI_HOSTNAME->clone;
-		$uri->path( join '/', $self->city, $self->section, $self->board );
+		$uri->path( join '/', $self->location, $self->section, $self->board );
 		$uri;
 	}
 );
@@ -85,7 +85,7 @@ has 'form' => (
 		my @fields_hidden = $form->look_down( _tag=>'input', type=>'hidden', class=>qr/sta|fr|gg[12]|point|mand/ );
 
 
-		## Marks hidden fiels in the class of "posPre$idOfNextDefinitiveElement"...
+		## Marks hidden fields in the class of "posPre$idOfNextDefinitiveElement"...
 		foreach my $hidden ( @fields_hidden ) {
 
 			given ( $hidden->address ) {
@@ -158,9 +158,9 @@ sub BUILD { $_[0]->_check_uri_or_prereq }
 
 sub _check_uri_or_prereq {
 	my $self = shift;
-	unless ( $self->has_uri or $self->city && $self->section && $self->board ) {
+	unless ( $self->has_uri or $self->location && $self->section && $self->board ) {
 		throw_error( sprintf(
-			"Please either configure %s with (city, section, and board) so it can make a URI, or supply a URI\n"
+			"Please either configure %s with (location, section, and board) so it can make a URI, or supply a URI\n"
 			, __PACKAGE__
 		));
 	}
@@ -178,15 +178,15 @@ Craiglickr::HTTP::FormRetrieve
 
 =head1 DESCRIPTION
 
-This module takes a city/section/board, and generates a URI with it. With the URI, we (a) downloads the URL (b) parses out the form, (c) mark the form up by setting ids, and classes which will make it easier to handle.
+This module takes a location/section/board, and generates a URI with it. With the URI, we (a) downloads the URL (b) parses out the form, (c) mark the form up by setting ids, and classes which will make it easier to handle.
 
-It is B<required> that you either supply the city, section, board; or, the URI.
+It is B<required> that you either supply the location, section, board; or, the URI.
 
 =over 12
 
 =item uri()
 
-=item city()
+=item location()
 
 =item section()
 
