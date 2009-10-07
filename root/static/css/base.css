@@ -1,0 +1,13 @@
+body { font-size:.8em; font-family:sans-serif; margin:0 auto }
+h1 { font-size:large; text-decoration:underline }
+
+optgroup, option {
+  font-style:normal;
+  font-weight:normal;
+  font-size:1em;
+  font-family:sans-serif;
+}
+option { color:black; width:200px; margin:0; padding:0 }
+option[disabled] { color:rgb(100,100,100) }
+optgroup { color:rgb(100,100,100) }
+

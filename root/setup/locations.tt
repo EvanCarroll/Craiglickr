@@ -1,29 +1,16 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">  
-<head>
-	<title>Craiglickr - Pick your locations to post to</title>
-	<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
-	<style type="text/css">
-		body { font-size:.8em; font-family:sans-serif; width:400px; margin:auto }
-		h1 { font-size:larger }
-		optgroup, option {
-			font-style:normal;
-			font-weight:normal;
-			font-size:1em;
-			font-family:sans-serif;
-		}
-		optgroup { color:rgb(100,100,100) }
-		option { color:black; width:200px; margin:0; padding:0 }
-		option[disabled] { color:rgb(100,100,100) }
+[% SET
+	title = 'Craiglickr - Pick your locations to post your ad to'
+	css = '
+		body { width:400px }
 		.rank1 { padding-left:1em }
 		.rank2 { padding-left:2em }
 		.rank3 { padding-left:3em }
 		.rank4 { padding-left:4em }
 		.rank4 { padding-left:5em }
 		.rank6 { padding-left:6em }
-	</style>
-</head>
-<body>
+	'
+	; WRAPPER wrapper.tt
+%]
 	<h1> Pick your locations:</h1>
 	<form action="[% c.request.uri %]" method="post">
 		<ol>
@@ -47,8 +34,7 @@
 		<button onclick="javascript:reset();return false">Reset</button>
 		<input type="submit" />
 	</form>
-</body>
-</html>
+[% END %]
 [% BLOCK iterate %]
 	[% DEFAULT rank = 0 %]
 	[% FOREACH x IN db.keys.sort %]

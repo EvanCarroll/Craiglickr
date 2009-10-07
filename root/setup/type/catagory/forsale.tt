@@ -1,23 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">  
-<head>
-	<title>Craiglickr - Pick your locations to post to</title>
-	<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
-	<style type="text/css">
-		body { font-size:.8em; font-family:sans-serif; width:400px; margin:auto }
-		h1 { font-size:larger }
-		optgroup, option {
-			font-style:normal;
-			font-weight:normal;
-			font-size:1em;
-			font-family:sans-serif;
-		}
-		optgroup { color:rgb(100,100,100) }
-		option { color:black; width:400px; margin:0; padding:0 }
-		option[disabled] { color:rgb(100,100,100) }
-	</style>
-</head>
-<body>
+[% SET
+	title = 'Craiglickr - Pick that catagories that represent your ad'
+	css = '
+		body { width:400px }
+	'
+	; WRAPPER wrapper.tt
+%]
 	<h1> Pick your catagory: </h1>
 	<form action="[% c.request.uri %]" method="post">
 		<ol>
@@ -33,8 +20,7 @@
 		<button onclick="javascript:reset();return false">Reset</button>
 		<input type="submit" />
 	</form>
-</body>
-</html>
+[% END %]
 [% BLOCK optionlist %]
 	[% FOR x = craigslist.section.s.values %]
 		<option value="[%x.code |html%]" label="[%x.text |html%]">
