@@ -123,32 +123,32 @@ Canada:
           subsites:
             burnaby/newwest:
               name: burnaby/newwest
-              uid: van/bnc
+              uid: van-bnc
               uri_dest: http://vancouver.en.craigslist.ca/bnc/
               uri_orig: http://vancouver.en.craigslist.ca/bnc/
             delta/surrey/langley:
               name: delta/surrey/langley
-              uid: van/rds
+              uid: van-rds
               uri_dest: http://vancouver.en.craigslist.ca/rds/
               uri_orig: http://vancouver.en.craigslist.ca/rds/
             north shore:
               name: north shore
-              uid: van/nvn
+              uid: van-nvn
               uri_dest: http://vancouver.en.craigslist.ca/nvn/
               uri_orig: http://vancouver.en.craigslist.ca/nvn/
             richmond:
               name: richmond
-              uid: van/rch
+              uid: van-rch
               uri_dest: http://vancouver.en.craigslist.ca/rch/
               uri_orig: http://vancouver.en.craigslist.ca/rch/
             tricities/pitt/maple:
               name: tricities/pitt/maple
-              uid: van/pml
+              uid: van-pml
               uri_dest: http://vancouver.en.craigslist.ca/pml/
               uri_orig: http://vancouver.en.craigslist.ca/pml/
             vancouver:
               name: vancouver
-              uid: van/van
+              uid: van-van
               uri_dest: http://vancouver.en.craigslist.ca/van/
               uri_orig: http://vancouver.en.craigslist.ca/van/
           uid: van
@@ -293,32 +293,32 @@ Canada:
           subsites:
             brampton:
               name: brampton
-              uid: tor/bra
+              uid: tor-bra
               uri_dest: http://toronto.en.craigslist.ca/bra/
               uri_orig: http://toronto.en.craigslist.ca/bra/
             city of toronto:
               name: city of toronto
-              uid: tor/tor
+              uid: tor-tor
               uri_dest: http://toronto.en.craigslist.ca/tor/
               uri_orig: http://toronto.en.craigslist.ca/tor/
             durham region:
               name: durham region
-              uid: tor/drh
+              uid: tor-drh
               uri_dest: http://toronto.en.craigslist.ca/drh/
               uri_orig: http://toronto.en.craigslist.ca/drh/
             mississauga:
               name: mississauga
-              uid: tor/mss
+              uid: tor-mss
               uri_dest: http://toronto.en.craigslist.ca/mss/
               uri_orig: http://toronto.en.craigslist.ca/mss/
             oakville:
               name: oakville
-              uid: tor/oak
+              uid: tor-oak
               uri_dest: http://toronto.en.craigslist.ca/oak/
               uri_orig: http://toronto.en.craigslist.ca/oak/
             york region:
               name: york region
-              uid: tor/yrk
+              uid: tor-yrk
               uri_dest: http://toronto.en.craigslist.ca/yrk/
               uri_orig: http://toronto.en.craigslist.ca/yrk/
           uid: tor
@@ -466,22 +466,22 @@ United States:
           subsites:
             central/south phx:
               name: central/south phx
-              uid: phx/cph
+              uid: phx-cph
               uri_dest: http://phoenix.craigslist.org/cph/
               uri_orig: http://phoenix.craigslist.org/cph/
             east valley:
               name: east valley
-              uid: phx/evl
+              uid: phx-evl
               uri_dest: http://phoenix.craigslist.org/evl/
               uri_orig: http://phoenix.craigslist.org/evl/
             phx north:
               name: phx north
-              uid: phx/nph
+              uid: phx-nph
               uri_dest: http://phoenix.craigslist.org/nph/
               uri_orig: http://phoenix.craigslist.org/nph/
             west valley:
               name: west valley
-              uid: phx/wvl
+              uid: phx-wvl
               uri_dest: http://phoenix.craigslist.org/wvl/
               uri_orig: http://phoenix.craigslist.org/wvl/
           uid: phx
@@ -559,32 +559,32 @@ United States:
           subsites:
             east bay:
               name: east bay
-              uid: sfo/eby
+              uid: sfo-eby
               uri_dest: http://sfbay.craigslist.org/eby/
               uri_orig: http://sfbay.craigslist.org/eby/
             north bay:
               name: north bay
-              uid: sfo/nby
+              uid: sfo-nby
               uri_dest: http://sfbay.craigslist.org/nby/
               uri_orig: http://sfbay.craigslist.org/nby/
             peninsula:
               name: peninsula
-              uid: sfo/pen
+              uid: sfo-pen
               uri_dest: http://sfbay.craigslist.org/pen/
               uri_orig: http://sfbay.craigslist.org/pen/
             san francisco:
               name: san francisco
-              uid: sfo/sfc
+              uid: sfo-sfc
               uri_dest: http://sfbay.craigslist.org/sfc/
               uri_orig: http://sfbay.craigslist.org/sfc/
             santa cruz:
               name: santa cruz
-              uid: sfo/scz
+              uid: sfo-scz
               uri_dest: http://sfbay.craigslist.org/scz/
               uri_orig: http://sfbay.craigslist.org/scz/
             south bay:
               name: south bay
-              uid: sfo/sby
+              uid: sfo-sby
               uri_dest: http://sfbay.craigslist.org/sby/
               uri_orig: http://sfbay.craigslist.org/sby/
           uid: sfo
@@ -635,32 +635,32 @@ United States:
           subsites:
             SF valley:
               name: SF valley
-              uid: lax/sfv
+              uid: lax-sfv
               uri_dest: http://losangeles.craigslist.org/sfv/
               uri_orig: http://losangeles.craigslist.org/sfv/
             antelope valley:
               name: antelope valley
-              uid: lax/ant
+              uid: lax-ant
               uri_dest: http://losangeles.craigslist.org/ant/
               uri_orig: http://losangeles.craigslist.org/ant/
             central LA:
               name: central LA
-              uid: lax/lac
+              uid: lax-lac
               uri_dest: http://losangeles.craigslist.org/lac/
               uri_orig: http://losangeles.craigslist.org/lac/
             long beach / 562:
               name: long beach / 562
-              uid: lax/lgb
+              uid: lax-lgb
               uri_dest: http://losangeles.craigslist.org/lgb/
               uri_orig: http://losangeles.craigslist.org/lgb/
             san gabriel valley:
               name: san gabriel valley
-              uid: lax/sgv
+              uid: lax-sgv
               uri_dest: http://losangeles.craigslist.org/sgv/
               uri_orig: http://losangeles.craigslist.org/sgv/
             westside-southbay:
               name: westside-southbay
-              uid: lax/wst
+              uid: lax-wst
               uri_dest: http://losangeles.craigslist.org/wst/
               uri_orig: http://losangeles.craigslist.org/wst/
           uid: lax
@@ -716,22 +716,22 @@ United States:
           subsites:
             city of san diego:
               name: city of san diego
-              uid: sdo/csd
+              uid: sdo-csd
               uri_dest: http://sandiego.craigslist.org/csd/
               uri_orig: http://sandiego.craigslist.org/csd/
             east SD county:
               name: east SD county
-              uid: sdo/esd
+              uid: sdo-esd
               uri_dest: http://sandiego.craigslist.org/esd/
               uri_orig: http://sandiego.craigslist.org/esd/
             north SD county:
               name: north SD county
-              uid: sdo/nsd
+              uid: sdo-nsd
               uri_dest: http://sandiego.craigslist.org/nsd/
               uri_orig: http://sandiego.craigslist.org/nsd/
             south SD county:
               name: south SD county
-              uid: sdo/ssd
+              uid: sdo-ssd
               uri_dest: http://sandiego.craigslist.org/ssd/
               uri_orig: http://sandiego.craigslist.org/ssd/
           uid: sdo
@@ -886,17 +886,17 @@ United States:
           subsites:
             charlotte co:
               name: charlotte co
-              uid: fmy/chl
+              uid: fmy-chl
               uri_dest: http://fortmyers.craigslist.org/chl/
               uri_orig: http://fortmyers.craigslist.org/chl/
             collier co:
               name: collier co
-              uid: fmy/col
+              uid: fmy-col
               uri_dest: http://fortmyers.craigslist.org/col/
               uri_orig: http://fortmyers.craigslist.org/col/
             lee county:
               name: lee county
-              uid: fmy/lee
+              uid: fmy-lee
               uri_dest: http://fortmyers.craigslist.org/lee/
               uri_orig: http://fortmyers.craigslist.org/lee/
           uid: fmy
@@ -962,17 +962,17 @@ United States:
           subsites:
             broward county:
               name: broward county
-              uid: mia/brw
+              uid: mia-brw
               uri_dest: http://miami.craigslist.org/brw/
               uri_orig: http://miami.craigslist.org/brw/
             miami / dade:
               name: miami / dade
-              uid: mia/mdc
+              uid: mia-mdc
               uri_dest: http://miami.craigslist.org/mdc/
               uri_orig: http://miami.craigslist.org/mdc/
             palm beach co:
               name: palm beach co
-              uid: mia/pbc
+              uid: mia-pbc
               uri_dest: http://miami.craigslist.org/pbc/
               uri_orig: http://miami.craigslist.org/pbc/
           uid: mia
@@ -998,22 +998,22 @@ United States:
           subsites:
             hernando co:
               name: hernando co
-              uid: tpa/hdo
+              uid: tpa-hdo
               uri_dest: http://tampa.craigslist.org/hdo/
               uri_orig: http://tampa.craigslist.org/hdo/
             hillsborough co:
               name: hillsborough co
-              uid: tpa/hil
+              uid: tpa-hil
               uri_dest: http://tampa.craigslist.org/hil/
               uri_orig: http://tampa.craigslist.org/hil/
             pasco co:
               name: pasco co
-              uid: tpa/psc
+              uid: tpa-psc
               uri_dest: http://tampa.craigslist.org/psc/
               uri_orig: http://tampa.craigslist.org/psc/
             pinellas co:
               name: pinellas co
-              uid: tpa/pnl
+              uid: tpa-pnl
               uri_dest: http://tampa.craigslist.org/pnl/
               uri_orig: http://tampa.craigslist.org/pnl/
           uid: tpa
@@ -1045,27 +1045,27 @@ United States:
           subsites:
             atlanta:
               name: atlanta
-              uid: atl/atl
+              uid: atl-atl
               uri_dest: http://atlanta.craigslist.org/atl/
               uri_orig: http://atlanta.craigslist.org/atl/
             otp east:
               name: otp east
-              uid: atl/eat
+              uid: atl-eat
               uri_dest: http://atlanta.craigslist.org/eat/
               uri_orig: http://atlanta.craigslist.org/eat/
             otp north:
               name: otp north
-              uid: atl/nat
+              uid: atl-nat
               uri_dest: http://atlanta.craigslist.org/nat/
               uri_orig: http://atlanta.craigslist.org/nat/
             otp south:
               name: otp south
-              uid: atl/sat
+              uid: atl-sat
               uri_dest: http://atlanta.craigslist.org/sat/
               uri_orig: http://atlanta.craigslist.org/sat/
             otp west:
               name: otp west
-              uid: atl/wat
+              uid: atl-wat
               uri_dest: http://atlanta.craigslist.org/wat/
               uri_orig: http://atlanta.craigslist.org/wat/
           uid: atl
@@ -1174,32 +1174,32 @@ United States:
           subsites:
             city of chicago:
               name: city of chicago
-              uid: chi/chc
+              uid: chi-chc
               uri_dest: http://chicago.craigslist.org/chc/
               uri_orig: http://chicago.craigslist.org/chc/
             north chicagoland:
               name: north chicagoland
-              uid: chi/nch
+              uid: chi-nch
               uri_dest: http://chicago.craigslist.org/nch/
               uri_orig: http://chicago.craigslist.org/nch/
             northwest indiana:
               name: northwest indiana
-              uid: chi/nwi
+              uid: chi-nwi
               uri_dest: http://chicago.craigslist.org/nwi/
               uri_orig: http://chicago.craigslist.org/nwi/
             northwest suburbs:
               name: northwest suburbs
-              uid: chi/nwc
+              uid: chi-nwc
               uri_dest: http://chicago.craigslist.org/nwc/
               uri_orig: http://chicago.craigslist.org/nwc/
             south chicagoland:
               name: south chicagoland
-              uid: chi/sox
+              uid: chi-sox
               uri_dest: http://chicago.craigslist.org/sox/
               uri_orig: http://chicago.craigslist.org/sox/
             west chicagoland:
               name: west chicagoland
-              uid: chi/wcl
+              uid: chi-wcl
               uri_dest: http://chicago.craigslist.org/wcl/
               uri_orig: http://chicago.craigslist.org/wcl/
           uid: chi
@@ -1588,27 +1588,27 @@ United States:
           subsites:
             boston/camb/brook:
               name: boston/camb/brook
-              uid: bos/gbs
+              uid: bos-gbs
               uri_dest: http://boston.craigslist.org/gbs/
               uri_orig: http://boston.craigslist.org/gbs/
             metro west:
               name: metro west
-              uid: bos/bmw
+              uid: bos-bmw
               uri_dest: http://boston.craigslist.org/bmw/
               uri_orig: http://boston.craigslist.org/bmw/
             north shore:
               name: north shore
-              uid: bos/nos
+              uid: bos-nos
               uri_dest: http://boston.craigslist.org/nos/
               uri_orig: http://boston.craigslist.org/nos/
             northwest/merrimack:
               name: northwest/merrimack
-              uid: bos/nwb
+              uid: bos-nwb
               uri_dest: http://boston.craigslist.org/nwb/
               uri_orig: http://boston.craigslist.org/nwb/
             south shore:
               name: south shore
-              uid: bos/sob
+              uid: bos-sob
               uri_dest: http://boston.craigslist.org/sob/
               uri_orig: http://boston.craigslist.org/sob/
           uid: bos
@@ -1660,17 +1660,17 @@ United States:
           subsites:
             macomb co:
               name: macomb co
-              uid: det/mcb
+              uid: det-mcb
               uri_dest: http://detroit.craigslist.org/mcb/
               uri_orig: http://detroit.craigslist.org/mcb/
             oakland co:
               name: oakland co
-              uid: det/okl
+              uid: det-okl
               uri_dest: http://detroit.craigslist.org/okl/
               uri_orig: http://detroit.craigslist.org/okl/
             wayne co:
               name: wayne co
-              uid: det/wyn
+              uid: det-wyn
               uri_dest: http://detroit.craigslist.org/wyn/
               uri_orig: http://detroit.craigslist.org/wyn/
           uid: det
@@ -1787,32 +1787,32 @@ United States:
           subsites:
             anok/chis/isa:
               name: anok/chis/isa
-              uid: min/ank
+              uid: min-ank
               uri_dest: http://minneapolis.craigslist.org/ank/
               uri_orig: http://minneapolis.craigslist.org/ank/
             carv/sher/wri:
               name: carv/sher/wri
-              uid: min/csw
+              uid: min-csw
               uri_dest: http://minneapolis.craigslist.org/csw/
               uri_orig: http://minneapolis.craigslist.org/csw/
             dakota/scott:
               name: dakota/scott
-              uid: min/dak
+              uid: min-dak
               uri_dest: http://minneapolis.craigslist.org/dak/
               uri_orig: http://minneapolis.craigslist.org/dak/
             hennepin co:
               name: hennepin co
-              uid: min/hnp
+              uid: min-hnp
               uri_dest: http://minneapolis.craigslist.org/hnp/
               uri_orig: http://minneapolis.craigslist.org/hnp/
             ramsey co:
               name: ramsey co
-              uid: min/ram
+              uid: min-ram
               uri_dest: http://minneapolis.craigslist.org/ram/
               uri_orig: http://minneapolis.craigslist.org/ram/
             washington/WI:
               name: washington/WI
-              uid: min/wsh
+              uid: min-wsh
               uri_dest: http://minneapolis.craigslist.org/wsh/
               uri_orig: http://minneapolis.craigslist.org/wsh/
           uid: min
@@ -2167,47 +2167,47 @@ United States:
           subsites:
             bronx:
               name: bronx
-              uid: nyc/brx
+              uid: nyc-brx
               uri_dest: http://newyork.craigslist.org/brx/
               uri_orig: http://newyork.craigslist.org/brx/
             brooklyn:
               name: brooklyn
-              uid: nyc/brk
+              uid: nyc-brk
               uri_dest: http://newyork.craigslist.org/brk/
               uri_orig: http://newyork.craigslist.org/brk/
             fairfield:
               name: fairfield
-              uid: nyc/fct
+              uid: nyc-fct
               uri_dest: http://newyork.craigslist.org/fct/
               uri_orig: http://newyork.craigslist.org/fct/
             long island:
               name: long island
-              uid: nyc/lgi
+              uid: nyc-lgi
               uri_dest: http://newyork.craigslist.org/lgi/
               uri_orig: http://newyork.craigslist.org/lgi/
             manhattan:
               name: manhattan
-              uid: nyc/mnh
+              uid: nyc-mnh
               uri_dest: http://newyork.craigslist.org/mnh/
               uri_orig: http://newyork.craigslist.org/mnh/
             new jersey:
               name: new jersey
-              uid: nyc/jsy
+              uid: nyc-jsy
               uri_dest: http://newyork.craigslist.org/jsy/
               uri_orig: http://newyork.craigslist.org/jsy/
             queens:
               name: queens
-              uid: nyc/que
+              uid: nyc-que
               uri_dest: http://newyork.craigslist.org/que/
               uri_orig: http://newyork.craigslist.org/que/
             staten island:
               name: staten island
-              uid: nyc/stn
+              uid: nyc-stn
               uri_dest: http://newyork.craigslist.org/stn/
               uri_orig: http://newyork.craigslist.org/stn/
             westchester:
               name: westchester
-              uid: nyc/wch
+              uid: nyc-wch
               uri_dest: http://newyork.craigslist.org/wch/
               uri_orig: http://newyork.craigslist.org/wch/
           uid: nyc
@@ -2528,37 +2528,37 @@ United States:
           subsites:
             clackamas co:
               name: clackamas co
-              uid: pdx/clc
+              uid: pdx-clc
               uri_dest: http://portland.craigslist.org/clc/
               uri_orig: http://portland.craigslist.org/clc/
             clark/cowlitz:
               name: clark/cowlitz
-              uid: pdx/clk
+              uid: pdx-clk
               uri_dest: http://portland.craigslist.org/clk/
               uri_orig: http://portland.craigslist.org/clk/
             columbia gorge:
               name: columbia gorge
-              uid: pdx/grg
+              uid: pdx-grg
               uri_dest: http://portland.craigslist.org/grg/
               uri_orig: http://portland.craigslist.org/grg/
             multnomah co:
               name: multnomah co
-              uid: pdx/mlt
+              uid: pdx-mlt
               uri_dest: http://portland.craigslist.org/mlt/
               uri_orig: http://portland.craigslist.org/mlt/
             north coast:
               name: north coast
-              uid: pdx/nco
+              uid: pdx-nco
               uri_dest: http://portland.craigslist.org/nco/
               uri_orig: http://portland.craigslist.org/nco/
             washington co:
               name: washington co
-              uid: pdx/wsc
+              uid: pdx-wsc
               uri_dest: http://portland.craigslist.org/wsc/
               uri_orig: http://portland.craigslist.org/wsc/
             yamhill co:
               name: yamhill co
-              uid: pdx/yam
+              uid: pdx-yam
               uri_dest: http://portland.craigslist.org/yam/
               uri_orig: http://portland.craigslist.org/yam/
           uid: pdx
@@ -2825,27 +2825,27 @@ United States:
           subsites:
             dallas:
               name: dallas
-              uid: dal/dal
+              uid: dal-dal
               uri_dest: http://dallas.craigslist.org/dal/
               uri_orig: http://dallas.craigslist.org/dal/
             fort worth:
               name: fort worth
-              uid: dal/ftw
+              uid: dal-ftw
               uri_dest: http://dallas.craigslist.org/ftw/
               uri_orig: http://dallas.craigslist.org/ftw/
             mid cities:
               name: mid cities
-              uid: dal/mdf
+              uid: dal-mdf
               uri_dest: http://dallas.craigslist.org/mdf/
               uri_orig: http://dallas.craigslist.org/mdf/
             north DFW:
               name: north DFW
-              uid: dal/ndf
+              uid: dal-ndf
               uri_dest: http://dallas.craigslist.org/ndf/
               uri_orig: http://dallas.craigslist.org/ndf/
             south DFW:
               name: south DFW
-              uid: dal/sdf
+              uid: dal-sdf
               uri_dest: http://dallas.craigslist.org/sdf/
               uri_orig: http://dallas.craigslist.org/sdf/
           uid: dal
@@ -3014,7 +3014,7 @@ United States:
       description: 'Vermont, United States'
       name: vermont
       uid: brl
-      uri_dest: http://burlington.craigslist.org/
+      uri_dest: http://burlington.en.craigslist.org
       uri_orig: http://geo.craigslist.org/iso/us/vt
     virginia:
       description: 'Virginia, United States'
@@ -3131,37 +3131,37 @@ United States:
           subsites:
             eastside:
               name: eastside
-              uid: sea/est
+              uid: sea-est
               uri_dest: http://seattle.craigslist.org/est/
               uri_orig: http://seattle.craigslist.org/est/
             kitsap co:
               name: kitsap co
-              uid: sea/kit
+              uid: sea-kit
               uri_dest: http://seattle.craigslist.org/kit/
               uri_orig: http://seattle.craigslist.org/kit/
             olympia:
               name: olympia
-              uid: sea/oly
+              uid: sea-oly
               uri_dest: http://seattle.craigslist.org/oly/
               uri_orig: http://seattle.craigslist.org/oly/
             seattle:
               name: seattle
-              uid: sea/see
+              uid: sea-see
               uri_dest: http://seattle.craigslist.org/see/
               uri_orig: http://seattle.craigslist.org/see/
             snohomish co:
               name: snohomish co
-              uid: sea/sno
+              uid: sea-sno
               uri_dest: http://seattle.craigslist.org/sno/
               uri_orig: http://seattle.craigslist.org/sno/
             south king:
               name: south king
-              uid: sea/skc
+              uid: sea-skc
               uri_dest: http://seattle.craigslist.org/skc/
               uri_orig: http://seattle.craigslist.org/skc/
             tacoma:
               name: tacoma
-              uid: sea/tac
+              uid: sea-tac
               uri_dest: http://seattle.craigslist.org/tac/
               uri_orig: http://seattle.craigslist.org/tac/
           uid: sea
@@ -3708,32 +3708,32 @@ canada:
       subsites:
         brampton:
           name: brampton
-          uid: tor/bra
+          uid: tor-bra
           uri_dest: http://toronto.en.craigslist.ca/bra/
           uri_orig: http://toronto.en.craigslist.ca/bra/
         city of toronto:
           name: city of toronto
-          uid: tor/tor
+          uid: tor-tor
           uri_dest: http://toronto.en.craigslist.ca/tor/
           uri_orig: http://toronto.en.craigslist.ca/tor/
         durham region:
           name: durham region
-          uid: tor/drh
+          uid: tor-drh
           uri_dest: http://toronto.en.craigslist.ca/drh/
           uri_orig: http://toronto.en.craigslist.ca/drh/
         mississauga:
           name: mississauga
-          uid: tor/mss
+          uid: tor-mss
           uri_dest: http://toronto.en.craigslist.ca/mss/
           uri_orig: http://toronto.en.craigslist.ca/mss/
         oakville:
           name: oakville
-          uid: tor/oak
+          uid: tor-oak
           uri_dest: http://toronto.en.craigslist.ca/oak/
           uri_orig: http://toronto.en.craigslist.ca/oak/
         york region:
           name: york region
-          uid: tor/yrk
+          uid: tor-yrk
           uri_dest: http://toronto.en.craigslist.ca/yrk/
           uri_orig: http://toronto.en.craigslist.ca/yrk/
       uid: tor
@@ -3749,32 +3749,32 @@ canada:
       subsites:
         burnaby/newwest:
           name: burnaby/newwest
-          uid: van/bnc
+          uid: van-bnc
           uri_dest: http://vancouver.en.craigslist.ca/bnc/
           uri_orig: http://vancouver.en.craigslist.ca/bnc/
         delta/surrey/langley:
           name: delta/surrey/langley
-          uid: van/rds
+          uid: van-rds
           uri_dest: http://vancouver.en.craigslist.ca/rds/
           uri_orig: http://vancouver.en.craigslist.ca/rds/
         north shore:
           name: north shore
-          uid: van/nvn
+          uid: van-nvn
           uri_dest: http://vancouver.en.craigslist.ca/nvn/
           uri_orig: http://vancouver.en.craigslist.ca/nvn/
         richmond:
           name: richmond
-          uid: van/rch
+          uid: van-rch
           uri_dest: http://vancouver.en.craigslist.ca/rch/
           uri_orig: http://vancouver.en.craigslist.ca/rch/
         tricities/pitt/maple:
           name: tricities/pitt/maple
-          uid: van/pml
+          uid: van-pml
           uri_dest: http://vancouver.en.craigslist.ca/pml/
           uri_orig: http://vancouver.en.craigslist.ca/pml/
         vancouver:
           name: vancouver
-          uid: van/van
+          uid: van-van
           uri_dest: http://vancouver.en.craigslist.ca/van/
           uri_orig: http://vancouver.en.craigslist.ca/van/
       uid: van
