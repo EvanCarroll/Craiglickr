@@ -106,13 +106,13 @@ has 'subsites' => (
 				my $uri = URI->new( $self->uri_dest );
 				$uri->path( $element->attr('href') );
 				use XXX; YYY [{
-					posting_uid => $self->posting_uid . "/$name"
+					posting_uid => $self->posting_uid . "-$name"
 					, uri_orig  => $uri
 					, name      => $element->attr('title')
 				}];
 
 				push @subsites, $self->meta->new_object({
-					posting_uid => $self->posting_uid . "/$name"
+					posting_uid => $self->posting_uid . "-$name"
 					, uri_orig  => $uri
 					, name      => $element->attr('title')
 				});
