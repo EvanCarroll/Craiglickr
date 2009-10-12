@@ -28,7 +28,8 @@ has 'uri' => (
 	, default => sub {
 		my $self = shift;
 		my $uri = URI_HOSTNAME->clone;
-		$uri->path( join '/', $self->location, $self->section, $self->board );
+		my ( $location, $sublocation ) = split '-', $self->location;
+		$uri->path( join '/', $location, $self->section, $self->board, $sublocation // 'none' );
 		$uri;
 	}
 );
