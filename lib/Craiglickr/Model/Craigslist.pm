@@ -18,7 +18,7 @@ has 'locations_crop' => ( isa => 'Str', is => 'ro', default => 0 );
 has 'for_sale' => (
 	isa  => 'HashRef'
 	, is => 'ro'
-	, lazy => 1 ## required for some weird fucking reason
+	, lazy => 1 ## required for some weird reason
 	, default => sub {
 		my $self = shift;
 		my $abs_path = File::ShareDir::dist_file('Craiglickr', 'S.yaml' );
@@ -31,7 +31,9 @@ has 'for_sale' => (
 has 'locations' => (
 	isa  => 'HashRef'
 	, is => 'ro'
-	, lazy => 1 ## required for some weird fucking reason
+		## required for some weird reason
+		## the attributes are not set from config prior
+	, lazy => 1
 	, default => sub {
 		my $self = shift;
 		my $abs_path = File::ShareDir::dist_file('Craiglickr', 'locations.yaml' );
@@ -48,5 +50,32 @@ has 'locations' => (
 		$hash;
 	}
 );
+
+has 'locations_index_by_code' => (
+	isa => 'HashRef'
+	, is => 'ro'
+	, lazy => 1
+	, default => sub {
+		my $self = shift;
+		my $h = $self->locations;
+		my $codes = {};
+		_recurse_and_add_to_codes( $h, $codes );
+		$codes;
+	}
+);
+
+sub _recurse_and_add_to_codes {
+	my ( $hash , $codes ) = @_;
+
+	foreach my $hash ( values %$hash ) {
+		if ( exists $hash->{subsites} ) {
+			_recurse_and_add_to_codes( $hash->{subsites}, $codes );
+		}
+		else {
+			$codes->{$hash->{uid}} = $hash;
+		}
+	}
+
+}
 
 1;
