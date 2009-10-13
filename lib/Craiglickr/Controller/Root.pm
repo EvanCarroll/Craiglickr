@@ -8,6 +8,11 @@ __PACKAGE__->config->{namespace} = '';
 use Craiglickr::Ad;
 use Craiglickr::Post;
 
+sub foo :Global {
+	my ( $self , $c ) = @_;
+	use XXX; YYY $c->model('CraigsList')->locations_index_by_code;
+}
+
 sub craiglickr :Chained('.') :CaptureArgs(0) { }
 
 sub configureAll :Chained('craiglickr') :PathPart('') :Args(0) {
@@ -17,7 +22,28 @@ sub configureAll :Chained('craiglickr') :PathPart('') :Args(0) {
 
 sub locations :Chained('craiglickr') :CaptureArgs(1) {
 	my ( $self, $c, $locations ) = @_;
-	$c->stash->{'locations'} = [split /,/, $locations];
+	my @locations = split /,/, $locations;
+
+	
+	if ( @locations > 0 ) {
+		die 'Cross-posting disabled'
+			if $c->config->{Craiglickr}->{cross_posting} == 0
+		;
+
+		my %city_code;
+		$city_code{$_}++ for map { m/(.*)?-/; $1 } @locations;
+		die 'Metro Cross-posting disabled'
+			if $c->config->{Craiglickr}->{cross_metro} == 0
+			&& grep $city_code{$_} > 1, keys %city_code
+		;
+	}
+	
+	foreach my $loc ( @locations ) {
+		die 'Invalid location' unless exists $c->model('Craigslist')->locations_index_by_code->{$loc};
+	}
+		
+	$c->stash->{'locations'} = \@locations;
+
 }
 
 sub configureLocations :Chained('craiglickr') :PathPart('locations') :Args(0) {
