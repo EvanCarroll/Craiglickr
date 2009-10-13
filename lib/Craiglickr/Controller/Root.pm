@@ -26,16 +26,19 @@ sub locations :Chained('craiglickr') :CaptureArgs(1) {
 
 	
 	if ( @locations > 0 ) {
-		die 'Cross-posting disabled'
-			if $c->config->{Craiglickr}->{cross_posting} == 0
-		;
 
-		my %city_code;
-		$city_code{$_}++ for map { m/(.*)?-/; $1 } @locations;
-		die 'Metro Cross-posting disabled'
-			if $c->config->{Craiglickr}->{cross_metro} == 0
-			&& grep $city_code{$_} > 1, keys %city_code
-		;
+		if ( $c->config->{Craiglickr}{location}{cross_posting} == 0 ) {
+			die 'Cross-posting to different locations disabled'
+		}
+		
+		elsif ( $c->config->{Craiglickr}{location}{cross_metro} == 0 ) {
+			my %city_code;
+			$city_code{$_}++ for map { s/-.*//; $_ } @locations;
+			die 'Cross-posting to different metro-sections disabled'
+				if grep $city_code{$_} > 1, keys %city_code
+			;
+		}
+
 	}
 	
 	foreach my $loc ( @locations ) {
@@ -69,7 +72,11 @@ sub configureLocations :Chained('craiglickr') :PathPart('locations') :Args(0) {
 sub boards :Chained('locations') :Args(1) {
 	my ( $self, $c, $boards ) = @_;
 	$c->stash->{'boards'} = [split /,/, $boards];
-	
+		
+	if ( $c->config->{Craiglickr}{category}{cross_posting} == 0 ) {
+		die 'Cross-posting to different catagories disabled'
+	}
+
 	$c->stash->{posts} = Craiglickr::Post->new({
 			locations => $c->stash->{locations}
 			, boards  => $c->stash->{boards}

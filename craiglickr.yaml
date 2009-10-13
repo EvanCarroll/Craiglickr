@@ -17,5 +17,8 @@ Model::Craigslist:
   locations_only: United States
   locations_crop: true
 Craiglickr:
-  cross_posting: 1
-  cross_metro:   0
+  location:
+    cross_posting: 1
+    cross_metro:   0
+  category:
+    cross_posting: 1
