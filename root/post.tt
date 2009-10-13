@@ -16,11 +16,11 @@
 	
 	[% IF c.request.header('User-Agent').match('Firefox') %]
 		<div id="GMnotice">
-			<strong>Firefox Notice:</strong> to ease posting we've created <a href="/static/gm/craiglickr.user.js">a greesemonkey script for your consumption</a>
+			<strong>Firefox Notice:</strong> to ease posting we've created <a href="/static/gm/craiglickr.user.js">a greasemonkey script for your consumption</a>
 		</div>
 	[% ELSE %]
 		<div id="GMnotice">
-			<strong>Upgrade Notice:</strong> for a better browser experience upgrade to <a href="http://www.firefox.com">Firefox</a> and utilize our <a href="/static/gm/craiglickr.user.js">a greesemonkey script</a>
+			<strong>Upgrade Notice:</strong> for a better browser experience upgrade to <a href="http://www.firefox.com">Firefox</a> and utilize our <a href="/static/gm/craiglickr.user.js">a greasemonkey script</a>
 		</div>
 	[% END %]
 
