@@ -33,7 +33,7 @@ sub locations :Chained('craiglickr') :CaptureArgs(1) {
 		
 		elsif ( $c->config->{Craiglickr}{location}{cross_metro} == 0 ) {
 			my %city_code;
-			$city_code{$_}++ for map { s/-.*//; $_ } @locations;
+			$city_code{$_}++ for map { s/-.*//; $_ } @{[@locations]};
 			die 'Cross-posting to different metro-sections disabled'
 				if grep $city_code{$_} > 1, keys %city_code
 			;
@@ -42,7 +42,7 @@ sub locations :Chained('craiglickr') :CaptureArgs(1) {
 	}
 	
 	foreach my $loc ( @locations ) {
-		die 'Invalid location' unless exists $c->model('Craigslist')->locations_index_by_code->{$loc};
+		die "Invalid location [$loc]" unless exists $c->model('Craigslist')->locations_index_by_code->{$loc};
 	}
 		
 	$c->stash->{'locations'} = \@locations;
