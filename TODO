@@ -2,10 +2,7 @@ TODO list
 
 Problems
 * Integrity
-	* Confirm that the locations are valid per YAML
 	* Confirm that the catagories are valid per YAML
-* Fix posting to metro-areas, subcraigslist.
-* Option to eliminate posting to two subcragslists
 * Add the ability to do template importantion and docs
 
 Craigslist functionality not supported.
