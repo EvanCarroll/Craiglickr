@@ -18,6 +18,15 @@ $(document).ready(function(){
 				}
 				
 				$button.parents( "form" ).attr('target', 'easyReCaptcha');
+
+				// Only the first forum is editable, so we must copy those fields edited here, prior to the submit.
+				$button.parents( "form" ).find('.title').attr( 'value', $("#title1").attr('value') );
+				$button.parents( "form" ).find('.price').attr( 'value', $("#price1").attr('value') );
+				$button.parents( "form" ).find('.location').attr( 'value', $("#location1").attr('value') );
+				$button.parents( "form" ).find('textarea.description').html( $("#description1").html() );;
+				alert( $("#description1").val() );
+				return false;
+
 				$button.click();
 				$(this).css('background-color','LightGreen');
 				return false;
