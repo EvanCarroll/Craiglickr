@@ -4,9 +4,10 @@ input { padding:.35em }
 form { background-color: whitesmoke; padding:10px }
 .formTop { position:relative; clear:both; font-size:1.25em }
 .formGrouping { float:left; margin:0 10px; border-left: 1px dotted gray; padding-left:5px }
-.titleGroup { width:20em }
-.priceGroup { width: 5em }
-.locationGroup { width:15em }
+.formGrouping.title { width:20em }
+.formGrouping.price { width: 5em }
+.formGrouping.location { width:15em }
+
 .formGrouping label, .formGrouping input { border:0; float:left; clear:both; width:100% }
 .formMain { clear:both }
 .ckeditor { height:100%} 

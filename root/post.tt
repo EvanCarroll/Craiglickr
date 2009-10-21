@@ -32,17 +32,17 @@
 		<input type="hidden" name="test" value="[%f.get_value_by_name('test')%]" />
 		<fieldset class="formTop">
 			<legend>Required Information</legend>
-			<div class="formGrouping titleGroup">
+			<div class="formGrouping title">
 				[%- p.get_token_as_html_from_form_pos('title') %]
-				<label for="title[%loop.count%]"> Title </label>
+				<label class="title" for="title[%loop.count%]"> Title </label>
 				<input tabindex="1" type="text" class="title" id="title[%loop.count%]" name="[% f.look_down('id','title').attr('name')  %]" value="[% ad.title  %]" />
 			</div>
-			<div class="formGrouping priceGroup">
-				<label for="price[%loop.count%]"> Price ($) </label>
+			<div class="formGrouping price">
+				<label class="price" for="price[%loop.count%]"> Price ($) </label>
 				<input tabindex="2" type="text" class="price" id="price[%loop.count%]" name="[% f.look_down('id','price').attr('name')  %]" value="[% ad.price  %]" />
 			</div>
-			<div class="formGrouping locationGroup">
-				<label for="location[%loop.count%]"> Location </label>
+			<div class="formGrouping location">
+				<label class="location" for="location[%loop.count%]"> Location </label>
 				<input tabindex="3" type="text" class="location" id="location[%loop.count%]" name="[% f.look_down('id','location').attr('name')  %]" value="[% ad.location  %]" />
 			</div>
 		</fieldset>

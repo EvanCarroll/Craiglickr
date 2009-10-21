@@ -20,9 +20,9 @@ $(document).ready(function(){
 				$button.parents( "form" ).attr('target', 'easyReCaptcha');
 
 				// Only the first forum is editable, so we must copy those fields edited here, prior to the submit.
-				$button.parents( "form" ).find('.title').val( $("#title1").attr('value') );
-				$button.parents( "form" ).find('.price').val( $("#price1").attr('value') );
-				$button.parents( "form" ).find('.location').val( $("#location1").attr('value') );
+				$button.parents( "form" ).find('input.title').val( $("#title1").attr('value') );
+				$button.parents( "form" ).find('input.price').val( $("#price1").attr('value') );
+				$button.parents( "form" ).find('input.location').val( $("#location1").attr('value') );
 				$button.parents( "form" ).find('textarea.description').val( CKEDITOR.instances.description1.getData() );
 
 				$button.click();
