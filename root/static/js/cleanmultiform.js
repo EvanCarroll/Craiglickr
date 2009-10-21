@@ -23,9 +23,7 @@ $(document).ready(function(){
 				$button.parents( "form" ).find('.title').attr( 'value', $("#title1").attr('value') );
 				$button.parents( "form" ).find('.price').attr( 'value', $("#price1").attr('value') );
 				$button.parents( "form" ).find('.location').attr( 'value', $("#location1").attr('value') );
-				$button.parents( "form" ).find('textarea.description').html( $("#description1").html() );;
-				alert( $("#description1").val() );
-				return false;
+				$button.parents( "form" ).find('textarea.description').html( CKEDITOR.instances.description1.getData() );
 
 				$button.click();
 				$(this).css('background-color','LightGreen');
