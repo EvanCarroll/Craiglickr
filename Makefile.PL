@@ -16,6 +16,8 @@ requires 'MooseX::Types';
 requires 'MooseX::Types::Email';
 requires 'File::ShareDir';
 
+requires 'IO::Socket::SSL';
+
 install_share 'share';
 
 resources(
