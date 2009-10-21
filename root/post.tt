@@ -49,7 +49,7 @@
 		<div class="formMain">
 			[%- p.get_token_as_html_from_form_pos('description') %]
 			<label for="description[%loop.count%]"> Description </label>
-			<textarea tabindex="4" class="description ckeditor" id="description[%loop.count%]" name="[% f.look_down('id','description').attr('name')  %]" rows="20" cols="80">[% ad.description %]</textarea>
+			<textarea tabindex="4" class="description[%IF loop.first%] ckeditor[%END%]" id="description[%loop.count%]" name="[% f.look_down('id','description').attr('name')  %]" rows="20" cols="80">[% ad.description %]</textarea>
 		</div>
 		<div class="formFooter">
 			<div style="display:none"> [%- FOREACH e IN p.get_image_add %] [% e.as_HTML %] [%- END %] </div>
