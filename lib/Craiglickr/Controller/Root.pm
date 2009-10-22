@@ -24,6 +24,12 @@ sub locations :Chained('craiglickr') :CaptureArgs(1) {
 	my ( $self, $c, $locations ) = @_;
 	my @locations = split /,/, $locations;
 
+	if ( $c->config->{Craiglickr}{location}{max} < @locations ) {
+		my $max = $c->config->{Craiglickr}{location}{max};
+		my $supplied = @locations;
+		die "You can only post to $max locations at a time. You tried to post to $supplied locations";
+	}
+
 	
 	if ( @locations > 0 ) {
 

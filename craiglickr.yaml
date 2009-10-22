@@ -20,5 +20,6 @@ Craiglickr:
   location:
     cross_posting: 1
     cross_metro:   0
+    max: 4
   category:
     cross_posting: 1
