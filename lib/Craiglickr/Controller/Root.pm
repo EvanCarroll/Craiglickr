@@ -24,6 +24,17 @@ sub locations :Chained('craiglickr') :CaptureArgs(1) {
 	my ( $self, $c, $locations ) = @_;
 	my @locations = split /,/, $locations;
 
+	## Detect dupes
+	my $db;
+	for ( @locations ) {
+		if ( exists $db->{$_} ) {
+			die "Can not post to the same location twice";
+		}
+		else {
+			$db->{$_} = undef;
+		}
+	}
+
 	if ( $c->config->{Craiglickr}{location}{max} < @locations ) {
 		my $max = $c->config->{Craiglickr}{location}{max};
 		my $supplied = @locations;
@@ -39,7 +50,7 @@ sub locations :Chained('craiglickr') :CaptureArgs(1) {
 		
 		elsif ( $c->config->{Craiglickr}{location}{cross_metro} == 0 ) {
 			my %city_code;
-			$city_code{$_}++ for map { s/-.*//; $_ } @{[@locations]};
+			$city_code{$_}++ for map { s/-.*//; $_ } grep /-/, @{[@locations]};
 			die 'Cross-posting to different metro-sections disabled'
 				if grep $city_code{$_} > 1, keys %city_code
 			;
