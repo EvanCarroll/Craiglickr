@@ -5,6 +5,8 @@ use warnings;
 
 use base 'Catalyst::View::TT';
 
+## ALL IN YAML
+
 =head1 NAME
 
 Craiglickr::View::TT - TT View for Craiglickr

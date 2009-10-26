@@ -5,6 +5,7 @@
 		.true { color: green }
 		.false { color: red }
 		dt,dd { display:inline; margin:0 }
+		.value { border-left: 1px dotted black; padding:0 .5em; font-family:monospace }
 		dl { margin-left:5em }
 	'
 	
@@ -15,35 +16,30 @@
 	yes = '<span class="true">true</span>'
 	enabled = '<span class="true">enabled</span>'
 	true = '<span class="true">true</span>'
-
-	; WRAPPER wrapper.tt
 %]
 
-	<h1>Craiglickr Configuration</h1>
+<h1>Craiglickr Configuration</h1>
 
-	<h2> Locations </h2>
-		<dl>
-			<dt> Cross-posting </dt>
-			<dd> [% c.config.Craiglickr.location.cross_posting ? enabled : disabled %] </dd>
-			<dd>
-				<dl>
-					<dt> Metro/Inner City cross-posting </dt>
-					<dd> [% c.config.Craiglickr.location.cross_metro ? enabled : disabled %] </dd>
-				</dl>
-			</dd>
-			<dd>
-				<dl>
-					<dt> Maximum Locations </dt>
-					<dd> [% c.config.Craiglickr.location.max %] </dd>
-				</dl>
-			</dd>
-		</dl>
+<h2> Locations </h2>
+	<dl>
+		<dt class="key"> Cross-posting </dt>
+		<dd class="value"> [% c.config.Craiglickr.location.cross_posting ? enabled : disabled %] </dd>
+		<dd>
+			<dl>
+				<dt class="key"> Metro/Inner City cross-posting </dt>
+				<dd class="value"> [% c.config.Craiglickr.location.cross_metro ? enabled : disabled %] </dd>
+			</dl>
+		</dd>
+		<dd>
+			<dl>
+				<dt class="key"> Maximum Locations </dt>
+				<dd class="value"> [% c.config.Craiglickr.location.max %] </dd>
+			</dl>
+		</dd>
+	</dl>
 
-	<h2> Catagories </h2>
-		<dl>
-			<dt> Cross posting </dt>
-			<dd> [% c.config.Craiglickr.category.cross_posting ? enabled : disabled %] </dd>
-		</dl>
-
-
-[% END %]
+<h2> Catagories </h2>
+	<dl>
+		<dt class="key"> Cross posting </dt>
+		<dd class="value"> [% c.config.Craiglickr.category.cross_posting ? enabled : disabled %] </dd>
+	</dl>

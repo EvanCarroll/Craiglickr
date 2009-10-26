@@ -7,6 +7,7 @@ static:
 View::TT:
   DEBUG: 1
   PRE_CHOMP: 1
+  WRAPPER: wrapper.tt
   TEMPLATE_EXTENTION: .tt
 Model::CraiglickrPost:
   cities:
@@ -23,3 +24,4 @@ Craiglickr:
     max: 4
   category:
     cross_posting: 0
+    no_owner: 1
