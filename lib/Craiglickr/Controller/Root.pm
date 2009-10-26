@@ -10,7 +10,8 @@ use Craiglickr::Post;
 
 sub foo :Global {
 	my ( $self , $c ) = @_;
-	use XXX; YYY $c->model('CraigsList')->locations_index_by_code;
+#	use XXX; YYY $c->model('CraigsList')->locations_index_by_code;
+	$c->stash->{template} = 'craiglickr_configuration.tt';
 }
 
 sub craiglickr :Chained('.') :CaptureArgs(0) { }
@@ -24,44 +25,39 @@ sub locations :Chained('craiglickr') :CaptureArgs(1) {
 	my ( $self, $c, $locations ) = @_;
 	my @locations = split /,/, $locations;
 
-	## Detect dupes
-	my $db;
-	for ( @locations ) {
-		if ( exists $db->{$_} ) {
-			die "Can not post to the same location twice";
-		}
-		else {
-			$db->{$_} = undef;
-		}
-	}
+	die 'No locations supplied'
+		unless @locations > 1
+	;
 
+	my %db;
+	for ( @locations ) {
+		! exists $db{$_}
+			? $db{$_} = undef
+			: die( "Can not post to the same location twice" )
+		;
+	}
+	
 	if ( $c->config->{Craiglickr}{location}{max} < @locations ) {
 		my $max = $c->config->{Craiglickr}{location}{max};
 		my $supplied = @locations;
 		die "You can only post to $max locations at a time. You tried to post to $supplied locations";
 	}
-
-	
-	if ( @locations > 0 ) {
-
-		if ( $c->config->{Craiglickr}{location}{cross_posting} == 0 ) {
-			die 'Cross-posting to different locations disabled'
-		}
-		
-		elsif ( $c->config->{Craiglickr}{location}{cross_metro} == 0 ) {
-			my %city_code;
-			$city_code{$_}++ for map { s/-.*//; $_ } grep /-/, @{[@locations]};
-			die 'Cross-posting to different metro-sections disabled'
-				if grep $city_code{$_} > 1, keys %city_code
-			;
-		}
-
+	if ( $c->config->{Craiglickr}{location}{cross_posting} == 0 ) {
+		die 'Cross-posting to different locations disabled'
 	}
 	
-	foreach my $loc ( @locations ) {
-		die "Invalid location [$loc]" unless exists $c->model('Craigslist')->locations_index_by_code->{$loc};
+	elsif ( $c->config->{Craiglickr}{location}{cross_metro} == 0 ) {
+		my %city_code;
+		$city_code{$_}++ for map { s/-.*//; $_ } grep /-/, @{[@locations]};
+		die 'Cross-posting to different metro-sections disabled'
+			if grep $city_code{$_} > 1, keys %city_code
+		;
 	}
-		
+	
+		foreach my $loc ( @locations ) {
+			die "Invalid location [$loc]" unless exists $c->model('Craigslist')->locations_index_by_code->{$loc};
+		}
+
 	$c->stash->{'locations'} = \@locations;
 
 }
