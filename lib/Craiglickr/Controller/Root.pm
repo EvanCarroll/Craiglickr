@@ -8,12 +8,6 @@ __PACKAGE__->config->{namespace} = '';
 use Craiglickr::Ad;
 use Craiglickr::Post;
 
-sub foo :Global {
-	my ( $self , $c ) = @_;
-#	use XXX; YYY $c->model('CraigsList')->locations_index_by_code;
-	$c->stash->{template} = 'craiglickr_configuration.tt';
-}
-
 sub craiglickr :Chained('.') :CaptureArgs(0) { }
 
 sub configureAll :Chained('craiglickr') :PathPart('') :Args(0) {
@@ -25,39 +19,51 @@ sub locations :Chained('craiglickr') :CaptureArgs(1) {
 	my ( $self, $c, $locations ) = @_;
 	my @locations = split /,/, $locations;
 
-	die 'No locations supplied'
-		unless @locations > 1
-	;
-
-	my %db;
-	for ( @locations ) {
-		! exists $db{$_}
-			? $db{$_} = undef
-			: die( "Can not post to the same location twice" )
-		;
-	}
+	## No 0 locations
+	die 'No locations supplied' unless @locations ;
 	
-	if ( $c->config->{Craiglickr}{location}{max} < @locations ) {
-		my $max = $c->config->{Craiglickr}{location}{max};
-		my $supplied = @locations;
-		die "You can only post to $max locations at a time. You tried to post to $supplied locations";
-	}
-	if ( $c->config->{Craiglickr}{location}{cross_posting} == 0 ) {
+	if ( @locations > 1 ) {
+		
+		## No posting cross-city unless permitted
 		die 'Cross-posting to different locations disabled'
-	}
-	
-	elsif ( $c->config->{Craiglickr}{location}{cross_metro} == 0 ) {
-		my %city_code;
-		$city_code{$_}++ for map { s/-.*//; $_ } grep /-/, @{[@locations]};
-		die 'Cross-posting to different metro-sections disabled'
-			if grep $city_code{$_} > 1, keys %city_code
+			if $c->config->{Craiglickr}{location}{cross_posting} == 0
 		;
-	}
 	
-		foreach my $loc ( @locations ) {
-			die "Invalid location [$loc]" unless exists $c->model('Craigslist')->locations_index_by_code->{$loc};
+		## No dupe locations
+		my %loc;
+		for my $loc ( @locations ) {
+			! exists $loc{$loc}
+				? $loc{$loc} = undef
+				: die( "Can not post to the same location twice as tried with $loc" )
+			;
 		}
 
+		## No dupe metro
+		if ( $c->config->{Craiglickr}{location}{cross_metro} == 0 ) {
+			my %metro;
+			for my $loc ( keys %loc ) {
+				$loc =~ s/-.*//;
+				! exists $metro{$loc}
+					? $metro{$loc} = undef
+					: die( "Can not post to the same location twice as tried with $loc" )
+				;
+			}
+		}
+	
+		## No exceeding max locations
+		if ( @locations > $c->config->{Craiglickr}{location}{max} ) {
+			my $max = $c->config->{Craiglickr}{location}{max};
+			my $supplied = @locations;
+			die "Can only post to $max locations at a time. You tried to post to $supplied locations";
+		}
+	
+	}
+	
+	## No invalid locations
+	foreach my $loc ( @locations ) {
+		die "Invalid location [$loc]" unless exists $c->model('Craigslist')->locations_index_by_code->{$loc};
+	}
+	
 	$c->stash->{'locations'} = \@locations;
 
 }
@@ -84,15 +90,15 @@ sub configureLocations :Chained('craiglickr') :PathPart('locations') :Args(0) {
 
 sub boards :Chained('locations') :Args(1) {
 	my ( $self, $c, $boards ) = @_;
-	$c->stash->{'boards'} = [split /,/, $boards];
+	my @boards = split /,/, $boards;
 		
-	if ( $c->config->{Craiglickr}{category}{cross_posting} == 0 ) {
+	if ( @boards > 1 and $c->config->{Craiglickr}{category}{cross_posting} == 0 ) {
 		die 'Cross-posting to different catagories disabled'
 	}
 
 	$c->stash->{posts} = Craiglickr::Post->new({
 			locations => $c->stash->{locations}
-			, boards  => $c->stash->{boards}
+			, boards  => \@boards
 	})->get_forms;
 	
 	$c->stash->{ad} = Craiglickr::Ad->new({
@@ -125,6 +131,12 @@ sub configureBoards :Chained('locations') :PathPart('boards') :Args(0) {
 		$c->stash->{template} = 'setup/type/catagory/forsale.tt';
 	}
 
+}
+
+sub configuration :Chained('craiglickr') :Args(0) {
+	my ( $self , $c ) = @_;
+	#	use XXX; YYY $c->model('CraigsList')->locations_index_by_code;
+	$c->stash->{template} = 'craiglickr_configuration.tt';
 }
 
 sub default :Path {
