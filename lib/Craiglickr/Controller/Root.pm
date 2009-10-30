@@ -64,7 +64,7 @@ sub locations :Chained('craiglickr') :CaptureArgs(1) {
 		die "Invalid location [$loc]" unless exists $c->model('Craigslist')->locations_index_by_code->{$loc};
 	}
 	
-	$c->stash->{'locations'} = \@locations;
+	$c->stash->{locations} = \@locations;
 
 }
 
