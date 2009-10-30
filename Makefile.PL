@@ -25,7 +25,7 @@ install_share 'share';
 resources(
 	'license',      => 'http://creativecommons.org/licenses/by-sa/3.0/'
 	, 'homepage',   => 'http://www.evancarroll.com/'
-	, 'repository', => 'http://github.com/EvanCarroll/git@github.com:EvanCarroll/Craiglickr.git'
+	, 'repository', => 'git://github.com/EvanCarroll/Craiglickr.git'
 );
 
 auto_install;
