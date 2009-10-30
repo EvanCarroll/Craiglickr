@@ -21,7 +21,7 @@ Craiglickr:
   location:
     cross_posting: 1
     cross_metro:   0
-    max: 4
+    max: 3
   category:
     cross_posting: 0
-    no_owner: 1
+    owner: 1

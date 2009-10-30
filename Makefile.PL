@@ -18,6 +18,8 @@ requires 'File::ShareDir';
 
 requires 'IO::Socket::SSL';
 
+test_requires 'Test::More' => 0.94;
+
 install_share 'share';
 
 resources(
