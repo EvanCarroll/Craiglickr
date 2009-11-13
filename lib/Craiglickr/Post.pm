@@ -3,7 +3,6 @@ use Moose;
 use strict;
 use warnings;
 
-use MooseX::AttributeHelpers;
 use Craiglickr::HTTP::FormRetrieve;
 use Craiglickr::Ad;
 
@@ -14,8 +13,8 @@ has 'locations' => (
 	, is => 'ro'
 	, default => sub { +[] }
 
-	, metaclass => 'Collection::Array'
-	, provides => { 'push' => 'add_location' }
+	, traits  => ['Array']
+	, handles => { 'add_location' => 'push' }
 );
 
 has 'boards' => (
@@ -23,8 +22,8 @@ has 'boards' => (
 	, is => 'ro'
 	, default => sub { +[] }
 
-	, metaclass => 'Collection::Array'
-	, provides => { 'push' => 'add_board' }
+	, traits  => ['Array']
+	, handles => { 'add_board' => 'push' }
 );
 
 sub get_forms {

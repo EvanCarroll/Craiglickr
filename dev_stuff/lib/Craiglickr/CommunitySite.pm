@@ -3,7 +3,6 @@ use strict;
 use warnings;
 
 use Moose;
-use MooseX::AttributeHelpers;
 use HTML::TreeBuilder;
 use URI;
 
@@ -66,8 +65,10 @@ has '_response_root' => (
 has 'subsites' => (
 	isa         => 'ArrayRef[Craiglickr::CommunitySite]'
 	, is        => 'ro'
-	, metaclass => 'Collection::Array'
-	, provides  => { 'push' => 'push_subsite', 'empty' => 'has_subsites' }
+
+	, traits    => ['Array']
+	, handles   => { 'push_subsite' => 'push' , 'has_subsites' => 'empty' }
+
 	, lazy      => 1
 	, predicate => 'preset_subsites'
 	, default   => sub {
