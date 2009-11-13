@@ -141,5 +141,3 @@ You can find the available license at L<http://creativecommons.org/licenses/by-s
 This program is currently using, and distributed with, B<CKeditor> which is being used under an unspecified license. You can find more information at http://ckeditor.com/license. CKeditor is a great easy to use WYSIWYG form, please check it out.
 
 =cut
-
-1;
