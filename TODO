@@ -4,6 +4,7 @@ Problems
 * Integrity
 	* Confirm that the catagories are valid per YAML
 * Add the ability to do template importantion and docs
+* Supper customizing the email address on the post.tt
 
 Craigslist functionality not supported.
 * Support more than just the "For Sale" section/board
