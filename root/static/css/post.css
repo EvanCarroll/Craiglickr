@@ -8,14 +8,20 @@ form { background-color: whitesmoke; padding:10px }
 .formGrouping.price { width: 5em }
 .formGrouping.location { width:15em }
 
-.formGrouping label, .formGrouping input { border:0; float:left; clear:both; width:100% }
+
+.formGrouping label
+, .formGrouping input { border:0; float:left; clear:both; width:100% }
+
 .formMain { clear:both }
 .ckeditor { height:100%} 
 .input { background-color:whitesmoke; }
 .posToken { display:none }
-#disclaimer { font-size:x-small; color:black; width:33%; margin:0 auto; }
+#disclaimer { font-size:x-small; color:black; width:60%; max-width:600px; margin:0 auto; }
 fieldset { border:0 }
 legend { display:none }
 
+.formFooter { height:3em }
 /* I don't like this picture interface */
 .formFooter .picture { display:none }
+.formGrouping.email { float:right }
+

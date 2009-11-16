@@ -1,13 +1,14 @@
 $(document).ready(function(){
 	$('.posting').css('display','none');
 
-	$('.email.confirm').attr('readonly', 'readonly');
-	$('.email.confirm').css('display', 'none');
+	/* Get rid of the confirm re-enter box, interface bloat */
+	$('.email .confirm').attr('readonly', 'readonly');
+	$('.email .confirm, .formFooter input[type=submit]').css('display', 'none');
 	
 	$('#post1').css('display','inherit').after( $('<div id="controller">') );
 	$(":submit").each(function(){
 		var $button = $(this);
-		$('#controller').append(
+		$('#post1 input[type=submit]').before(
 			$('<button />')
 			.text( 'post: ' + $button.attr('alt') )
 			.click(function() {

@@ -53,9 +53,11 @@
 		<div class="picture"> [%- FOREACH e IN p.get_image_add %] [% e.as_HTML %] [%- END %] </div>
 		[%- p.get_token_as_html_from_form_pos('Submit') %]
 		<input tabindex="5" type="submit" name="[% f.look_down('type','submit').attr('name')  %]" value="Continue" alt="[%p.location%] &rarr; [%p.board%]" />
-		<label for="email[%loop.count%]">E-mail (for responses):</label>
-		<input type="text" class="email" id="email[%loop.count%]" name="FromEMail" value="[% ad.email  %]" />
-		<input type="text" class="email confirm" name="ConfirmEMail" value="[% ad.email  %]" />
+		<div class="formGrouping email">
+			<label for="email[%loop.count%]">E-mail (for responses):</label>
+			<input type="text" id="email[%loop.count%]" name="FromEMail" value="[% ad.email  %]" />
+			<input type="text" class="confirm" name="ConfirmEMail" value="[% ad.email  %]" />
+		</div>
 		<input type="hidden" name="[% f.look_down('type','radio').0.attr('name') %]" value="C" />
 	</div>
 </form>
