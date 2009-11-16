@@ -14,22 +14,12 @@
 	<h1> Pick your locations:</h1>
 	<form action="[% c.request.uri %]" method="post">
 		<ol>
-			<li> <label for="location1"> <em>Required</em> &mdash; Primary Location </label> <select id="location1" name="loc">
+			[% FOR i IN [ 1 .. c.config.Craiglickr.location.max ] %]
+			<li> <label for="location[%i%]"> <em>Required</em> &mdash; Primary Location </label> <select id="location[%i%]" name="loc">
 				<option disabled="disabled" selected="selected"> Click here and pick a location </option>
 				[% INCLUDE iterate db = craigslist.locations %]
 			</select> </li>
-			<li> <label for="location2"> <em>Optional</em> &mdash; Secondary Location </label> <select id="location2" name="loc">
-				<option disabled="disabled" selected="selected"> And another.. (if you want) </option>
-				[% INCLUDE iterate db = craigslist.locations %]
-			</select> </li>
-			<li> <label for="location3"> <em>Optional</em> &mdash; Third Location </label> <select id="location3" name="loc">
-				<option disabled="disabled" selected="selected"> And another.. (if you want) </option>
-				[% INCLUDE iterate db = craigslist.locations %]
-			</select> </li>
-			<li> <label for="location4"> <em>Optional</em> &mdash; Fourth Location </label> <select id="location4" name="loc">
-				<option disabled="disabled" selected="selected"> You get the idea. </option>
-				[% INCLUDE iterate db = craigslist.locations %]
-			</select> </li>
+			[% END %]
 		</ol>
 		<button onclick="javascript:reset();return false">Reset</button>
 		<input type="submit" />
