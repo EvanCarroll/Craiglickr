@@ -16,3 +16,6 @@ form { background-color: whitesmoke; padding:10px }
 #disclaimer { font-size:x-small; color:black; width:33%; margin:0 auto; }
 fieldset { border:0 }
 legend { display:none }
+
+/* I don't like this picture interface */
+.formFooter .picture { display:none }
