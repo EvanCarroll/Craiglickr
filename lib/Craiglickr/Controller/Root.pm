@@ -102,11 +102,11 @@ sub boards :Chained('locations') :Args(1) {
 	})->get_forms;
 	
 	$c->stash->{ad} = Craiglickr::Ad->new({
-		title         => 'Test Vehicle'
+		title         => 'Test Item'
 		, location    => 'Kingwood, TX'
-		, description => 'THIS CAR IS AWESOME'
+		, description => 'THIS ITEM IS AWESOME'
 		, price       => 1_000 + 500
-		, email       => 'me@evancarroll.com'
+		, email       => 'user@domain.com'
 		, email_flag  => 'anonymous'
 	});
 
