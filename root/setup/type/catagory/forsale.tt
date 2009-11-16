@@ -8,14 +8,21 @@
 	<h1> Pick your catagory: </h1>
 	<form action="[% c.request.uri %]" method="post">
 		<ol>
-			<li> <label for="cata1"> <em>Required</em> &mdash; Primary catagory </label> <select id="cata1" name="cat">
-				<option disabled="disabled" selected="selected"> What type of item is this? </option>
-				[% PROCESS optionlist %]
-			</select> </li>
-			<li> <label for="cata2"> <em>Optional</em> &mdash; Second catagory </label> <select id="cata2" name="cat">
-				<option disabled="disabled" selected="selected"> A second catagory should rarely be used! </option>
-				[% PROCESS optionlist %]
-			</select> </li>
+			[% FOR i IN [ 1 .. c.config.Craiglickr.category.max ] %]
+			<li>
+				<label for="cata[%i%]">
+					<em> [% IF loop.first %] Required [% ELSE %] Optional [% END %] </em> &mdash; catagory
+				</label>
+				<select id="cata[%i%]" name="cat">
+					[% IF loop.first %]
+						<option disabled="disabled" selected="selected"> Pick your category </option>
+					[% ELSE %]
+						<option disabled="disabled" selected="selected"> A second catagory should rarely be used! </option>
+					[% END %]
+					[% PROCESS optionlist %]
+				</select>
+			</li>
+			[% END %]
 		</ol>
 		<button onclick="javascript:reset();return false">Reset</button>
 		<input type="submit" />
