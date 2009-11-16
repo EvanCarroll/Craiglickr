@@ -19,9 +19,10 @@ Model::Craigslist:
   locations_crop: true
 Craiglickr:
   location:
+    max: 3
     cross_posting: 1
     cross_metro:   0
-    max: 3
   category:
+    max: 1
     cross_posting: 0
     owner: 1
