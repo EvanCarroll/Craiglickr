@@ -15,10 +15,13 @@
 	<form action="[% c.request.uri %]" method="post">
 		<ol>
 			[% FOR i IN [ 1 .. c.config.Craiglickr.location.max ] %]
-			<li> <label for="location[%i%]"> <em>Required</em> &mdash; Primary Location </label> <select id="location[%i%]" name="loc">
-				<option disabled="disabled" selected="selected"> Click here and pick a location </option>
-				[% INCLUDE iterate db = craigslist.locations %]
-			</select> </li>
+			<li>
+				<label for="location[%i%]"> <em> [% IF loop.first %] Required [% ELSE %] Optional [% END %] </em> &mdash; location </label>
+				<select id="location[%i%]" name="loc">
+					<option disabled="disabled" selected="selected"> Click here and pick a location </option>
+					[% INCLUDE iterate db = craigslist.locations %]
+				</select>
+			</li>
 			[% END %]
 		</ol>
 		<button onclick="javascript:reset();return false">Reset</button>
