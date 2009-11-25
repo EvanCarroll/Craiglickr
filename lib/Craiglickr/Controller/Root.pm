@@ -29,11 +29,12 @@ sub locations :Chained('craiglickr') :CaptureArgs(1) {
 			if $c->config->{Craiglickr}{location}{cross_posting} == 0
 		;
 	
+		my %l;
+		
 		## No dupe locations
-		my %loc;
 		for my $loc ( @locations ) {
-			! exists $loc{$loc}
-				? $loc{$loc} = undef
+			! exists $l{$loc}
+				? $l{$loc} = undef
 				: die( "Can not post to the same location twice as tried with $loc" )
 			;
 		}
@@ -41,7 +42,7 @@ sub locations :Chained('craiglickr') :CaptureArgs(1) {
 		## No dupe metro
 		if ( $c->config->{Craiglickr}{location}{cross_metro} == 0 ) {
 			my %metro;
-			for my $loc ( keys %loc ) {
+			for my $loc ( keys %l ) {
 				$loc =~ s/-.*//;
 				! exists $metro{$loc}
 					? $metro{$loc} = undef
@@ -92,13 +93,33 @@ sub boards :Chained('locations') :Args(1) {
 	my ( $self, $c, $boards ) = @_;
 	my @boards = split /,/, $boards;
 		
-	if ( @boards > 1 and $c->config->{Craiglickr}{category}{cross_posting} == 0 ) {
-		die 'Cross-posting to different catagories disabled'
+	if ( @boards > 1 ) {
+
+		die 'Cross-posting to different boards is disabled'
+			if $c->config->{Craiglickr}{category}{cross_posting} == 0
+		;
+		
+		## No dupe locations
+		my %b;
+		for my $board ( @boards ) {
+			! exists $b{$board}
+				? $b{$board} = undef
+				: die( "Can not post to the same board twice as tried with $board" )
+			;
+		}
+		
+		## No exceeding max categorys
+		if ( @boards > $c->config->{Craiglickr}{category}{max} ) {
+			my $max = $c->config->{Craiglickr}{category}{max};
+			my $supplied = @boards;
+			die "Can only post to $max boards at a time. You tried to post to the '$supplied' board";
+		}
+
 	}
 
 	$c->stash->{posts} = Craiglickr::Post->new({
-			locations => $c->stash->{locations}
-			, boards  => \@boards
+		locations => $c->stash->{locations}
+		, boards  => \@boards
 	})->get_forms;
 	
 	$c->stash->{ad} = Craiglickr::Ad->new({
