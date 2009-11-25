@@ -27,6 +27,7 @@ $(document).ready(function(){
 				$form.find('input.title').val( $("#title1").attr('value') );
 				$form.find('input.price').val( $("#price1").attr('value') );
 				$form.find('input.email').val( $("#email1").attr('value') );
+				$form.find('input.confirm').val( $("#email1").attr('value') );
 				$form.find('input.location').val( $("#location1").attr('value') );
 				$form.find('textarea.description').val( CKEDITOR.instances.description1.getData() );
 
