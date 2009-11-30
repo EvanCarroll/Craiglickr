@@ -29,9 +29,10 @@
 	</form>
 [% END %]
 [% BLOCK optionlist %]
-	[% FOR x = craigslist.section.s.values %]
-		<option value="[%x.code |html%]" label="[%x.text |html%]">
-			[%x.text |html%] [% IF x.comment %] &mdash; [%x.comment |html%] [% END %]
+	[% SET h = craigslist.section.s %]
+	[% FOR x = h.keys.sort %]
+		<option value="[%h.$x.code |html%]" label="[%h.$x.text |html%]">
+			[%h.$x.text |html%] [% IF h.$x.comment %] &mdash; [%h.$x.comment |html%] [% END %]
 		</option>
 	[% END %]
 [% END %]
