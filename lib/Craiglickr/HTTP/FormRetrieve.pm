@@ -72,8 +72,18 @@ has 'form' => (
 
 		## type="hidden" class=> qr/sta|fr|gg1|point/;
 		$input[0]->attr( id => "title" );
-		$input[1]->attr( id => "price" );
-		$input[2]->attr( id => "location" );
+
+		## maxlength=70  == title
+		## maxlength=7   == price
+		## maxlength=40  == location
+		## if we don't have it (in the event of free), the next box=40 is going to be location
+		if ( $input[1]->attr('maxlength') == 7 ) {
+			$input[1]->attr( id => "price" );
+			$input[2]->attr( id => "location" );
+		}
+		elsif ( $input[1]->attr('maxlength') == 40 ) {
+			$input[1]->attr( id => "location" );
+		}
 		
 		$form->look_down( name => 'FromEMail' )->attr( id => "email1" );
 		$form->look_down( name => 'ConfirmEMail' )->attr( id => "email2" );
