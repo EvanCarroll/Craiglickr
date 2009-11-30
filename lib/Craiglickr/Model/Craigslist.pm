@@ -18,6 +18,8 @@ has 'locations_crop' => ( isa => 'Str', is => 'ro', default => 0 );
 has 'for_sale' => (
 	isa  => 'HashRef'
 	, is => 'ro'
+	, traits => ['Hash']
+	, handles => { 'for_sale_by_code' => 'get' }
 	, lazy => 1 ## required for some weird reason
 	, default => sub {
 		my $self = shift;

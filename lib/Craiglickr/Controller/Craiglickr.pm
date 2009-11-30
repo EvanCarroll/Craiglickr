@@ -66,10 +66,18 @@ sub locations :Chained('craiglickr') :CaptureArgs(1) {
 	
 	## No invalid locations
 	foreach my $loc ( @locations ) {
-		die "Invalid location [$loc]" unless exists $c->model('Craigslist')->locations_index_by_code->{$loc};
+
+		my $linfo = $c->model('Craigslist')->locations_index_by_code->{$loc};
+
+		die "Invalid location [$loc]"
+			unless defined $linfo
+		;
+
+		## Finallize in stash		
+		push @{ $c->stash->{locations} }, $linfo;
 	}
 	
-	$c->stash->{locations} = \@locations;
+	$c->stash->{locations};
 
 }
 
@@ -121,8 +129,14 @@ sub boards :Chained('locations') :Args(1) {
 
 	}
 
+	foreach my $boards ( @boards ) {
+		push @{ $c->stash->{boards} }
+			, $c->model('Craigslist')->for_sale_by_code($boards)
+		;
+	}
+	
 	$c->stash->{posts} = Craiglickr::Post->new({
-		locations => $c->stash->{locations}
+		locations => [map $_->{uid}, @{$c->stash->{locations}}]
 		, boards  => \@boards
 	})->get_forms;
 	

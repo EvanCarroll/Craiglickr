@@ -6,8 +6,14 @@
 	uri_js.push( 'js/cleanmultiform.js' );
 	uri_js.push( 'ckeditor/ckeditor.js' );
 %]
-
-<div id="header"><h1> Craiglickr </h1> <h2> cities [% cities.join(', ') %] &rarr; post to car dealer </h2> </div>
+[% USE Dumper %]
+<div id="header">
+	<h1> Craiglickr </h1>
+	<h2>
+		post to [% FOR l IN locations %] [% l.name %] [% IF NOT loop.last %] , [% END %] [% END %]
+		&rarr; [% FOR b IN boards %] [% b.text %] [% IF NOT loop.last %] , [% END %] [% END %]
+	</h2>
+</div>
 <noscript>
 		<p> <strong>CKEditor requires JavaScript to run</strong>. In a browser with no JavaScript support, like yours, you should still see the contents (HTML data) and you should be able to edit it normally, without a rich editor interface. </p>
 </noscript>
