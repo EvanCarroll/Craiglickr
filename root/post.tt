@@ -35,7 +35,7 @@
 			<label class="title" for="title[%loop.count%]"> Title </label>
 			<input tabindex="1" type="text" class="title" id="title[%loop.count%]" name="[% f.look_down('id','title').attr('name')  %]" value="[% ad.title  %]" />
 		</div>
-		[%- IF f.look_down('id','price').attr('name').length > 0 %]
+		[%- IF f.look_down('id','price').attr('name').defined %]
 		<div class="formGrouping price">
 			<label class="price" for="price[%loop.count%]"> Price ($) </label>
 			<input tabindex="2" type="text" class="price" id="price[%loop.count%]" name="[% f.look_down('id','price').attr('name')  %]" value="[% ad.price  %]" />
