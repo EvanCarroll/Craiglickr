@@ -15,7 +15,7 @@ sub configureAll :Chained('craiglickr') :PathPart('') :Args(0) {
 
 sub default {
 	my ( $self , $c ) = @_;
-	#	use XXX; YYY $c->model('CraigsList')->locations_index_by_code;
+	# use XXX; YYY $c->model('CraigsList')->locations_index_by_code;
 	$c->stash->{template} = 'craiglickr_configuration.tt';
 }
 
@@ -39,7 +39,7 @@ sub locations :Chained('craiglickr') :CaptureArgs(1) {
 		for my $loc ( @locations ) {
 			! exists $l{$loc}
 				? $l{$loc} = undef
-				: die( "Can not post to the same location twice as tried with $loc" )
+				: die "Can not post to the same location twice as tried with $loc"
 			;
 		}
 
@@ -50,7 +50,7 @@ sub locations :Chained('craiglickr') :CaptureArgs(1) {
 				$loc =~ s/-.*//;
 				! exists $metro{$loc}
 					? $metro{$loc} = undef
-					: die( "Can not post to the same location twice as tried with $loc" )
+					: die "Can not post to the same location twice as tried with $loc"
 				;
 			}
 		}
@@ -108,7 +108,7 @@ sub boards :Chained('locations') :Args(1) {
 		for my $board ( @boards ) {
 			! exists $b{$board}
 				? $b{$board} = undef
-				: die( "Can not post to the same board twice as tried with $board" )
+				: die "Can not post to the same board twice as tried with $board"
 			;
 		}
 		
