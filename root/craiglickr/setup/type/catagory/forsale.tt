@@ -8,16 +8,16 @@
 	<h1> Pick your catagory: </h1>
 	<form action="[% c.request.uri %]" method="post">
 		<ol>
-			[% FOR i IN [ 1 .. c.config.Craiglickr.category.max ] %]
+			[% FOR i IN [ 1 .. c.config.Craiglickr.board.max ] %]
 			<li>
 				<label for="cata[%i%]">
 					<em> [% IF loop.first %] Required [% ELSE %] Optional [% END %] </em> &mdash; catagory
 				</label>
 				<select id="cata[%i%]" name="cat">
 					[% IF loop.first %]
-						<option disabled="disabled" selected="selected"> Pick your category </option>
+						<option disabled="disabled" selected="selected"> Pick your board </option>
 					[% ELSE %]
-						<option disabled="disabled" selected="selected"> A second catagory should rarely be used! </option>
+						<option disabled="disabled" selected="selected"> A second board should rarely be used! </option>
 					[% END %]
 					[% PROCESS optionlist %]
 				</select>

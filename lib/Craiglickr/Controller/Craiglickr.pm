@@ -10,13 +10,13 @@ sub craiglickr :Chained :CaptureArgs(0) { }
 
 sub configureAll :Chained('craiglickr') :PathPart('') :Args(0) {
 	my ( $self, $c ) = @_;
-	$c->stash->{template} = 'configure.tt';
+	$c->stash->{template} = 'craiglickr/home.tt';
 }
 
-sub view_configuration :Path {
+sub view_configuration :Local {
 	my ( $self , $c ) = @_;
 	# use XXX; YYY $c->model('CraigsList')->locations_index_by_code;
-	$c->stash->{template} = 'craiglickr_configuration.tt';
+	$c->stash->{template} = 'craiglickr/view_configuration.tt';
 }
 
 sub configureLocations :Chained('craiglickr') :PathPart('locations') :Args(0) {
@@ -34,7 +34,7 @@ sub configureLocations :Chained('craiglickr') :PathPart('locations') :Args(0) {
 	}
 	else {
 		$c->stash->{craigslist}{locations} = $c->model('CraigsList')->locations;
-		$c->stash->{template} = 'setup/locations.tt';
+		$c->stash->{template} = 'craiglickr/setup/locations.tt';
 	}
 
 }
@@ -116,7 +116,7 @@ sub configureBoards :Chained('locations') :PathPart('boards') :Args(0) {
 	}
 	else {
 		$c->stash->{craigslist}{section}{s} = $c->model('Craigslist')->for_sale;
-		$c->stash->{template} = 'setup/type/catagory/forsale.tt';
+		$c->stash->{template} = 'craiglickr/setup/type/catagory/forsale.tt';
 	}
 
 }
@@ -176,7 +176,7 @@ sub post :Private {
 		, email_flag  => 'anonymous'
 	});
 
-	$c->stash->{template} = 'post.tt';
+	$c->stash->{template} = 'craiglickr/post.tt';
 }
 
 sub end : ActionClass('RenderView') {}
