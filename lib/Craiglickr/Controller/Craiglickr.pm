@@ -13,7 +13,7 @@ sub configureAll :Chained('craiglickr') :PathPart('') :Args(0) {
 	$c->stash->{template} = 'configure.tt';
 }
 
-sub default {
+sub view_configuration :Path {
 	my ( $self , $c ) = @_;
 	# use XXX; YYY $c->model('CraigsList')->locations_index_by_code;
 	$c->stash->{template} = 'craiglickr_configuration.tt';
@@ -128,7 +128,7 @@ sub boards :Chained('locations') :Args(1) {
 	if ( @boards > 1 ) {
 
 		die 'Cross-posting to different boards is disabled'
-			if $c->config->{Craiglickr}{category}{cross_posting} == 0
+			if $c->config->{Craiglickr}{board}{cross_posting} == 0
 		;
 		
 		## No dupe locations
@@ -140,9 +140,9 @@ sub boards :Chained('locations') :Args(1) {
 			;
 		}
 		
-		## No exceeding max categorys
-		if ( @boards > $c->config->{Craiglickr}{category}{max} ) {
-			my $max = $c->config->{Craiglickr}{category}{max};
+		## No exceeding max boards
+		if ( @boards > $c->config->{Craiglickr}{board}{max} ) {
+			my $max = $c->config->{Craiglickr}{board}{max};
 			my $supplied = @boards;
 			die "Can only post to $max boards at a time. You tried to post to the '$supplied' board";
 		}

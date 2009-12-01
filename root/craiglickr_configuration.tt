@@ -38,8 +38,14 @@
 		</dd>
 	</dl>
 
-<h2> Catagories </h2>
+<h2> Boards (Catagories) </h2>
 	<dl>
 		<dt class="key"> Cross posting </dt>
-		<dd class="value"> [% c.config.Craiglickr.category.cross_posting ? enabled : disabled %] </dd>
+		<dd class="value"> [% c.config.Craiglickr.board.cross_posting ? enabled : disabled %] </dd>
+		<dd>
+			<dl>
+				<dt class="key"> Maximum Locations </dt>
+				<dd class="value"> [% c.config.Craiglickr.board.max %] </dd>
+			</dl>
+		</dd>
 	</dl>

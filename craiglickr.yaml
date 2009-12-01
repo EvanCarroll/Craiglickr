@@ -22,7 +22,7 @@ Craiglickr:
     max: 3
     cross_posting: 1
     cross_metro:   0
-  category:
+  board:
     max: 1
     cross_posting: 0
     owner: 1
