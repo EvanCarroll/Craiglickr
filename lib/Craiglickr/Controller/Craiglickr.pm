@@ -19,6 +19,26 @@ sub default {
 	$c->stash->{template} = 'craiglickr_configuration.tt';
 }
 
+sub configureLocations :Chained('craiglickr') :PathPart('locations') :Args(0) {
+	my ( $self, $c ) = @_;
+	
+	if ( my %p = %{$c->request->params} ) {
+		$p{loc} = [$p{loc}] unless ref $p{loc} eq 'ARRAY';
+
+		my %unique;
+		$unique{$_}=undef for @{$p{loc}};
+		$c->res->redirect(
+			$c->uri_for( $self->action_for('configureBoards'), [join ',', keys %unique] )
+		);
+
+	}
+	else {
+		$c->stash->{craigslist}{locations} = $c->model('CraigsList')->locations;
+		$c->stash->{template} = 'setup/locations.tt';
+	}
+
+}
+
 sub locations :Chained('craiglickr') :CaptureArgs(1) {
 	my ( $self, $c, $locations ) = @_;
 	my @locations = split /,/, $locations;
@@ -81,22 +101,22 @@ sub locations :Chained('craiglickr') :CaptureArgs(1) {
 
 }
 
-sub configureLocations :Chained('craiglickr') :PathPart('locations') :Args(0) {
+sub configureBoards :Chained('locations') :PathPart('boards') :Args(0) {
 	my ( $self, $c ) = @_;
-	
+
 	if ( my %p = %{$c->request->params} ) {
-		$p{loc} = [$p{loc}] unless ref $p{loc} eq 'ARRAY';
+		$p{cat} = [$p{cat}] unless ref $p{cat} eq 'ARRAY';
 
 		my %unique;
-		$unique{$_}=undef for @{$p{loc}};
+		$unique{$_}=undef for @{$p{cat}};
 		$c->res->redirect(
-			$c->uri_for( $self->action_for('configureBoards'), [join ',', keys %unique] )
+			$c->uri_for( $self->action_for('boards'), $c->request->captures, join ',', keys %unique )
 		);
 
 	}
 	else {
-		$c->stash->{craigslist}{locations} = $c->model('CraigsList')->locations;
-		$c->stash->{template} = 'setup/locations.tt';
+		$c->stash->{craigslist}{section}{s} = $c->model('Craigslist')->for_sale;
+		$c->stash->{template} = 'setup/type/catagory/forsale.tt';
 	}
 
 }
@@ -134,10 +154,17 @@ sub boards :Chained('locations') :Args(1) {
 			, $c->model('Craigslist')->for_sale_by_code($boards)
 		;
 	}
+
+	$c->detach( $self->action_for('post') );
+	
+}
+
+sub post :Private {
+	my ( $self, $c ) = @_;
 	
 	$c->stash->{posts} = Craiglickr::Post->new({
 		locations => [map $_->{uid}, @{$c->stash->{locations}}]
-		, boards  => \@boards
+		, boards  => [map $_->{code}, @{$c->stash->{boards}}]
 	})->get_forms;
 	
 	$c->stash->{ad} = Craiglickr::Ad->new({
@@ -150,26 +177,6 @@ sub boards :Chained('locations') :Args(1) {
 	});
 
 	$c->stash->{template} = 'post.tt';
-}
-
-sub configureBoards :Chained('locations') :PathPart('boards') :Args(0) {
-	my ( $self, $c ) = @_;
-
-	if ( my %p = %{$c->request->params} ) {
-		$p{cat} = [$p{cat}] unless ref $p{cat} eq 'ARRAY';
-
-		my %unique;
-		$unique{$_}=undef for @{$p{cat}};
-		$c->res->redirect(
-			$c->uri_for( $self->action_for('boards'), $c->request->captures, join ',', keys %unique )
-		);
-
-	}
-	else {
-		$c->stash->{craigslist}{section}{s} = $c->model('Craigslist')->for_sale;
-		$c->stash->{template} = 'setup/type/catagory/forsale.tt';
-	}
-
 }
 
 sub end : ActionClass('RenderView') {}
