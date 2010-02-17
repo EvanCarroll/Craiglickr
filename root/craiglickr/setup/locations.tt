@@ -9,26 +9,26 @@
 		.rank4 { padding-left:5em }
 		.rank6 { padding-left:6em }
 	'
-	; WRAPPER wrapper.tt
-%]
-	<h1> Pick your locations:</h1>
-	<form action="[% c.request.uri %]" method="post">
-		<ol>
-			[% FOR i IN [ 1 .. c.config.Craiglickr.location.max ] %]
-			<li>
-				<label for="location[%i%]"> <em> [% IF loop.first %] Required [% ELSE %] Optional [% END %] </em> &mdash; location </label>
-				<select id="location[%i%]" name="loc">
-					<option disabled="disabled" selected="selected"> Click here and pick a location </option>
-					[% INCLUDE iterate db = craigslist.locations %]
-				</select>
-			</li>
-			[% END %]
-		</ol>
-		<button onclick="javascript:reset();return false">Reset</button>
-		<input type="submit" />
-	</form>
-[% END %]
-[% BLOCK iterate %]
+-%]
+
+<h1> Pick your locations:</h1>
+<form action="[% c.request.uri %]" method="post">
+	<ol>
+		[% FOR i IN [ 1 .. c.config.Craiglickr.location.max ] %]
+		<li>
+			<label for="location[%i%]"> <em> [% IF loop.first %] Required [% ELSE %] Optional [% END %] </em> &mdash; location </label>
+			<select id="location[%i%]" name="loc">
+				<option disabled="disabled" selected="selected"> Click here and pick a location </option>
+				[% INCLUDE iterate db = craigslist.locations %]
+			</select>
+		</li>
+		[% END %]
+	</ol>
+	<button onclick="javascript:reset();return false">Reset</button>
+	<input type="submit" />
+</form>
+
+[%- BLOCK iterate %]
 	[% DEFAULT rank = 0 %]
 	[% FOREACH x IN db.keys.sort %]
 		[% IF NOT db.$x.exists('subsites') %]
