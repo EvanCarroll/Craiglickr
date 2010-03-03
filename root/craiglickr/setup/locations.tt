@@ -1,4 +1,4 @@
-[% SET
+[% META
 	title = 'Craiglickr - Pick your locations to post your ad to'
 	css = '
 		body { width:400px }
@@ -9,8 +9,7 @@
 		.rank4 { padding-left:5em }
 		.rank6 { padding-left:6em }
 	'
--%]
-
+%]
 <h1> Pick your locations:</h1>
 <form action="[% c.request.uri %]" method="post">
 	<ol>
@@ -28,7 +27,7 @@
 	<input type="submit" />
 </form>
 
-[%- BLOCK iterate %]
+[% BLOCK iterate %]
 	[% DEFAULT rank = 0 %]
 	[% FOREACH x IN db.keys.sort %]
 		[% IF NOT db.$x.exists('subsites') %]
