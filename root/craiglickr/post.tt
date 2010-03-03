@@ -1,6 +1,6 @@
 [%
+	META title = 'Craiglickr posting tool';
 	DEFAULT uri_css = [], uri_js = [];
-	title = 'Craiglickr posting tool';
 	uri_css.push( 'css/post.css' );
 	uri_js.push( 'js/jquery.js' );
 	uri_js.push( 'js/cleanmultiform.js' );
@@ -28,20 +28,20 @@
 	</div>
 [% END %]
 
-[%- FOREACH p IN posts %]
-[%- SET f = p.form %]
-<form id="post[%loop.count%]" class="posting[%IF loop.first%] first[%END%]" title="A posting to [%p.city%] for the board [%p.board%]" action="[% f.attr('action') %]" method="post" enctype="multipart/form-data" target="_blank">
-	[%- p.get_token_as_html_from_form_pos('postingKey') %]
+[% FOREACH p IN posts %]
+[% SET f = p.form %]
+<form id="post[%loop.count%]" class="posting[%IF loop.first%] first[%END%]" title="A posting to [%p.city%] for the board [%p.board%]" action="[% f.attr('action') %]" method="post" enctype="multipart/form-data" rel="external">
+	[% p.get_token_as_html_from_form_pos('postingKey') %]
 	<input type="hidden" name="postingKey" value="[%f.get_value_by_name('postingkey')%]" />
 	<input type="hidden" name="test" value="[%f.get_value_by_name('test')%]" />
 	<fieldset class="formTop">
 		<legend>Required Information</legend>
 		<div class="formGrouping title">
-			[%- p.get_token_as_html_from_form_pos('title') %]
+			[% p.get_token_as_html_from_form_pos('title') %]
 			<label class="title" for="title[%loop.count%]"> Title </label>
 			<input tabindex="1" type="text" class="title" id="title[%loop.count%]" name="[% f.look_down('id','title').attr('name')  %]" value="[% ad.title  %]" />
 		</div>
-		[%- IF f.look_down('id','price').attr('name').defined %]
+		[% IF f.look_down('id','price').attr('name').defined %]
 		<div class="formGrouping price">
 			<label class="price" for="price[%loop.count%]"> Price ($) </label>
 			<input tabindex="2" type="text" class="price" id="price[%loop.count%]" name="[% f.look_down('id','price').attr('name')  %]" value="[% ad.price  %]" />
@@ -53,13 +53,15 @@
 		</div>
 	</fieldset>
 	<div class="formMain">
-		[%- p.get_token_as_html_from_form_pos('description') %]
+		[% p.get_token_as_html_from_form_pos('description') %]
 		<label for="description[%loop.count%]"> Description </label>
-		<textarea tabindex="4" class="description[%IF loop.first%] ckeditor[%END%]" id="description[%loop.count%]" name="[% f.look_down('id','description').attr('name')  %]" rows="20" cols="80">[% ad.description %]</textarea>
+		<textarea tabindex="4" class="description[%IF loop.first%] ckeditor[%END%]" id="description[%loop.count%]" name="[% f.look_down('id','description').attr('name')  %]" rows="20" cols="80">
+				[% PROCESS craiglickr/posting_template/evan_bb.tt %]
+		</textarea>
 	</div>
 	<div class="formFooter">
-		<div class="picture"> [%- FOREACH e IN p.get_image_add %] [% e.as_HTML %] [%- END %] </div>
-		[%- p.get_token_as_html_from_form_pos('Submit') %]
+		<div class="picture"> [% FOREACH e IN p.get_image_add %] [% e.as_HTML %] [% END %] </div>
+		[% p.get_token_as_html_from_form_pos('Submit') %]
 		<input tabindex="5" type="submit" name="[% f.look_down('type','submit').attr('name')  %]" value="Continue" alt="[%p.location%] &rarr; [%p.board%]" />
 		<div class="formGrouping email">
 			<label for="email[%loop.count%]">E-mail (for responses):</label>
@@ -69,5 +71,5 @@
 		<input type="hidden" name="[% f.look_down('type','radio').0.attr('name') %]" value="C" />
 	</div>
 </form>
-[%- END %]
+[% END %]
 <div id="disclaimer"> Craiglickr is not a <em>posting agent</em>! We simply mark-up and format the post to Craigslist&trade;: the corresponding post will be sent from your computer, with your IP address exposed to Craigslist&trade;. <strong>You are bound to the <a target="_new" href="http://www.craigslist.org/about/terms.of.use">Craigslist TOS</a> with the use of the Craigslist&trade; web site.</strong> </div>
