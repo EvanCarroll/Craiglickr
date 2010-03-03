@@ -2,8 +2,8 @@
 	DEFAULT uri_css = [], uri_js = [];
 	META no_wrapper = 0;
 	uri_css.push('css/base.css');
--%]
-[% IF no_wrapper OR template.no_wrapper -%][% content -%][% ELSE -%]
+%]
+[% IF no_wrapper OR template.no_wrapper %][% content %][% ELSE %]
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE
  html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
