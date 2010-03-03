@@ -1,9 +1,8 @@
-[% SET
+[% META
 	title = 'Craiglickr - Pick that catagories that represent your ad'
 	css = '
 		body { width:400px }
 	'
-	; WRAPPER wrapper.tt
 %]
 	<h1> Pick your catagory: </h1>
 	<form action="[% c.request.uri %]" method="post">
