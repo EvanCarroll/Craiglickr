@@ -1,4 +1,4 @@
-[% SET
+[% META
 	title = 'Craiglickr Configuration'
 	css = '
 		body { width:60% }
@@ -7,8 +7,9 @@
 		dt,dd { display:inline; margin:0 }
 		.value { border-left: 1px dotted black; padding:0 .5em; font-family:monospace }
 		dl { margin-left:5em }
-	'
+	';
 	
+	SET
 	disabled = '<span class="false">disabled</span>'
 	false = '<span class="false">true</span>'
 	no = '<span class="false">no</span>'
