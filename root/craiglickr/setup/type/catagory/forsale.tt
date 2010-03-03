@@ -6,6 +6,8 @@
 %]
 	<h1> Pick your catagory: </h1>
 	<form action="[% c.request.uri %]" method="post">
+		<fieldset>
+		<legend>Type of item you want to post</legend>
 		<ol>
 			[% FOR i IN [ 1 .. c.config.Craiglickr.board.max ] %]
 			<li>
@@ -25,8 +27,9 @@
 		</ol>
 		<button onclick="javascript:reset();return false">Reset</button>
 		<input type="submit" />
+		</fieldset>
 	</form>
-[% END %]
+
 [% BLOCK optionlist %]
 	[% SET h = craigslist.section.s %]
 	[% FOR x = h.keys.sort %]
