@@ -1,14 +1,13 @@
-[% SET
+[% META
 	title = 'Craiglickr posting tool'
 	css = ' body { width:60% } ' ;
 %]
-
 	<h1>Welcome to Craiglickr</h1>
 
-	<p> <a href="http://www.craigslist.org" target="_blank">Craigslist</a> is a (mostly) free community forum for posting and advertising products and services. Craiglickr is a free and open source posting tool written in perl with the <a href="http://www.catalystframework.org" target="_blank">Catalyst Web Framework</a> to ease the use of Craigslist.</p>
+	<p> <a href="http://www.craigslist.org" rel="external">Craigslist</a> is a (mostly) free community forum for posting and advertising products and services. Craiglickr is a free and open source posting tool written in perl with the <a href="http://www.catalystframework.org" rel="external">Catalyst Web Framework</a> to ease the use of Craigslist.</p>
 
 	<h2> Implication of open source </h2>
-	<p> Craiglickr is an open source project freely available on <a href="http://github.com/EvanCarroll/Craiglickr" target="_blank">github</a>. </p>
+	<p> Craiglickr is an open source project freely available on <a href="http://github.com/EvanCarroll/Craiglickr" rel="external">github</a>. </p>
 
 	<h2> Using Craiglickr </h2>
 	<p> Configuring Craiglickr is easy: </p>
@@ -23,4 +22,4 @@
 	</p>
 	
 	<h2> Greasemonkey client script </h2>
-	<p> Craiglickr provides <a href="/static/gm/craiglickr.user.js">a Greasemonkey script</a> to ease the redundancy in posting to Craigslist. <a href="http://www.greasespot.net/" target="_blank">Greasemonkey</a> is a tool that permits control of your browser. We specifically use it to ease your experience across the domain <tt>craigslist.org</tt>. Greasemonkey require <a href="http://www.mozilla.com/en-US/products/firefox/" target="_blank">Firefox</a>, a totally free and open-source standards-compliant web browser. These are both good things and they are strongly recommended. You can <a href="http://www.firefox.com" target="_blank">download Firefox at firefox.com</a> and you can <a href="https://addons.mozilla.org/en-US/firefox/addon/748" target="_blank">download greasemonkey at addons.mozzila.org.</a></p> <p> If you're looking for more information on Greasemonkey <a href="http://en.wikipedia.org/wiki/Greasemonkey" target="_blank">check out the Wikipedia article on it</a>; <a href="http://en.wikipedia.org/wiki/Mozilla_Firefox" target="_blank">same goes for Firefox &mdash; check out Wikipedia for more information</a>.</p>
+	<p> Craiglickr provides <a href="/static/gm/craiglickr.user.js">a Greasemonkey script</a> to ease the redundancy in posting to Craigslist. <a href="http://www.greasespot.net/" rel="external">Greasemonkey</a> is a tool that permits control of your browser. We specifically use it to ease your experience across the domain <tt>craigslist.org</tt>. Greasemonkey require <a href="http://www.mozilla.com/en-US/products/firefox/" rel="external">Firefox</a>, a totally free and open-source standards-compliant web browser. These are both good things and they are strongly recommended. You can <a href="http://www.firefox.com" rel="external">download Firefox at firefox.com</a> and you can <a href="https://addons.mozilla.org/en-US/firefox/addon/748" rel="external">download greasemonkey at addons.mozzila.org.</a></p> <p> If you're looking for more information on Greasemonkey <a href="http://en.wikipedia.org/wiki/Greasemonkey" rel="external">check out the Wikipedia article on it</a>; <a href="http://en.wikipedia.org/wiki/Mozilla_Firefox" rel="external">same goes for Firefox &mdash; check out Wikipedia for more information</a>.</p>
