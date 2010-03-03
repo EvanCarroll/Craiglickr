@@ -12,6 +12,8 @@
 %]
 <h1> Pick your locations:</h1>
 <form action="[% c.request.uri %]" method="post">
+	<fieldset>
+	<legend> Pick up to [% c.config.Craiglickr.location.max %] regional boards to post to </legend>
 	<ol>
 		[% FOR i IN [ 1 .. c.config.Craiglickr.location.max ] %]
 		<li>
@@ -25,6 +27,7 @@
 	</ol>
 	<button onclick="javascript:reset();return false">Reset</button>
 	<input type="submit" />
+	</fieldset>
 </form>
 
 [% BLOCK iterate %]
