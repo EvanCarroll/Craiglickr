@@ -1,20 +1,36 @@
 [%
 	DEFAULT uri_css = [], uri_js = [];
+	META no_wrapper = 0;
 	uri_css.push('css/base.css');
-- %]
+-%]
+[% IF no_wrapper OR template.no_wrapper -%][% content -%][% ELSE -%]
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html 
-	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE
+ html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <?xml-stylesheet href="http://www.w3.org/StyleSheets/TR/W3C-REC.css" type="text/css"?>
 <?xml-stylesheet href="#internalStyle" type="text/css"?>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 	<head>
-		<title> [% title %] </title>
+		<title> [% template.title %] </title>
 		<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+		<script type="text/javascript"> google.load('jquery', '1.4.2') </script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("a[rel~=external]").click(function() {
+						window.open( $(this).attr('href') );
+						return false;
+				});
+			});
+		</script>
 		[% FOREACH uri = uri_css %] <link rel="stylesheet" type="text/css" href="/static/[%uri%]" /> [% END %]
 		[% FOREACH uri = uri_js %] <script type="text/javascript" src="/static/[%uri%]"></script> [% END %]
-		<style type="text/css" id="internalStyle"> [%css%] </style>
+		<style type="text/css" id="internalStyle"> [% template.css %] </style>
+		[%- IF redirect %]
+			<meta http-equiv="Refresh" content="7;url=[% redirect %]" />
+		[%- END %]
 	</head>
 	<body> [%content%] </body>
 </html>
+[% END %]
