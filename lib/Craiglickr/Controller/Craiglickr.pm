@@ -155,34 +155,35 @@ sub boards :Chained('locations') :Args(1) {
 		$c->res->cookies->{default_locations} = { value => join ',', map $_->{uid}, @{$c->stash->{locations}} };
 	}
 
-	$c->stash->{posts} = Craiglickr::Post->new({
-		locations => [ map $_->{uid},  @{$c->stash->{locations}} ]
-		, boards  => [ map $_->{code}, @{$c->stash->{boards}}    ]
-	})->get_forms;
-
 	$c->detach( $self->action_for('post') );
 
 }
 
 sub post :Local {
 	my ( $self, $c ) = @_;
-
+	
 	## Try to set the posts from the cookie data
 	if (
-		! defined $c->stash->{posts}
+		! defined $c->stash->{locations}
+		&& ! defined $c->stash->{boards}
 		and $c->config->{Craiglickr}{cookies}
-		and $c->req->cookie('default_locations')
-			&& $c->req->cookie('default_boards')
 	) {
-		$c->stash->{posts} = Craiglickr::Post->new({
-			locations => [ split ',', $c->req->cookie('default_locations')->value ]
-			, boards  => [ split ',', $c->req->cookie('default_boards')->value ]
-		})->get_forms;
+		if ( $c->req->cookie('default_locations') and $c->req->cookie('default_boards') ) {
+			$c->go(
+				'/craiglickr/boards'
+				, [ $c->req->cookie('default_locations')->value ]
+				, [ $c->req->cookie('default_boards')->value ]
+			);
+		}
+		else {
+			$c->res->redirect( $c->uri_for( '/craiglickr/locations' ) );
+		}
 	}
-
-	die 'No posts to build from in URL or in cookies'
-		unless defined $c->stash->{posts}
-	;
+	
+	$c->stash->{posts} = Craiglickr::Post->new({
+		locations => [ map $_->{uid},  @{$c->stash->{locations}} ]
+		, boards  => [ map $_->{code}, @{$c->stash->{boards}}    ]
+	})->get_forms;
 
 	$c->stash->{ad} = Craiglickr::Ad->new({
 		title         => 'Test Item'
