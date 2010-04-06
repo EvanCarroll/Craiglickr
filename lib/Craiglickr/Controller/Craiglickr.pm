@@ -8,7 +8,7 @@ use Craiglickr::Post;
 
 sub craiglickr :Chained :CaptureArgs(0) { }
 
-sub configureAll :Chained('craiglickr') :PathPart('') :Args(0) {
+sub index :Chained('craiglickr') :PathPart('') :Args(0) {
 	my ( $self, $c ) = @_;
 	$c->stash->{template} = 'craiglickr/home.tt';
 }
