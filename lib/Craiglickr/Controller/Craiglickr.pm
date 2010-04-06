@@ -13,12 +13,6 @@ sub configureAll :Chained('craiglickr') :PathPart('') :Args(0) {
 	$c->stash->{template} = 'craiglickr/home.tt';
 }
 
-sub view_configuration :Local {
-	my ( $self , $c ) = @_;
-	# use XXX; YYY $c->model('CraigsList')->locations_index_by_code;
-	$c->stash->{template} = 'craiglickr/view_configuration.tt';
-}
-
 sub configureLocations :Chained('craiglickr') :PathPart('locations') :Args(0) {
 	my ( $self, $c ) = @_;
 	
