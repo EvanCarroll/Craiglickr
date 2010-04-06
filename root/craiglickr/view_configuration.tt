@@ -8,18 +8,24 @@
 		.value { border-left: 1px dotted black; padding:0 .5em; font-family:monospace }
 		dl { margin-left:5em }
 	';
-	
+
 	SET
 	disabled = '<span class="false">disabled</span>'
 	false = '<span class="false">true</span>'
 	no = '<span class="false">no</span>'
-	
+
 	yes = '<span class="true">true</span>'
 	enabled = '<span class="true">enabled</span>'
 	true = '<span class="true">true</span>'
 %]
 
 <h1>Craiglickr Configuration</h1>
+
+<h2> Miscellaneous </h2>
+	<dl>
+		<dt class="key"> Cookie saving of defaults </dt>
+		<dd class="value"> [% c.config.Craiglickr.cookies ? enabled : disabled %] </dd>
+	</dl>
 
 <h2> Locations </h2>
 	<dl>

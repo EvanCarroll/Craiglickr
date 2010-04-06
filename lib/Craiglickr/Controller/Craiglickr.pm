@@ -15,7 +15,7 @@ sub index :Chained('craiglickr') :PathPart('') :Args(0) {
 
 sub configureLocations :Chained('craiglickr') :PathPart('locations') :Args(0) {
 	my ( $self, $c ) = @_;
-	
+
 	if ( my %p = %{$c->request->params} ) {
 		$p{loc} = [$p{loc}] unless ref $p{loc} eq 'ARRAY';
 
@@ -39,16 +39,16 @@ sub locations :Chained('craiglickr') :CaptureArgs(1) {
 
 	## No 0 locations
 	die 'No locations supplied' unless @locations ;
-	
+
 	if ( @locations > 1 ) {
-		
+
 		## No posting cross-city unless permitted
 		die 'Cross-posting to different locations disabled'
 			if $c->config->{Craiglickr}{location}{cross_posting} == 0
 		;
-	
+
 		my %l;
-		
+
 		## No dupe locations
 		for my $loc ( @locations ) {
 			! exists $l{$loc}
@@ -68,16 +68,16 @@ sub locations :Chained('craiglickr') :CaptureArgs(1) {
 				;
 			}
 		}
-	
+
 		## No exceeding max locations
 		if ( @locations > $c->config->{Craiglickr}{location}{max} ) {
 			my $max = $c->config->{Craiglickr}{location}{max};
 			my $supplied = @locations;
 			die "Can only post to $max locations at a time. You tried to post to $supplied locations";
 		}
-	
+
 	}
-	
+
 	## No invalid locations
 	foreach my $loc ( @locations ) {
 
@@ -87,10 +87,10 @@ sub locations :Chained('craiglickr') :CaptureArgs(1) {
 			unless defined $linfo
 		;
 
-		## Finallize in stash		
+		## Finallize in stash
 		push @{ $c->stash->{locations} }, $linfo;
 	}
-	
+
 	$c->stash->{locations};
 
 }
@@ -118,13 +118,13 @@ sub configureBoards :Chained('locations') :PathPart('boards') :Args(0) {
 sub boards :Chained('locations') :Args(1) {
 	my ( $self, $c, $boards ) = @_;
 	my @boards = split /,/, $boards;
-		
+
 	if ( @boards > 1 ) {
 
 		die 'Cross-posting to different boards is disabled'
 			if $c->config->{Craiglickr}{board}{cross_posting} == 0
 		;
-		
+
 		## No dupe locations
 		my %b;
 		for my $board ( @boards ) {
@@ -133,7 +133,7 @@ sub boards :Chained('locations') :Args(1) {
 				: die "Can not post to the same board twice as tried with $board"
 			;
 		}
-		
+
 		## No exceeding max boards
 		if ( @boards > $c->config->{Craiglickr}{board}{max} ) {
 			my $max = $c->config->{Craiglickr}{board}{max};
@@ -149,18 +149,41 @@ sub boards :Chained('locations') :Args(1) {
 		;
 	}
 
+	## Flush this data to cookies if set in config
+	if ( $c->config->{Craiglickr}{cookies} ) {
+		$c->res->cookies->{default_boards} = { value => join ',', map $_->{code}, @{$c->stash->{boards}} };
+		$c->res->cookies->{default_locations} = { value => join ',', map $_->{uid}, @{$c->stash->{locations}} };
+	}
+
+	$c->stash->{posts} = Craiglickr::Post->new({
+		locations => [ map $_->{uid},  @{$c->stash->{locations}} ]
+		, boards  => [ map $_->{code}, @{$c->stash->{boards}}    ]
+	})->get_forms;
+
 	$c->detach( $self->action_for('post') );
-	
+
 }
 
-sub post :Private {
+sub post :Local {
 	my ( $self, $c ) = @_;
-	
-	$c->stash->{posts} = Craiglickr::Post->new({
-		locations => [map $_->{uid}, @{$c->stash->{locations}}]
-		, boards  => [map $_->{code}, @{$c->stash->{boards}}]
-	})->get_forms;
-	
+
+	## Try to set the posts from the cookie data
+	if (
+		! defined $c->stash->{posts}
+		and $c->config->{Craiglickr}{cookies}
+		and $c->req->cookie('default_locations')
+			&& $c->req->cookie('default_boards')
+	) {
+		$c->stash->{posts} = Craiglickr::Post->new({
+			locations => [ split ',', $c->req->cookie('default_locations')->value ]
+			, boards  => [ split ',', $c->req->cookie('default_boards')->value ]
+		})->get_forms;
+	}
+
+	die 'No posts to build from in URL or in cookies'
+		unless defined $c->stash->{posts}
+	;
+
 	$c->stash->{ad} = Craiglickr::Ad->new({
 		title         => 'Test Item'
 		, location    => 'Kingwood, TX'
