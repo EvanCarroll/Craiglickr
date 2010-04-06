@@ -1,9 +1,10 @@
 package Craiglickr::HTTP::FormRetrieve;
-use Moose;
 use strict;
 use warnings;
-
 use feature ':5.10';
+
+use Moose;
+use Catalyst::Exception;
 use HTML::TreeBuilder;
 use URI;
 use LWP;
@@ -56,6 +57,12 @@ has 'form' => (
 				, id => 'postingForm'
 			)
 		;
+
+		unless ( $form ) {
+			Catalyst::Exception->throw(
+				message => 'Critical error! Craigslist is not responding in a friendly fashion. '
+			);
+		}
 		
 		## get rid of parents
 		$form->detach;
