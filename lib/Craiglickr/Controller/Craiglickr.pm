@@ -13,16 +13,23 @@ sub index :Chained('craiglickr') :PathPart('') :Args(0) {
 	$c->stash->{template} = 'craiglickr/home.tt';
 }
 
+## Both of these are chained from craiglickr /craiglickr/locations craiglickr/locations/foo
 sub configureLocations :Chained('craiglickr') :PathPart('locations') :Args(0) {
 	my ( $self, $c ) = @_;
 
-	if ( my %p = %{$c->request->params} ) {
+	if ( $c->req->params->{loc} ) {
+		my %p = %{$c->req->params};
+		## They get sent as an array in catalyst if they are in the form loc=foo&loc=bar
 		$p{loc} = [$p{loc}] unless ref $p{loc} eq 'ARRAY';
 
 		my %unique;
 		$unique{$_}=undef for @{$p{loc}};
 		$c->res->redirect(
-			$c->uri_for( $self->action_for('configureBoards'), [join ',', keys %unique] )
+			$c->uri_for(
+				$self->action_for('configureBoards')
+				, [join ',', keys %unique]
+				, $c->req->query_params
+			)
 		);
 
 	}
@@ -95,16 +102,24 @@ sub locations :Chained('craiglickr') :CaptureArgs(1) {
 
 }
 
+## Both boards are end points /locations/foo/boards/bar /locations/foo/boards
 sub configureBoards :Chained('locations') :PathPart('boards') :Args(0) {
 	my ( $self, $c ) = @_;
 
-	if ( my %p = %{$c->request->params} ) {
+	if ( $c->req->params->{cat} ) {
+		my %p = %{$c->req->params};
+		## They get sent as an array in catalyst if they are in the form loc=foo&loc=bar
 		$p{cat} = [$p{cat}] unless ref $p{cat} eq 'ARRAY';
 
 		my %unique;
 		$unique{$_}=undef for @{$p{cat}};
 		$c->res->redirect(
-			$c->uri_for( $self->action_for('boards'), $c->request->captures, join ',', keys %unique )
+			$c->uri_for(
+				$self->action_for('boards')
+				, $c->request->captures
+				, (join ',', keys %unique)
+				, $c->req->query_params
+			)
 		);
 
 	}
@@ -151,8 +166,8 @@ sub boards :Chained('locations') :Args(1) {
 
 	## Flush this data to cookies if set in config
 	if ( $c->config->{Craiglickr}{cookies} ) {
-		$c->res->cookies->{default_boards} = { value => join ',', map $_->{code}, @{$c->stash->{boards}} };
-		$c->res->cookies->{default_locations} = { value => join ',', map $_->{uid}, @{$c->stash->{locations}} };
+		$c->res->cookies->{default_boards}    = { value => join ',', map $_->{code}, @{$c->stash->{boards}}    };
+		$c->res->cookies->{default_locations} = { value => join ',', map $_->{uid},  @{$c->stash->{locations}} };
 	}
 
 	$c->detach( $self->action_for('post') );
@@ -176,7 +191,9 @@ sub post :Local {
 			);
 		}
 		else {
-			$c->res->redirect( $c->uri_for( '/craiglickr/locations' ) );
+			$c->res->redirect(
+				$c->uri_for( '/craiglickr/locations', $c->req->mangle_params )
+			);
 		}
 	}
 	
