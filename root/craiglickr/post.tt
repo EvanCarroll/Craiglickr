@@ -2,7 +2,6 @@
 	META title = 'Craiglickr posting tool';
 	DEFAULT uri_css = [], uri_js = [];
 	uri_css.push( 'css/post.css' );
-	uri_js.push( 'js/jquery.js' );
 	uri_js.push( 'js/cleanmultiform.js' );
 	uri_js.push( 'ckeditor/ckeditor.js' );
 %]
