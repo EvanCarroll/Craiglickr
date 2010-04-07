@@ -98,6 +98,11 @@ sub locations :Chained('craiglickr') :CaptureArgs(1) {
 		push @{ $c->stash->{locations} }, $linfo;
 	}
 
+	## Flush this data to cookies if set in config
+	if ( $c->config->{Craiglickr}{cookies} ) {
+		$c->res->cookies->{default_locations} = { value => join ',', map $_->{uid}, @{$c->stash->{locations}} };
+	}
+
 	$c->stash->{locations};
 
 }
@@ -166,8 +171,7 @@ sub boards :Chained('locations') :Args(1) {
 
 	## Flush this data to cookies if set in config
 	if ( $c->config->{Craiglickr}{cookies} ) {
-		$c->res->cookies->{default_boards}    = { value => join ',', map $_->{code}, @{$c->stash->{boards}}    };
-		$c->res->cookies->{default_locations} = { value => join ',', map $_->{uid},  @{$c->stash->{locations}} };
+		$c->res->cookies->{default_boards} = { value => join ',', map $_->{code}, @{$c->stash->{boards}} };
 	}
 
 	$c->detach( $self->action_for('post') );
@@ -176,7 +180,7 @@ sub boards :Chained('locations') :Args(1) {
 
 sub post :Local {
 	my ( $self, $c ) = @_;
-	
+
 	## Try to set the posts from the cookie data
 	if (
 		! defined $c->stash->{locations}
@@ -196,7 +200,7 @@ sub post :Local {
 			);
 		}
 	}
-	
+
 	$c->stash->{posts} = Craiglickr::Post->new({
 		locations => [ map $_->{uid},  @{$c->stash->{locations}} ]
 		, boards  => [ map $_->{code}, @{$c->stash->{boards}}    ]
@@ -212,6 +216,7 @@ sub post :Local {
 	});
 
 	$c->stash->{template} = 'craiglickr/post.tt';
+
 }
 
 sub end : ActionClass('RenderView') {}
