@@ -6,7 +6,7 @@ BEGIN { open STDERR, '>', '/dev/null' };
 
 use FindBin '$Bin';
 use lib "$Bin/lib";
-use Test::More tests => 6;
+use Test::More tests => 2;
 use Catalyst::Test 'Craiglickr';
 	
 use feature ':5.10';
@@ -22,10 +22,11 @@ is_deeply (
 );
 
 is_deeply (
-	Craiglickr->config->{Craiglickr}{category}
+	Craiglickr->config->{Craiglickr}{board}
 	, {
 		'owner' => '1',
-		'cross_posting' => '0'
+		'cross_posting' => '0',
+		'max' => 1
 	}
-	, 'category'
+	, 'board'
 );
