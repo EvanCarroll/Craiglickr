@@ -5,7 +5,7 @@ static:
   dirs:
     - static
 View::TT:
-  DEBUG: 1
+  render_die: 1
   PRE_CHOMP: 1
   POST_CHOMP: 1
   WRAPPER: wrapper.tt
