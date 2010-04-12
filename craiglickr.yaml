@@ -23,8 +23,12 @@ Craiglickr:
   location:
     max: 3
     cross_posting: 1
-    cross_metro:   0
+    cross_metro: 0
+    default: 0
+    restrict: 0
   board:
     max: 1
     cross_posting: 0
     owner: 1
+    default: 0
+    restrict: 0

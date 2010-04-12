@@ -43,6 +43,14 @@
 				<dd class="value"> [% c.config.Craiglickr.location.max %] </dd>
 			</dl>
 		</dd>
+		<dt class="key"> Restrict to Default </dt>
+		<dd class="value"> [% c.config.Craiglickr.location.restrict ? enabled : disabled %] </dd>
+		[% IF c.config.Craiglickr.location.default %]
+			<dt class="key"> Defaults </dt>
+			[% FOR d = c.config.Craiglickr.location %]
+				<dd class="value"> [% d %] </dd>
+			[% END %]
+		[% END %]
 	</dl>
 
 <h2> Boards (Catagories) </h2>
@@ -55,4 +63,12 @@
 				<dd class="value"> [% c.config.Craiglickr.board.max %] </dd>
 			</dl>
 		</dd>
+		<dt class="key"> Restrict to Default </dt>
+		<dd class="value"> [% c.config.Craiglickr.board.restrict ? enabled : disabled %] </dd>
+		[% IF c.config.Craiglickr.board.default %]
+			<dt class="key"> Defaults </dt>
+			[% FOR d = c.config.Craiglickr.board.default %]
+				<dd class="value"> [% d %] </dd>
+			[% END %]
+		[% END %]
 	</dl>

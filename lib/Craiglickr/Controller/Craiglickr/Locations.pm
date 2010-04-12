@@ -7,7 +7,18 @@ use parent 'Catalyst::Controller';
 sub configure :Chained('/craiglickr') :PathPart('locations') :Args(0) {
 	my ( $self, $c ) = @_;
 
-	if ( $c->req->params->{loc} ) {
+	## Restrict just short circuits the whole selection process
+	if ( $c->config->{Craiglickr}{location}{restrict} ) {
+		$c->res->redirect(
+			$c->uri_for(
+				$c->controller('Craiglickr::Locations::Boards')->action_for('configure')
+				, [ 'default' ]
+				, ()
+				, $c->req->query_params
+			)
+		);
+	}
+	elsif ( $c->req->params->{loc} ) {
 		my %p = %{$c->req->params};
 		## They get sent as an array in catalyst if they are in the form loc=foo&loc=bar
 		$p{loc} = [$p{loc}] unless ref $p{loc} eq 'ARRAY';
@@ -34,6 +45,14 @@ sub configure :Chained('/craiglickr') :PathPart('locations') :Args(0) {
 sub locations :Chained('/craiglickr') :CaptureArgs(1) {
 	my ( $self, $c, $locations ) = @_;
 	my @locations = split /,/, $locations;
+
+	## Set @locations to the default
+	@locations = @{ $c->config->{Craiglickr}{location}{default} }
+		if $c->config->{Craiglickr}{location}{default}
+		&& @locations == 1
+		&& $locations[0] eq 'default'
+		or $c->config->{Craiglickr}{location}{restrict}
+	;
 
 	## No 0 locations
 	die 'No locations supplied' unless @locations ;
