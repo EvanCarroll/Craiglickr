@@ -70,6 +70,68 @@ This is a Catalyst-based Craigslist posting tool. There
 		, email_flag => 'anonymous'
 	});
 
+=head1 CONFIGURATION
+
+The default configuration (yaml), provides for the following values:
+
+	cookies: 1
+	location:
+		max: 3
+		cross_posting: 1
+		cross_metro: 0
+		default: 0
+		restrict: 0
+	board:
+		max: 1
+		cross_posting: 0
+		owner: 1
+		default: 0
+		restrict: 0
+
+=head2 Description of terms
+
+=over 12
+
+=item
+
+C<cookies>
+
+When enabled, the configuration will be saved in cookies, and sourced on posting for any values not present.
+
+=back
+
+C<location>, C<board>
+
+These options afford 4 common choices, and one specific. In location, L<cross_metro> can be toggeled to disable metro-area cross posting. This is useful for Craigslists that are broken down into suburb areas, like Dallas L<http://dallas.craigslist.org/>. In board, L<owner> can be used to disable posting to owner-oriented sites that have dealer-type alternatives. The big case for this is 'cars and trucks by owner'.
+
+=over 4
+
+=item
+
+C<max> (0..)
+
+Maxium amount of posting desintations you may have
+
+=item
+
+C<cross_posting> (0|1)
+
+Permit more than one post, per submission
+
+=item
+
+C<default> (0|Array)
+
+An array of possible locations and boards. The C<default> will be used when the special term, 'default' is supplied as an argument. Example, C</craiglickr/locations/default/boards/default>.
+
+=item
+
+C<restrict> (0|1)
+
+To further constraint the application into force-chosing the C<default> configuration screens will not be shown for these.
+
+=back
+
 =head1 SEE ALSO
 
 L<Craiglickr::Controller::Root>, L<Catalyst>
