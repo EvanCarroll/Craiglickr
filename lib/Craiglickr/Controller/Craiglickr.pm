@@ -62,6 +62,4 @@ sub post :Chained('/craiglickr') :Args(0) {
 
 sub wtf :Local { use XXX; XXX $_[1]->dispatcher->_action_hash() };
 
-sub end : ActionClass('RenderView') {}
-
 1;

@@ -34,6 +34,9 @@ sub configure :Chained('/craiglickr/locations/locations') :PathPart('boards') :A
 sub boards :Chained('/craiglickr/locations/locations') :Args(1) {
 	my ( $self, $c, $boards ) = @_;
 	my @boards = split /,/, $boards;
+	
+	## No 0 boards
+	die 'No boards supplied' unless @boards ;
 
 	if ( @boards > 1 ) {
 
@@ -75,7 +78,5 @@ sub boards :Chained('/craiglickr/locations/locations') :Args(1) {
 	);
 
 }
-
-sub end : ActionClass('RenderView') {}
 
 1;

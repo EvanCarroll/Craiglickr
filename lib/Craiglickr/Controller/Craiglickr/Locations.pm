@@ -97,6 +97,4 @@ sub locations :Chained('/craiglickr') :CaptureArgs(1) {
 
 }
 
-sub end : ActionClass('RenderView') {}
-
 1;
