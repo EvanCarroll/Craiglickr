@@ -1,6 +1,6 @@
 package Craiglickr::Types;
 use MooseX::Types -declare => [qw/Money EmailFlag/];
-use MooseX::Types::Moose qw( Str Int );
+use MooseX::Types::Moose qw( Str Int Any );
 
 enum EmailFlag , qw( hidden unhidden anonymous );
 
@@ -8,8 +8,8 @@ enum EmailFlag , qw( hidden unhidden anonymous );
 ## Money
 ##
 subtype Money
-	, as Str
-	, where { defined $_ && /^(?:\d+(?:\.\d*)?|\.\d+)$/ }
+	, as Any
+	, where { !defined $_ || /^(?:\d+(?:\.\d*)?|\.\d+)$/ }
 	, message { "Invalid money: [ $_[0] ]" }
 ;
 coerce Money
@@ -19,6 +19,8 @@ coerce Money
 
 sub monify {
 	my $money = shift;
+
+	return undef if $money =~ /^[0\.$ ]*$/;
 
 	$money =~ s/[^0-9.-]+//g;
 
