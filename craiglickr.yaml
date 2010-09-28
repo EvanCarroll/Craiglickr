@@ -1,4 +1,4 @@
-~~~~
+---
 name: Craiglickr
 default_view: TT
 static:
@@ -17,7 +17,7 @@ Model::CraiglickrPost:
     - ctd
 Model::Craigslist:
   locations_only: United States
-  locations_crop: true
+  locations_crop: 'true'
 Craiglickr:
   cookies: 1
   location:
@@ -32,3 +32,4 @@ Craiglickr:
     owner: 1
     default: 0
     restrict: 0
+
