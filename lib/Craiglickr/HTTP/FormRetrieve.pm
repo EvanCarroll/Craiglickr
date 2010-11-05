@@ -1,7 +1,9 @@
 package Craiglickr::HTTP::FormRetrieve;
+use feature ':5.10';
+use mro 'c3';
 use strict;
 use warnings;
-use feature ':5.10';
+use namespace::autoclean;
 
 use Moose;
 use Catalyst::Exception;

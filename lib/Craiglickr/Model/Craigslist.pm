@@ -3,9 +3,10 @@ use feature ':5.10';
 use mro 'c3';
 use strict;
 use warnings;
+use namespace::autoclean;
 
 use Moose;
-
+use MooseX::ClassAttribute;
 extends 'Catalyst::Model';
 
 use File::ShareDir;
@@ -15,7 +16,7 @@ use YAML;
 has 'locations_only' => ( isa => 'Str', is => 'ro' );
 has 'locations_crop' => ( isa => 'Str', is => 'ro', default => 0 );
 
-has 'for_sale' => (
+class_has 'for_sale' => (
 	isa  => 'HashRef'
 	, is => 'ro'
 	, traits => ['Hash']
@@ -80,4 +81,4 @@ sub _recurse_and_add_to_codes {
 
 }
 
-1;
+__PACKAGE__->meta->make_immutable;

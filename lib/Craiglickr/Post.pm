@@ -1,12 +1,14 @@
 package Craiglickr::Post;
-use Moose;
+use feature ':5.10';
+use mro 'c3';
 use strict;
 use warnings;
+use namespace::autoclean;
+
+use Moose;
 
 use Craiglickr::HTTP::FormRetrieve;
 use Craiglickr::Ad;
-
-use namespace::clean -except => 'meta';
 
 has 'locations' => (
 	isa  => 'ArrayRef[Str]'

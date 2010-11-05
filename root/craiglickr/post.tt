@@ -55,7 +55,7 @@
 		[% p.get_token_as_html_from_form_pos('description') %]
 		<label for="description[%loop.count%]"> Description </label>
 		<textarea tabindex="4" class="description[%IF loop.first%] ckeditor[%END%]" id="description[%loop.count%]" name="[% f.look_down('id','description').attr('name')  %]" rows="20" cols="80">
-				[% PROCESS craiglickr/posting_template/evan_bb.tt %]
+				[%# PROCESS craiglickr/posting_template/evan_bb.tt %]
 		</textarea>
 	</div>
 	<div class="formFooter">

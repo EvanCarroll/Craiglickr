@@ -2,8 +2,8 @@ use Craiglickr::Post;
 
 my $clp = Craiglickr::Post->new;
 
-$clp->add_city( 'hou' );
-$clp->add_city( 'elp' );
+$clp->add_location( 'hou' );
+$clp->add_location( 'elp' );
 $clp->add_board( 'ctd' );
 
 foreach (  1  ) {

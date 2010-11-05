@@ -7,7 +7,6 @@ license  'perl';
 
 build_requires 'Test::More';
 
-requires 'namespace::clean';
 requires 'LWP';
 requires 'URI';
 requires 'HTML::TreeBuilder';
@@ -15,6 +14,8 @@ requires 'Moose' => '0.92';
 requires 'MooseX::Types';
 requires 'MooseX::Types::Email';
 requires 'File::ShareDir';
+requires 'namespace::autoclean';
+requires 'MooseX::ClassAttribute'
 
 requires 'IO::Socket::SSL';
 
