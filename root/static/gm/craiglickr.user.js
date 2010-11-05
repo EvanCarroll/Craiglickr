@@ -2,15 +2,17 @@
 // @name          Craiglickr - TOU Auto-Accept
 // @namespace     http://www.evancarroll.com
 // @description   Automagically accepts Craiglist - TOU, Crops out header in reCaptcha, and clicks continue if all form elements are filled out on post.
-// @version       0.0.1
+// @version       0.0.2
 // @author        Evan Carroll
 // @license       CC-BY-SA v3 http://creativecommons.org/licenses/by-sa/3.0/
 // @include       https://post.craigslist.org/*
-// @require       http://code.jquery.com/jquery-latest.js
+// @require       http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js
 // ==/UserScript==
 
 // Official TOU can be found at the following address (2009-09-25)
 // http://www.craigslist.org/about/terms.of.use
+
+// @require       http://code.jquery.com/jquery-latest.js
 
 (function() {
 	
@@ -29,7 +31,7 @@
 		// skip if all the good stuff isn't there that we want.
 		if (
 			$("input[tabindex=1][type=text]").filter(
-				function () { return ( $(this).attr('value') && $(this).attr('value').size() > 0 ? false : true ); }
+				function () { return ( $(this).attr('value') && $(this).attr('value').length > 0 ? false : true ); }
 			).size() == 0
 		) {
 			$(":submit[value=Continue]").click();			
