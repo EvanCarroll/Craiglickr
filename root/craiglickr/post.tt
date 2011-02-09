@@ -17,13 +17,17 @@
 		<p> <strong>CKEditor requires JavaScript to run</strong>. In a browser with no JavaScript support, like yours, you should still see the contents (HTML data) and you should be able to edit it normally, without a rich editor interface. </p>
 </noscript>
 
-[% IF c.request.header('User-Agent').match('Firefox') %]
+[%
+	IF c.request.header('User-Agent').match('Firefox')
+	OR c.request.header('User-Agent').match('Chrome')
+	OR c.request.header('User-Agent').match('Chromium')
+%]
 	<div id="GMnotice">
-		<strong>Firefox Notice:</strong> to ease posting we've created <a href="/static/gm/craiglickr.user.js">a greasemonkey script for your consumption</a>
+		<strong>Notice:</strong> to ease posting we've created <a href="/static/gm/craiglickr.user.js">a Greasemonkey script (click here to install)</a>. If you you're using Google Chrome, or Google Chromium you already have Greasemonkey installed, and you're ready to run the <a href="/static/gm/craiglickr.user.js">script-install</a>; however, if you're using FireFox you'll have to install the <a href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey">Greasemonkey Extension</a>.
 	</div>
 [% ELSE %]
 	<div id="GMnotice">
-		<strong>Upgrade Notice:</strong> for a better browser experience upgrade to <a href="http://www.firefox.com">Firefox</a> and utilize our <a href="/static/gm/craiglickr.user.js">a greasemonkey script</a>
+		<strong>Upgrade Notice:</strong> for a better browser experience upgrade to <a href="http://www.google.com/chrome">Google Chrome</a> or <a href="http://www.firefox.com">Firefox</a> and utilize our <a href="/static/gm/craiglickr.user.js">a greasemonkey script</a>.
 	</div>
 [% END %]
 
